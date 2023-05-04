@@ -1,0 +1,22 @@
+{
+  "name": "web-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olaciesielska/web-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olaciesielska/web-project/issues"
+  },
+  "homepage": "https://github.com/olaciesielska/web-project#readme",
+  "dependencies": {
+    "sass": "^1.62.1"
+  }
+}
