@@ -76,7 +76,6 @@
   display: flex;
 }
 .navbar .nav-link {
-  padding: 10px;
   text-decoration: none;
   text-transform: uppercase;
   color: #111111;
@@ -90,10 +89,17 @@
   font-size: 1.6rem;
 }
 .navbar .icon-icon_06:before {
+  padding-right: 15%;
+  width: 35px;
+  height: 55px;
   border-right: 1px solid #e1e2e8;
 }
 .navbar .basket {
   border: 1px solid #e1e2e8;
+  margin-left: 1rem;
+}
+.navbar .basket__icon {
+  padding-top: 0.5rem;
 }
 .navbar .basket-icon {
   padding: 20px;
@@ -102,20 +108,32 @@
   margin-right: 10px;
 }
 .navbar span {
-  margin-left: 45%;
   font-weight: 400;
   text-transform: lowercase;
 }
-.navbar .icon-icon_04 {
+.navbar .basket__wrapper {
   display: flex;
+  width: 110%;
+  height: 100%;
+}
+.navbar .basket__arrow {
+  display: flex;
+  width: 35px;
+  height: 55px;
+  background-color: #9BCB3B;
+  color: #FFFFFF;
   align-items: center;
   justify-content: center;
-  color: #FFFFFF;
-  width: 7%;
-  background-color: #9BCB3B;
+}
+.navbar .basket__center {
+  margin: auto;
+  justify-content: start;
+}
+.navbar .basket__center span {
+  justify-content: start;
 }
 
-.second {
+.navbar--modifier {
   border-top: 1px solid #e1e2e8;
 }
 
