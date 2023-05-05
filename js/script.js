@@ -10,7 +10,7 @@ let slide_index = 1;
 
         function displaySlides(n) {
             let i;
-            let slides = document.getElementsByClassName("showSlide");
+            let slides = document.getElementsByClassName("slider__element");
             if (n > slides.length) { slide_index = 1 }
             if (n < 1) { slide_index = slides.length }
             for (i = 0; i < slides.length; i++) {

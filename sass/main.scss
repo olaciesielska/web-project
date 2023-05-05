@@ -12,29 +12,92 @@
     font-display: block;
   }
 
-  @font-face {
+@font-face {
+    font-family: "Metropolis";
+    src: url("../etap_01_2/fonts/Metropolis-Light.otf");
+    font-weight: 300;
+  }
+
+@font-face {
     font-family: "Metropolis";
     src: url("../etap_01_2/fonts/Metropolis-Regular.otf");
     font-weight: 400;
   }
 
- @font-face {
+@font-face {
     font-family: "Metropolis";
     src: url("../etap_01_2/fonts/Metropolis-Bold.otf");
     font-weight: 700;
   }
   
-.slider {
-    background-color: $main-color;
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1900px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
 }
 
-.slidercontainer {
+.slider {
     position: relative;
-    padding-bottom: 1%;
-        .showSlide img {
-            width: 1860px;
-            height: 595px;
-        }
+    background-color: $main-color;
+        .slider__element {
+    
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .content {
+                position: absolute;
+                text-align: justify;
+                justify-content: start;
+                font-family: Metropolis;
+                font-weight: 300;
+                color: $white;
+                top: 33%;
+                left: 10%;
+                width: 100%;
+                font-size: 44px;
+                z-index: 2;
+            }
+
+            .content-text {
+                position: absolute;
+                padding-top: 1rem;
+                text-align: left;
+                justify-content: start;
+                font-family: Metropolis;
+                font-size: 22px;
+                font-weight: 300;
+                color: $white;
+                top: 45%;
+                left: 10%;
+                width: 20%;
+                z-index: 2;
+            }
+    }
+
+    .shadow-bg {
+        position: absolute;
+        width: 50%;
+        height: 94%;
+    }
+}
+
+.see_more_button {
+    cursor: pointer;
+    background-color: $red;
+    margin-top: 10%;
+    color: $white;
+    font-family: Metropolis;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    width: 204px;
+    height: 55px;
 }
 
 .left, .right {
@@ -48,6 +111,7 @@
     font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
+    z-index: 2;
 }
 
 .right {
@@ -59,32 +123,81 @@
     background-color: rgba(115, 115, 115, 0.8);
 }
 
-.content {
-    position: absolute;
-    text-align: justify;
-    justify-content: start;
-    font-family: Metropolis;
-    color: $white;
-    top: 33%;
-    left: 10%;
-    width: 100%;
-    font-size: 44px;
-}
-
 .active {
     background-color: #717171;
 }
 
-.fade {
+.fade_animation {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
 }
 
-.text-bold {
+.content--modifier {
     position: absolute;
     font-weight: 700;
+}
+
+.slider__element {
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.8);
+    z-index: 10;
+}
+
+.shadow-bg {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0,.6), rgba(0, 0, 0,.01));
+    z-index: 1;
+}
+
+.banners {
+    background-color: $main-color;
+    .banner-wrapper {
+        display: flex;
+        justify-content: space-between;
+        .banner-element {
+            position: relative;
+            display: flex;
+            margin: 0 auto;
+            overflow: hidden;
+            img {
+                transition: transform 1s;
+                z-index: 0;
+            }
+
+            .see_more_button {
+                background-color: transparent;
+                border: 1px solid $white;
+                transform: background-color 0.5s;
+            }
+
+            .see_more_button:hover {
+                background-color: $red;
+                border: none;
+            }
+
+            .banner-text {
+                position: absolute;
+                padding-top: 1rem;
+                text-align: left;
+                font-family: Metropolis;
+                font-size: 44px;
+                font-weight: 700;
+                color: $white;
+                top: 25%;
+                left: 5%;
+                z-index: 2;
+                span {
+                font-weight: 300;
+                }
+            }
+        }
+        .banner-element:hover img {
+                transform: scale(1.1);
+        }
+    }
 }
 
 @-webkit-keyframes fade {
