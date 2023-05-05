@@ -11,83 +11,96 @@
     font-style: normal;
     font-display: block;
   }
-  
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-icon_01:before {
-    content: "\e900";
-  }
-  .icon-icon_02:before {
-    content: "\e901";
-  }
-  .icon-icon_03:before {
-    content: "\e902";
-  }
-  .icon-icon_04:before {
-    content: "\e903";
-  }
-  .icon-icon_05:before {
-    content: "\e904";
-  }
-  .icon-icon_06:before {
-    content: "\e905";
-  }
-  
-@font-face {
+
+  @font-face {
     font-family: "Metropolis";
     src: url("../etap_01_2/fonts/Metropolis-Regular.otf");
     font-weight: 400;
   }
 
-  @font-face {
+ @font-face {
     font-family: "Metropolis";
     src: url("../etap_01_2/fonts/Metropolis-Bold.otf");
     font-weight: 700;
   }
+  
+.slider {
+    background-color: $main-color;
+}
 
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1900px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .header-class {
-    display: flex;
-    justify-content: space-between;
-  }
+.slidercontainer {
+    position: relative;
+    padding-bottom: 1%;
+        .showSlide img {
+            width: 1860px;
+            height: 595px;
+        }
+}
 
-  .navbar {
-    ul {
-        display: flex;
-        list-style: none;
+.left, .right {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: $white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.right {
+    right: 1rem;
+    border-radius: 3px 0 0 3px;
+}
+
+.left:hover, .right:hover {
+    background-color: rgba(115, 115, 115, 0.8);
+}
+
+.content {
+    position: absolute;
+    text-align: justify;
+    justify-content: start;
+    font-family: Metropolis;
+    color: $white;
+    top: 33%;
+    left: 10%;
+    width: 100%;
+    font-size: 44px;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.text-bold {
+    position: absolute;
+    font-weight: 700;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
     }
-    .nav-link {
-        float: right;
-        padding: 5px 5px;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: $black;
-        font-size: 14px;
-        font-family: Metropolis;
-        font-weight: 700;
+    to {
+        opacity: 1
     }
-    .icon {
-        font-weight: bold;
-        padding: 0 10px;
-        font-size: 20px;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
     }
-  }
+    to {
+        opacity: 1
+    }
+}
