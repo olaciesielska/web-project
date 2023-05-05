@@ -5,21 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
-        <img src="img/logo.png" alt="Logo firmy">
-    </header>
-    <nav id="navbar">
-        
+        <div class="container header-class">
+            <div><img src="img/logo.png" alt="Logo firmy"></div>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a class="nav-link" href="javascript:void(0)"><i class="icon icon-icon_01"></i>kontakt</a></li>
+            <li><a class="nav-link" href="javascript:void(0)"><i class="icon icon-icon_02"></i>ulubione</a></li>
+            <li><a class="nav-link" href="javascript:void(0)"><i class="icon icon-icon_03"></i>moje konto</a></li>
+            <li class="basket"><a class="nav-link" href="javascript:void(0)"><i class="icon basket-icon icon-icon_06"></i>twój koszyk<span>3456,00 zł</span></a></li><div class="icon-icon_04"></div>
+        </ul>
     </nav>
-    <main>
+</div>
+<nav class="navbar second">
+    <ul class="header-class">
+        <li><a class="nav-link" href="javascript:void(0)">źródła światła</a></li>
+        <li><a class="nav-link" href="javascript:void(0)">oświetlenie wewnętrzne</a></li>
+        <li><a class="nav-link" href="javascript:void(0)">gniazdka, wyłączniki</a></li>
+        <li><a class="nav-link" href="javascript:void(0)">automatyka, sterowanie</a></li>
+        <li><a class="nav-link" href="javascript:void(0)">rozdzielenie i aparatura</a></li>
+        <li><a class="nav-link" href="javascript:void(0)">materiały instalacyjne</a></li>
+    </ul>
+</nav>
+</header>
 
-    </main>
+<main>
+    <section class="slider">
+        <div class="container slidercontainer">
+            <div class="showSlide fade">
+                <img src="img/img_01.jpg"/>
+                <div class="content"><span class="text-bold">Poznaj SEDNA</span><br> Schneider Electric</div>
+            </div>
+            <div class="showSlide fade">
+                <img src="img/img_07.jpg"/>
+                <div class="content"><span class="text-bold">Philips HUE</span><br> Oświetl swój dom</div>
+            </div>
+
+            <a class="left icon-icon_05" onclick="nextSlide(-1)"></a>
+            <a class="right icon-icon_04" onclick="nextSlide(1)"></a>
+        </div>
+    </section>
+</main>
 
     <footer>
         
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
