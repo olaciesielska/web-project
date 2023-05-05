@@ -51,7 +51,7 @@
   font-size: 44px;
   z-index: 2;
 }
-.slider .slider__element .content-text {
+.slider .slider__element .content__text {
   position: absolute;
   padding-top: 1rem;
   text-align: left;
@@ -71,7 +71,7 @@
   height: 94%;
 }
 
-.see_more_button {
+.banner__button {
   cursor: pointer;
   background-color: #F74137;
   margin-top: 10%;
@@ -100,7 +100,7 @@
 }
 
 .right {
-  right: 1rem;
+  right: 2rem;
   border-radius: 3px 0 0 3px;
 }
 
@@ -119,7 +119,7 @@
   animation-duration: 1.5s;
 }
 
-.content--modifier {
+.content--bold {
   position: absolute;
   font-weight: 700;
 }
@@ -144,26 +144,26 @@
   display: flex;
   justify-content: space-between;
 }
-.banners .banner-wrapper .banner-element {
+.banners .banner-wrapper .banner__element {
   position: relative;
   display: flex;
   margin: 0 auto;
   overflow: hidden;
 }
-.banners .banner-wrapper .banner-element img {
+.banners .banner-wrapper .banner__element img {
   transition: transform 1s;
   z-index: 0;
 }
-.banners .banner-wrapper .banner-element .see_more_button {
+.banners .banner-wrapper .banner__element .banner__button {
   background-color: transparent;
   border: 1px solid #FFFFFF;
   transform: background-color 0.5s;
 }
-.banners .banner-wrapper .banner-element .see_more_button:hover {
+.banners .banner-wrapper .banner__element .banner__button:hover {
   background-color: #F74137;
   border: none;
 }
-.banners .banner-wrapper .banner-element .banner-text {
+.banners .banner-wrapper .banner__element .banner__text {
   position: absolute;
   padding-top: 1rem;
   text-align: left;
@@ -175,10 +175,10 @@
   left: 5%;
   z-index: 2;
 }
-.banners .banner-wrapper .banner-element .banner-text span {
+.banners .banner-wrapper .banner__element .banner__text span {
   font-weight: 300;
 }
-.banners .banner-wrapper .banner-element:hover img {
+.banners .banner-wrapper .banner__element:hover img {
   transform: scale(1.1);
 }
 
