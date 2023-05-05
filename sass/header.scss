@@ -77,12 +77,12 @@
         display: flex;
         list-style: none;
     }
+
     li {
       display: flex;
     }
 
     .nav-link {
-        padding: 10px;
         text-decoration: none;
         text-transform: uppercase;
         color: $black;
@@ -98,11 +98,19 @@
     }
 
     .icon-icon_06:before {
-        border-right: 1px solid $light-gray;
-      }
+      padding-right: 15%;
+      width: 35px;
+      height: 55px;
+      border-right: 1px solid $light-gray;
+    }
 
     .basket {
         border: 1px solid $light-gray;
+        margin-left: 1rem;
+    }
+
+    .basket__icon {
+      padding-top: 0.5rem;
     }
 
     .basket-icon {
@@ -113,19 +121,35 @@
     }
 
     span {
-      margin-left: 45%;
       font-weight: 400;
       text-transform: lowercase;
     }
-    .icon-icon_04 {
+
+    .basket__wrapper {
       display: flex;
+      width: 110%;
+      height: 100%;
+    }
+
+    .basket__arrow {
+      display: flex;
+      width: 35px;
+      height: 55px;
+      background-color: $light-green;
+      color: $white;
       align-items: center;
       justify-content: center;
-      color: $white;
-      width: 7%;
-      background-color: $light-green;
     }
+
+   .basket__center {
+    margin: auto;
+    justify-content: start;
+      span {
+        justify-content: start;
+      }
+   }
 }
-.second {
+
+.navbar--modifier {
   border-top: 1px solid $light-gray;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Elhurt</title>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -15,14 +15,35 @@
     
     <nav class="navbar">
         <ul>
-            <li><a class="nav-link" href="javascript:void(0)"><i class="icon icon-icon_01"></i>kontakt</a></li>
-            <li><a class="nav-link" href="javascript:void(0)"><i class="icon icon-icon_02"></i>ulubione</a></li>
-            <li><a class="nav-link" href="javascript:void(0)"><i class="icon icon-icon_03"></i>moje konto</a></li>
-            <li class="basket"><a class="nav-link" href="javascript:void(0)"><i class="icon basket-icon icon-icon_06"></i>twój koszyk<span>3456,00 zł</span></a></li><div class="icon-icon_04"></div>
+            <li><a class="nav-link" href="javascript:void(0)">
+                <i class="icon icon-icon_01"></i>kontakt</a>
+            </li>
+            <li><a class="nav-link" href="javascript:void(0)">
+                <i class="icon icon-icon_02"></i>ulubione</a>
+            </li>
+            <li><a class="nav-link" href="javascript:void(0)">
+                <i class="icon icon-icon_03"></i>moje konto</a>
+            </li>
+            <li class="basket">
+                <a class="nav-link" href="javascript:void(0)">
+                  <div class="basket__wrapper">
+                    <div class="basket__icon">
+                      <i class="icon basket-icon icon-icon_06"></i>
+                    </div>
+                    <div class="basket__center">
+                      twój koszyk<br>
+                      <span>3456,00 zł</span>
+                    </div>
+                    <div class="basket__arrow">
+                      <div class="icon-icon_04"></div>
+                    </div>
+                  </div>
+                </a>
+            </li>
         </ul>
     </nav>
 </div>
-<nav class="navbar second">
+<nav class="navbar navbar--modifier">
     <ul class="header-class">
         <li><a class="nav-link" href="javascript:void(0)">źródła światła</a></li>
         <li><a class="nav-link" href="javascript:void(0)">oświetlenie wewnętrzne</a></li>
@@ -36,18 +57,48 @@
 
 <main>
     <section class="slider">
-        <div class="container slidercontainer">
-            <div class="showSlide fade">
+        <div class="container">
+            <div class="slider__element fade_animation">
+                <div class="shadow-bg"></div>
                 <img src="img/img_01.jpg"/>
-                <div class="content"><span class="text-bold">Poznaj SEDNA</span><br> Schneider Electric</div>
-            </div>
-            <div class="showSlide fade">
-                <img src="img/img_07.jpg"/>
-                <div class="content"><span class="text-bold">Philips HUE</span><br> Oświetl swój dom</div>
+                <div class="content"><span class="content--modifier">Poznaj SEDNA</span><br> Schneider Electric</div>
+                <p class="content-text">Sedna to osprzęt elektroinstalacyjny o wyrazistym kształcie oraz unikalnej formie.<br>
+                    <button class="see_more_button">Zobacz więcej</button></p>
             </div>
 
+            <div class="slider__element fade_animation">
+                <div class="shadow-bg"></div>
+                <img src="img/img_07.jpg"/>
+                <div class="content"><span class="content--modifier">Philips HUE</span><br> Oświetl swój dom</div>
+                <p class="content-text">Wyobraź sobie, że jednym dotknięciem wyłączasz wszystkie światła.<br>
+                    <button class="see_more_button">Zobacz więcej</button></p>
+            </div>
+            
             <a class="left icon-icon_05" onclick="nextSlide(-1)"></a>
             <a class="right icon-icon_04" onclick="nextSlide(1)"></a>
+        </div>
+    </section>
+
+    <section class="banners">
+        <div class="container banner-wrapper">
+            <div class="banner-element">
+                <div class="shadow-bg"></div>
+                <img src="img/img_02.jpg"/>
+                <div class="banner-text">Pomoc eksperta<br><span>Doradzamy</span><br>
+                <button class="see_more_button">Zobacz więcej</button></div>
+            </div>
+            <div class="banner-element">
+                <div class="shadow-bg"></div>
+                <img src="img/img_03.jpg"/>
+                <div class="banner-text">Szukaj wygodnie<br><span>Elhurt Plus</span><br>
+                <button class="see_more_button">Zobacz więcej</button></div>
+            </div>
+            <div class="banner-element">
+                <div class="shadow-bg"></div>
+                <img src="img/img_05.jpg"/>
+                <div class="banner-text">Seria Unica<br><span>Wyjątkowy wzór</span><br>
+                <button class="see_more_button">Zobacz więcej</button></div>
+            </div>
         </div>
     </section>
 </main>
