@@ -6,7 +6,8 @@
   font-style: normal;
   font-display: block;
 }
-[class^=icon-], [class*=" icon-"] {
+[class^=icon-],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   speak: never;
@@ -63,77 +64,78 @@
   padding-top: 30px;
 }
 
-.header-class {
+.menu {
   display: flex;
   justify-content: space-between;
 }
 
-.navbar ul {
+.menu__navigation {
+  position: relative;
+}
+.menu__navigation .menu__item-list {
   display: flex;
   list-style: none;
 }
-.navbar li {
+.menu__navigation .menu__item {
   display: flex;
 }
-.navbar .nav-link {
+.menu__navigation .menu__link {
   text-decoration: none;
   text-transform: uppercase;
   color: #111111;
   font-size: 14px;
   font-family: Metropolis;
   font-weight: 700;
+  padding: 1rem 0;
 }
-.navbar .icon {
-  font-weight: bold;
-  padding: 0 15px;
-  font-size: 1.6rem;
+.menu__navigation .menu__icon {
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 0 1.5rem;
 }
-.navbar .icon-icon_06:before {
+.menu__navigation .icon-icon_06:before {
   padding-right: 15%;
   width: 35px;
   height: 55px;
   border-right: 1px solid #e1e2e8;
 }
-.navbar .basket {
+.menu__navigation .menu__item-basket {
   border: 1px solid #e1e2e8;
   margin-left: 1rem;
 }
-.navbar .basket__icon {
+.menu__navigation .basket__icon {
   padding-top: 0.5rem;
 }
-.navbar .basket-icon {
+.menu__navigation .basket-icon {
   padding: 20px;
   font-size: 2.5rem;
   font-weight: 400;
   margin-right: 10px;
 }
-.navbar span {
+.menu__navigation .basket__center-lowercase {
   font-weight: 400;
   text-transform: lowercase;
 }
-.navbar .basket__wrapper {
+.menu__navigation .basket__wrapper {
   display: flex;
   width: 110%;
   height: 100%;
 }
-.navbar .basket__arrow {
+.menu__navigation .basket__arrow {
   display: flex;
   width: 35px;
   height: 55px;
-  background-color: #9BCB3B;
-  color: #FFFFFF;
+  background-color: #9bcb3b;
+  color: #ffffff;
   align-items: center;
   justify-content: center;
 }
-.navbar .basket__center {
+.menu__navigation .basket__center {
   margin: auto;
   justify-content: start;
 }
-.navbar .basket__center span {
-  justify-content: start;
-}
 
-.navbar--modifier {
+.menu__navigation-border {
   border-top: 1px solid #e1e2e8;
 }
 
