@@ -46,14 +46,36 @@
 
 @font-face {
   font-family: "Metropolis";
+  src: url("../fonts/Metropolis-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Metropolis";
   src: url("../fonts/Metropolis-Regular.otf");
   font-weight: 400;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/Metropolis-Medium.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/Metropolis-SemiBold.otf");
+  font-weight: 600;
 }
 @font-face {
   font-family: "Metropolis";
   src: url("../fonts/Metropolis-Bold.otf");
   font-weight: 700;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -74,9 +96,11 @@
 .menu__navigation .menu__item-list {
   display: flex;
   list-style: none;
+  margin-top: -0.5rem;
 }
 .menu__navigation .menu__item {
   display: flex;
+  margin-right: 3rem;
 }
 .menu__navigation .menu__link {
   text-decoration: none;
@@ -85,40 +109,60 @@
   font-size: 14px;
   font-family: Metropolis;
   font-weight: 700;
-  padding: 1rem 0;
+  padding: 1.2rem 0;
 }
 .menu__navigation .menu__icon {
-  font-weight: 700;
-  font-size: 1.5rem;
-  padding: 0 1.5rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding: 0 1rem;
 }
 .menu__navigation .icon-icon_06:before {
-  padding-right: 15%;
-  width: 35px;
-  height: 55px;
+  padding-right: 20%;
   border-right: 1px solid #e1e2e8;
 }
 .menu__navigation .menu__item-basket {
-  border: 1px solid #e1e2e8;
-  margin-left: 1rem;
-}
-.menu__navigation .basket__icon {
-  padding-top: 0.5rem;
-}
-.menu__navigation .basket-icon {
-  padding: 20px;
-  font-size: 2.5rem;
-  font-weight: 400;
-  margin-right: 10px;
-}
-.menu__navigation .basket__center-lowercase {
-  font-weight: 400;
-  text-transform: lowercase;
+  margin: 0 1rem;
 }
 .menu__navigation .basket__wrapper {
+  position: relative;
   display: flex;
   width: 110%;
-  height: 100%;
+  height: 57px;
+  border: 1px solid #e1e2e8;
+  margin-top: 0.5rem;
+}
+.menu__navigation .basket__wrapper .basket__icon {
+  padding-top: 0.5rem;
+}
+.menu__navigation .basket__wrapper .basket__icon .icon-icon_06 {
+  padding-right: 2rem;
+  font-size: 2.3rem;
+  margin-right: 1.5rem;
+}
+.menu__navigation .basket__wrapper .basket__icon .icon-icon_06 .basket__icon--top {
+  display: flex;
+  position: absolute;
+  width: 26px;
+  height: 14px;
+  background-color: #9bcb3b;
+  color: #ffffff;
+  font-size: 10px;
+  font-family: Metropolis;
+  align-items: center;
+  justify-content: center;
+  left: 15%;
+  bottom: 58%;
+  border-radius: 10%;
+}
+.menu__navigation .basket__wrapper .basket__center {
+  position: relative;
+  margin: auto;
+  right: 7%;
+}
+.menu__navigation .basket__wrapper .basket__center .basket__center--lowercase {
+  line-height: 1.5;
+  font-weight: 400;
+  text-transform: lowercase;
 }
 .menu__navigation .basket__arrow {
   display: flex;
@@ -129,13 +173,11 @@
   align-items: center;
   justify-content: center;
 }
-.menu__navigation .basket__center {
-  margin: auto;
-  justify-content: start;
-}
 
-.menu__navigation-border {
+.menu__navigation--border {
+  margin-top: 1rem;
   border-top: 1px solid #e1e2e8;
+  border-bottom: 1px solid #e1e2e8;
 }
 
 /*# sourceMappingURL=header.css.map */
