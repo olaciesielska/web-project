@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elhurt</title>
     <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+    <link rel="stylesheet" href="css/banners.css" />
   </head>
   <body>
     <header>
@@ -14,10 +15,10 @@
         <div class="menu__logo">
           <img class="menu__logo-image" src="img/logo.png" alt="Logo firmy Elhurt" />
         </div>
-
-        <nav class="menu__navigation">
+        <!--<input class="menu__searchbar" type="text" placeholder="Search.." /> -->
+        <nav class="menu__navigation menu__navigation-mobile">
           <ul class="menu__item-list">
-            <li class="menu__item">
+            <li class="menu__item menu__contact">
               <a class="menu__link" href="javascript:void(0)">
                 <i class="menu__icon icon-icon_01"></i>kontakt
               </a>
@@ -53,7 +54,7 @@
           </ul>
         </nav>
       </div>
-      <nav class="menu__navigation menu__navigation--border">
+      <nav class="menu__navigation menu__navigation--border menu__navigation--hide">
         <ul class="menu">
           <li class="menu__item">
             <a class="menu__link" href="javascript:void(0)">źródła światła</a>
@@ -84,7 +85,7 @@
             <div class="shadow-bg"></div>
             <img class="slider__element-image" src="img/img_01.jpg" alt="Sprzet Sedna" />
             <div class="slider__content">
-              <span class="slider__content-bold">Poznaj SEDNA</span><br />
+              <span class="slider__content--bold">Poznaj SEDNA</span><br />
               Schneider Electric
             </div>
             <p class="content__text">
@@ -97,7 +98,7 @@
             <div class="shadow-bg"></div>
             <img class="slider__element-image" src="img/img_07.jpg" alt="Oswietlenie Philips" />
             <div class="slider__content">
-              <span class="slider__content-bold">Philips HUE</span><br />
+              <span class="slider__content--bold">Philips HUE</span><br />
               Oświetl swój dom
             </div>
             <p class="content__text">
@@ -121,7 +122,7 @@
               alt="Ekspert doradza klientowi"
             />
             <div class="banner__text">
-              Pomoc eksperta<br /><span>Doradzamy</span><br />
+              Pomoc eksperta<br /><span class="banner__text--light">Doradzamy</span><br />
               <button class="banner__button">Zobacz więcej</button>
             </div>
           </div>
@@ -133,7 +134,7 @@
               alt="Klient wygodnie wyszukuje"
             />
             <div class="banner__text">
-              Szukaj wygodnie<br /><span>Elhurt Plus</span><br />
+              Szukaj wygodnie<br /><span class="banner__text--light">Elhurt Plus</span><br />
               <button class="banner__button">Zobacz więcej</button>
             </div>
           </div>
@@ -145,7 +146,7 @@
               alt="Wyjatkowy wzor serii Unica"
             />
             <div class="banner__text">
-              Seria Unica<br /><span>Wyjątkowy wzór</span><br />
+              Seria Unica<br /><span class="banner__text--light">Wyjątkowy wzór</span><br />
               <button class="banner__button">Zobacz więcej</button>
             </div>
           </div>
