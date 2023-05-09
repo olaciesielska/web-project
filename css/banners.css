@@ -3,6 +3,7 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -17,14 +18,12 @@
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon.ttf");
-  src: url("../fonts/icomoon.eot") format("embedded-opentype"),
-    url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.ttf") format("woff"),
-    url("../fonts/icomoon.svg") format("svg");
+  src: url("../fonts/icomoon.eot") format("embedded-opentype"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.ttf") format("woff"), url("../fonts/icomoon.svg") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
-[class^="icon-"],
+[class^=icon-],
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
@@ -60,6 +59,14 @@
 
 .icon-icon_06:before {
   content: "\e905";
+}
+
+.icon-icon_07:before {
+  content: "\e906";
+}
+
+.icon-icon_08:before {
+  content: "\e907";
 }
 
 @font-face {
@@ -114,6 +121,8 @@
   transition: transform 1s;
   z-index: 0;
   gap: 30px;
+  width: 100%;
+  height: 100%;
 }
 .banners .banners__wrapper .banner__element .banner__button {
   cursor: pointer;
@@ -121,7 +130,6 @@
   margin-top: 10%;
   color: #ffffff;
   font-family: Metropolis;
-  font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   border: none;
@@ -129,7 +137,7 @@
   height: 55px;
   background-color: transparent;
   border: 1px solid #ffffff;
-  transform: background-color 0.5s;
+  transition: background-color 0.5s;
 }
 .banners .banners__wrapper .banner__element .banner__button:hover {
   background-color: #f74137;
@@ -140,12 +148,13 @@
   padding-top: 1rem;
   text-align: left;
   font-family: Metropolis;
-  font-size: 44px;
+  font-size: 2.5em;
   font-weight: 700;
   color: #ffffff;
   top: 25%;
   left: 5%;
   z-index: 2;
+  white-space: nowrap;
 }
 .banners .banners__wrapper .banner__element .banner__text .banner__text--light {
   font-weight: 300;
@@ -164,6 +173,8 @@
   }
   .banners .banners__wrapper .banner__element {
     justify-content: center;
+    width: 100%;
+    height: auto;
   }
   .banners .banners__wrapper .banner__element .shadow-bg {
     position: absolute;
@@ -177,10 +188,16 @@
   .banners .banners__wrapper .banner__element .banner__element-image {
     align-items: center;
     justify-content: center;
-    width: 1000vw;
+    width: 100%;
+    height: auto;
   }
   .banners .banners__wrapper .banner__element .banner__text {
-    font-size: 1.5em;
+    font-size: 5vw;
+  }
+  .banners .banners__wrapper .banner__element .banner__text .banner__button {
+    width: 11em;
+    height: 3em;
+    font-size: 0.5em;
   }
 }
 

@@ -3,6 +3,7 @@
 
 .banners {
   background-color: $main-color;
+
   .banners__wrapper {
     display: flex;
     justify-content: space-between;
@@ -24,13 +25,15 @@
         transition: transform 1s;
         z-index: 0;
         gap: 30px;
+        width: 100%;
+        height: 100%;
       }
 
       .banner__button {
         @include button;
         background-color: transparent;
         border: 1px solid $white;
-        transform: background-color 0.5s;
+        transition: background-color 0.5s;
       }
 
       .banner__button:hover {
@@ -43,12 +46,13 @@
         padding-top: 1rem;
         text-align: left;
         font-family: Metropolis;
-        font-size: 44px;
+        font-size: 2.5em;
         font-weight: 700;
         color: $white;
         top: 25%;
         left: 5%;
         z-index: 2;
+        white-space: nowrap;
 
         .banner__text--light {
           font-weight: 300;
@@ -70,8 +74,12 @@
       flex-wrap: wrap;
       gap: 30px;
       margin-top: 5vh;
+
       .banner__element {
         justify-content: center;
+        width: 100%;
+        height: auto;
+
         .shadow-bg {
           @include shadow;
           height: 100%;
@@ -81,10 +89,16 @@
         .banner__element-image {
           align-items: center;
           justify-content: center;
-          width: 1000vw;
+          width: 100%;
+          height: auto;
         }
         .banner__text {
-          font-size: 1.5em;
+          font-size: 5vw;
+          .banner__button {
+            width: 11em;
+            height: 3em;
+            font-size: 0.5em;
+          }
         }
       }
     }
