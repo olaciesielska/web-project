@@ -207,12 +207,12 @@
 @media (max-width: 767px) {
   .menu {
     position: relative;
-    height: 5vh;
+    height: 10vh;
   }
   .menu .menu__logo {
     width: 100%;
     height: 100%;
-    padding-bottom: 60px;
+    padding-bottom: 8vh;
     border-bottom: 1px solid #e1e2e8;
   }
   .menu .menu__logo .menu__logo-image {
@@ -275,9 +275,6 @@
     border: none;
   }
   .menu__navigation--hide {
-    display: none;
-  }
-  .slider {
     display: none;
   }
 }

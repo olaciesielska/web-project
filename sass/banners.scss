@@ -66,14 +66,13 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .banners {
     .banners__wrapper {
-      position: relative;
-      display: flex;
+      position: absolute;
       flex-wrap: wrap;
       gap: 30px;
-      margin-top: 5vh;
+      margin-top: 40px;
 
       .banner__element {
         justify-content: center;

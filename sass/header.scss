@@ -128,12 +128,12 @@
 @media (max-width: 767px) {
   .menu {
     position: relative;
-    height: 5vh;
+    height: 10vh;
 
     .menu__logo {
       width: 100%;
       height: 100%;
-      padding-bottom: 60px;
+      padding-bottom: 8vh;
       border-bottom: 1px solid $light-gray;
 
       .menu__logo-image {
@@ -207,9 +207,6 @@
     }
   }
   .menu__navigation--hide {
-    display: none;
-  }
-  .slider {
     display: none;
   }
 }
