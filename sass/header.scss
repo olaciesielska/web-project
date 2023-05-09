@@ -4,14 +4,28 @@
 .menu {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  height: 100%;
 }
 
 .menu__navigation {
   position: relative;
+  padding-inline-start: 40px;
+
   .menu__item-list {
     display: flex;
     list-style: none;
     margin-top: -0.5rem;
+
+    .menu__burger {
+      display: none;
+    }
+    .menu__search {
+      display: none;
+    }
+    .menu__basket--mobile {
+      display: none;
+    }
   }
 
   .menu__item {
@@ -27,6 +41,10 @@
     font-family: Metropolis;
     font-weight: 700;
     padding: 1.2rem 0;
+
+    .menu__caption {
+      white-space: nowrap;
+    }
   }
 
   .menu__icon {
@@ -51,12 +69,15 @@
     height: 57px;
     border: 1px solid $light-gray;
     margin-top: 0.5rem;
+
     .basket__icon {
       padding-top: 0.5rem;
+
       .icon-icon_06 {
         padding-right: 2rem;
         font-size: 2.3rem;
         margin-right: 1.5rem;
+
         .basket__icon--top {
           display: flex;
           position: absolute;
@@ -78,6 +99,7 @@
       position: relative;
       margin: auto;
       right: 7%;
+
       .basket__center--lowercase {
         line-height: 1.5;
         font-weight: 400;
@@ -103,7 +125,7 @@
   border-bottom: 1px solid $light-gray;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .menu {
     position: relative;
     height: 5vh;
@@ -111,7 +133,7 @@
     .menu__logo {
       width: 100%;
       height: 100%;
-      padding-bottom: 6vh;
+      padding-bottom: 60px;
       border-bottom: 1px solid $light-gray;
 
       .menu__logo-image {
@@ -123,12 +145,64 @@
         margin-bottom: 1rem;
       }
     }
+
     .menu__navigation-mobile {
       position: fixed;
+      width: 100%;
+      background-color: $white;
       bottom: 0;
-      .menu__contact,
-      .menu__item-basket {
-        display: none;
+      left: 0;
+      z-index: 5;
+      border: 1px solid $light-gray;
+      padding-inline-start: 1rem;
+
+      .menu__item-list {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        left: 0;
+        margin-top: 0.7rem;
+        margin-right: 2rem;
+
+        .menu__contact,
+        .menu__item-basket {
+          display: none;
+        }
+
+        .menu__burger,
+        .menu__search,
+        .menu__basket--mobile {
+          display: block;
+        }
+
+        .menu__item {
+          text-align: center;
+          height: 5vh;
+          padding: 0;
+
+          .menu__link {
+            position: absolute;
+            padding: 0;
+
+            .menu__caption {
+              display: block;
+              text-align: center;
+              font-weight: 300;
+              white-space: nowrap;
+              margin-top: 0.4rem;
+              font-size: 1em;
+            }
+
+            .menu__icon {
+              font-size: 2em;
+            }
+          }
+        }
+
+        .icon-icon_06:before {
+          border: none;
+        }
       }
     }
   }

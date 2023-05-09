@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/slider.css" />
     <link rel="stylesheet" href="css/banners.css" />
+    <link
+      rel="stylesheet"
+      href="https://i.icomoon.io/public/temp/acfd586b03/UntitledProject/style.css"
+    />
   </head>
   <body>
     <header>
@@ -15,22 +19,37 @@
         <div class="menu__logo">
           <img class="menu__logo-image" src="img/logo.png" alt="Logo firmy Elhurt" />
         </div>
-        <!--<input class="menu__searchbar" type="text" placeholder="Search.." /> -->
+        <!-- <input class="menu__searchbar" type="text" placeholder="Search.." /> -->
         <nav class="menu__navigation menu__navigation-mobile">
           <ul class="menu__item-list">
+            <li class="menu__item menu__burger">
+              <a class="menu__link" href="javascript:void(0)">
+                <i class="menu__icon icon-icon_07"></i><span class="menu__caption">menu</span>
+              </a>
+            </li>
             <li class="menu__item menu__contact">
               <a class="menu__link" href="javascript:void(0)">
-                <i class="menu__icon icon-icon_01"></i>kontakt
+                <i class="menu__icon icon-icon_01"></i><span class="menu__caption">kontakt</span>
+              </a>
+              <li class="menu__item menu__search">
+                <a class="menu__link" href="javascript:void(0)">
+                  <i class="menu__icon icon-icon_08"></i><span class="menu__caption">szukaj</span>
+                </a>
+              </li>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="javascript:void(0)">
+                <i class="menu__icon icon-icon_02"></i><span class="menu__caption">ulubione</span>
               </a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="javascript:void(0)">
-                <i class="menu__icon icon-icon_02"></i>ulubione
+                <i class="menu__icon icon-icon_03"></i><span class="menu__caption">moje konto</span>
               </a>
             </li>
-            <li class="menu__item">
+            <li class="menu__item menu__basket--mobile">
               <a class="menu__link" href="javascript:void(0)">
-                <i class="menu__icon icon-icon_03"></i>moje konto
+                <i class="menu__icon icon-icon_06"></i><span class="menu__caption">koszyk</span>
               </a>
             </li>
             <li class="menu__item-basket">
@@ -54,6 +73,7 @@
           </ul>
         </nav>
       </div>
+
       <nav class="menu__navigation menu__navigation--border menu__navigation--hide">
         <ul class="menu">
           <li class="menu__item">
@@ -80,7 +100,7 @@
 
     <main>
       <section class="slider">
-        <div class="container">
+        <div class="container menu">
           <div class="slider__element fade_animation">
             <div class="shadow-bg"></div>
             <img class="slider__element-image" src="img/img_01.jpg" alt="Sprzet Sedna" />
@@ -122,7 +142,7 @@
               alt="Ekspert doradza klientowi"
             />
             <div class="banner__text">
-              Pomoc eksperta<br /><span class="banner__text--light">Doradzamy</span><br />
+            Pomoc eksperta<br /><span class="banner__text--light">Doradzamy</span><br />
               <button class="banner__button">Zobacz więcej</button>
             </div>
           </div>
