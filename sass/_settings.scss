@@ -3,6 +3,7 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -28,7 +29,6 @@
   margin-top: 10%;
   color: $white;
   font-family: Metropolis;
-  font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   border: none;
@@ -79,6 +79,14 @@
 }
 .icon-icon_06:before {
   content: "\e905";
+}
+
+.icon-icon_07:before {
+  content: "\e906";
+}
+
+.icon-icon_08:before {
+  content: "\e907";
 }
 
 @font-face {

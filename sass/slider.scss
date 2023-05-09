@@ -4,6 +4,8 @@
 .slider {
   position: relative;
   background-color: $main-color;
+  width: 100vw;
+
   .slider__element {
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.8);
     z-index: 10;
@@ -64,7 +66,7 @@
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  z-index: 2;
+  z-index: 10;
   background-color: $light-gray;
   opacity: 0.7;
 }
