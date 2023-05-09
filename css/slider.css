@@ -208,7 +208,7 @@
   .slider {
     position: relative;
     width: 100vw;
-    height: 30vh;
+    height: calc(210px - 50 * (767px - 100vw) / 680);
     margin-top: 5vh;
   }
   .slider .slider__element .slider__element-image {
@@ -225,12 +225,12 @@
   }
   .slider .slider__element .slider__content {
     font-size: calc(35px - 33 * (767px - 100vw) / 680);
-    top: 8vh;
+    top: 6.5vh;
   }
   .slider .slider__element .content__text {
     width: 30vw;
-    padding-top: 15vw;
-    font-size: calc(20px - 15 * (767px - 100vw) / 680);
+    padding-top: calc(80px - 50 * (767px - 100vw) / 680);
+    font-size: calc(17px - 15 * (767px - 100vw) / 680);
   }
   .slider .slider__element .banner__button {
     display: none;
