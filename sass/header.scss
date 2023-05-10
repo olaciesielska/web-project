@@ -8,15 +8,17 @@
   height: 100%;
 }
 
+.menu--top {
+  height: 109px;
+}
+
 .menu__navigation {
   position: relative;
   padding-inline-start: 40px;
-  padding-right: 30px;
 
   .menu__item-list {
     display: flex;
     list-style: none;
-    margin-top: -0.5rem;
 
     .menu__burger {
       display: none;
@@ -31,7 +33,7 @@
 
   .menu__item {
     display: flex;
-    margin-right: 3rem;
+    margin-right: 2.5rem;
   }
 
   .menu__item--padding {
@@ -69,16 +71,16 @@
   }
 
   .menu__item-basket {
-    margin: 0 1rem;
+    margin-left: 1rem;
   }
 
   .basket__wrapper {
     position: relative;
     display: flex;
-    width: 110%;
-    height: 57px;
+    height: 55px;
     border: 1px solid c.$light-gray;
     margin-top: 0.5rem;
+    margin-right: 0;
 
     .basket__icon {
       padding-top: 0.5rem;
@@ -107,7 +109,7 @@
     }
     .basket__center {
       position: relative;
-      margin: auto;
+      margin: auto 1rem;
       right: 7%;
 
       .basket__center--lowercase {
@@ -157,13 +159,12 @@
     .menu__navigation-mobile {
       position: fixed;
       width: 100%;
-      height: 80px;
       background-color: c.$white;
       bottom: 0;
       left: 0;
-      z-index: 6;
+      z-index: 15;
       border: 1px solid c.$light-gray;
-      padding: 0 1.5em;
+      padding: 0 20px;
 
       .menu__item-list {
         position: relative;
@@ -182,8 +183,7 @@
         .menu__item {
           display: flex;
           text-align: center;
-          align-items: center;
-          height: 5vh;
+          height: 4em;
           padding: 0;
           margin: 0;
 

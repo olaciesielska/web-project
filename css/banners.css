@@ -99,7 +99,7 @@
 }
 .banners .banners__wrapper {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
 .banners .banners__wrapper .banner__element {
   position: relative;
