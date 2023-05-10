@@ -1,3 +1,5 @@
+@use "colors" as c;
+
 *,
 *::before,
 *::after {
@@ -19,15 +21,15 @@
   position: absolute;
   width: 50%;
   height: 95%;
-  background-image: $shadow-gradient;
+  background-image: c.$shadow-gradient;
   z-index: 1;
 }
 
 @mixin button {
   cursor: pointer;
-  background-color: $red;
+  background-color: c.$red;
   margin-top: 10%;
-  color: $white;
+  color: c.$white;
   font-family: Metropolis;
   font-weight: 700;
   text-transform: uppercase;

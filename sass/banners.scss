@@ -1,8 +1,8 @@
-@import "colors";
-@import "settings";
+@use "colors" as c;
+@use "settings" as s;
 
 .banners {
-  background-color: $main-color;
+  background-color: c.$main-color;
 
   .banners__wrapper {
     display: flex;
@@ -16,7 +16,7 @@
       justify-content: space-between;
 
       .shadow-bg {
-        @include shadow;
+        @include s.shadow;
         height: 100%;
       }
 
@@ -30,14 +30,14 @@
       }
 
       .banner__button {
-        @include button;
+        @include s.button;
         background-color: transparent;
-        border: 1px solid $white;
+        border: 1px solid c.$white;
         transition: background-color 0.5s;
       }
 
       .banner__button:hover {
-        background-color: $red;
+        background-color: c.$red;
         border: none;
       }
 
@@ -48,7 +48,7 @@
         font-family: Metropolis;
         font-size: 2.5em;
         font-weight: 700;
-        color: $white;
+        color: c.$white;
         top: 25%;
         left: 5%;
         z-index: 2;
@@ -72,6 +72,7 @@
       position: absolute;
       flex-wrap: wrap;
       gap: 30px;
+      z-index: 5;
 
       .banner__element {
         justify-content: center;
@@ -79,7 +80,7 @@
         height: auto;
 
         .shadow-bg {
-          @include shadow;
+          @include s.shadow;
           height: 100%;
           width: 100%;
         }
@@ -92,7 +93,11 @@
         }
         .banner__text {
           font-size: 5vw;
+
           .banner__button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 11em;
             height: 3em;
             font-size: 0.5em;

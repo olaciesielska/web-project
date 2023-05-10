@@ -208,8 +208,11 @@
   .slider {
     position: relative;
     width: 100vw;
-    height: calc(210px - 50 * (767px - 100vw) / 680);
-    margin-top: 5vh;
+    min-height: 300px;
+    margin-top: 1rem;
+  }
+  .slider .slider__element {
+    margin-bottom: 3rem;
   }
   .slider .slider__element .slider__element-image {
     position: absolute;
@@ -229,7 +232,7 @@
   }
   .slider .slider__element .content__text {
     width: 30vw;
-    padding-top: calc(80px - 50 * (767px - 100vw) / 680);
+    padding-top: 6vh;
     font-size: calc(17px - 15 * (767px - 100vw) / 680);
   }
   .slider .slider__element .banner__button {
@@ -238,7 +241,7 @@
   .slider .right,
   .slider .left {
     position: absolute;
-    display: flex;
+    display: none;
     width: 2em;
     height: 2em;
     margin-top: 6em;

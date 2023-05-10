@@ -1,9 +1,9 @@
-@import "colors";
-@import "settings";
+@use "colors" as c;
+@use "settings" as s;
 
 .slider {
   position: relative;
-  background-color: $main-color;
+  background-color: c.$main-color;
   width: 100vw;
 
   .slider__element {
@@ -20,7 +20,7 @@
       text-align: justify;
       font-family: Metropolis;
       font-weight: 300;
-      color: $white;
+      color: c.$white;
       top: 33%;
       left: 10%;
       font-size: 44px;
@@ -40,7 +40,7 @@
       font-family: Metropolis;
       font-size: 22px;
       font-weight: 300;
-      color: $white;
+      color: c.$white;
       top: 45%;
       left: 10%;
       width: 20%;
@@ -49,11 +49,11 @@
   }
 
   .shadow-bg {
-    @include shadow;
+    @include s.shadow;
   }
 
   .banner__button {
-    @include button;
+    @include s.button;
   }
 }
 
@@ -68,7 +68,7 @@
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   z-index: 10;
-  background-color: $light-gray;
+  background-color: c.$light-gray;
   opacity: 0.7;
 }
 
@@ -79,7 +79,7 @@
 
 .left:hover,
 .right:hover {
-  background-color: $dark-gray;
+  background-color: c.$dark-gray;
 }
 
 .fade_animation {
@@ -111,10 +111,11 @@
   .slider {
     position: relative;
     width: 100vw;
-    height: calc(210px - 50 * ((767px - 100vw) / 680));
-    margin-top: 5vh;
+    min-height: 300px;
+    margin-top: 1rem;
 
     .slider__element {
+      margin-bottom: 3rem;
       .slider__element-image {
         position: absolute;
         width: 100%;
@@ -136,7 +137,7 @@
 
       .content__text {
         width: 30vw;
-        padding-top: calc(80px - 50 * ((767px - 100vw) / 680));
+        padding-top: 6vh;
         font-size: calc(17px - 15 * ((767px - 100vw) / 680));
       }
 
@@ -148,7 +149,7 @@
     .right,
     .left {
       position: absolute;
-      display: flex;
+      display: none;
       width: 2em;
       height: 2em;
       margin-top: 6em;

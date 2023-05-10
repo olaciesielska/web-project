@@ -1,5 +1,5 @@
-@import "colors";
-@import "settings";
+@use "colors" as c;
+@use "settings" as s;
 
 .menu {
   display: flex;
@@ -11,6 +11,7 @@
 .menu__navigation {
   position: relative;
   padding-inline-start: 40px;
+  padding-right: 30px;
 
   .menu__item-list {
     display: flex;
@@ -33,14 +34,23 @@
     margin-right: 3rem;
   }
 
+  .menu__item--padding {
+    padding: 1.2rem 0;
+  }
+
+  .menu--height {
+    height: 57px;
+  }
+
   .menu__link {
+    display: flex;
     text-decoration: none;
     text-transform: uppercase;
-    color: $black;
+    color: c.$black;
     font-size: 14px;
     font-family: Metropolis;
     font-weight: 700;
-    padding: 1.2rem 0;
+    align-items: center;
 
     .menu__caption {
       white-space: nowrap;
@@ -55,7 +65,7 @@
 
   .icon-icon_06:before {
     padding-right: 20%;
-    border-right: 1px solid $light-gray;
+    border-right: 1px solid c.$light-gray;
   }
 
   .menu__item-basket {
@@ -67,7 +77,7 @@
     display: flex;
     width: 110%;
     height: 57px;
-    border: 1px solid $light-gray;
+    border: 1px solid c.$light-gray;
     margin-top: 0.5rem;
 
     .basket__icon {
@@ -83,8 +93,8 @@
           position: absolute;
           width: 26px;
           height: 14px;
-          background-color: $light-green;
-          color: $white;
+          background-color: c.$light-green;
+          color: c.$white;
           font-size: 10px;
           font-family: Metropolis;
           align-items: center;
@@ -112,8 +122,8 @@
     display: flex;
     width: 35px;
     height: 55px;
-    background-color: $light-green;
-    color: $white;
+    background-color: c.$light-green;
+    color: c.$white;
     align-items: center;
     justify-content: center;
   }
@@ -121,41 +131,39 @@
 
 .menu__navigation--border {
   margin-top: 1rem;
-  border-top: 1px solid $light-gray;
-  border-bottom: 1px solid $light-gray;
+  border-top: 1px solid c.$light-gray;
+  border-bottom: 1px solid c.$light-gray;
 }
 
 @media (max-width: 767px) {
   .menu {
     position: relative;
-    height: 10vh;
+    min-height: 80px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid c.$light-gray;
 
     .menu__logo {
-      width: 100%;
-      height: 100%;
-      padding-bottom: 8vh;
-      border-bottom: 1px solid $light-gray;
-
       .menu__logo-image {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        margin-top: 1rem;
         margin-bottom: 1rem;
+        width: 50%;
+        height: auto;
       }
     }
 
     .menu__navigation-mobile {
       position: fixed;
       width: 100%;
-      height: 4rem;
-      background-color: $white;
+      height: 80px;
+      background-color: c.$white;
       bottom: 0;
       left: 0;
-      z-index: 5;
-      border: 1px solid $light-gray;
-      padding-inline-start: 1rem;
+      z-index: 6;
+      border: 1px solid c.$light-gray;
+      padding: 0 1.5em;
 
       .menu__item-list {
         position: relative;
@@ -163,27 +171,24 @@
         align-items: center;
         justify-content: space-between;
         left: 0;
-        margin-top: 0.7rem;
-        margin-right: 2rem;
+        margin-top: 0.85rem;
 
-        .menu__contact,
-        .menu__item-basket {
-          display: none;
-        }
-
+        .menu__basket--mobile,
         .menu__burger,
-        .menu__search,
-        .menu__basket--mobile {
+        .menu__search {
           display: block;
         }
 
         .menu__item {
+          display: flex;
           text-align: center;
+          align-items: center;
           height: 5vh;
           padding: 0;
+          margin: 0;
 
           .menu__link {
-            position: absolute;
+            display: block;
             padding: 0;
 
             .menu__caption {
@@ -199,6 +204,11 @@
               font-size: calc(40px - 25 * ((767px - 100vw) / 680));
             }
           }
+        }
+
+        .menu__contact,
+        .menu__item-basket {
+          display: none;
         }
 
         .icon-icon_06:before {
