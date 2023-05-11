@@ -4,7 +4,8 @@
 .slider {
   position: relative;
   background-color: c.$main-color;
-  width: 100vw;
+  width: 100%;
+  border-top: 1px solid c.$light-gray;
 
   .slider__element {
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.8);
@@ -17,7 +18,6 @@
 
     .slider__content {
       position: absolute;
-      text-align: justify;
       font-family: Metropolis;
       font-weight: 300;
       color: c.$white;
@@ -25,26 +25,23 @@
       left: 8%;
       font-size: 44px;
       z-index: 2;
+      width: 10em;
+      height: 6em;
 
       .slider__content--bold {
         position: absolute;
         font-weight: 700;
       }
-    }
-
-    .content__text {
-      position: absolute;
-      padding-top: 1rem;
-      text-align: left;
-      font-family: Metropolis;
-      font-size: 22px;
-      font-weight: 300;
-      color: c.$white;
-      z-index: 2;
-    }
-
-    .slider__content {
-      width: 20%;
+      .content__text {
+        position: absolute;
+        padding-top: 0.5rem;
+        text-align: left;
+        font-family: Metropolis;
+        font-size: 22px;
+        font-weight: 300;
+        color: c.$white;
+        z-index: 2;
+      }
     }
   }
 
@@ -54,6 +51,8 @@
 
   .banner__button {
     @include s.button;
+    position: absolute;
+    bottom: 0;
   }
 }
 
@@ -72,7 +71,7 @@
 }
 
 .right {
-  right: 2.5rem;
+  right: 2rem;
 }
 
 .left:hover,
@@ -111,7 +110,7 @@
     margin-top: 1rem;
 
     .slider__element {
-      margin-bottom: 3rem;
+      margin-bottom: 1rem;
 
       .slider__element-image {
         position: absolute;
@@ -123,20 +122,20 @@
       .shadow-bg {
         position: absolute;
         width: 100%;
-        height: 32vw;
+        height: 30vw;
         left: 0;
       }
 
       .slider__content {
         width: 35vw;
         left: 2em;
-        font-size: calc(30px - 35 * ((767px - 100vw) / 680));
-      }
+        font-size: calc(25px - 20 * ((767px - 100vw) / 680));
 
-      .content__text {
-        width: 34vw;
-        font-size: calc(15px - 15 * ((767px - 100vw) / 680));
-        left: 0;
+        .content__text {
+          width: 34vw;
+          font-size: calc(15px - 15 * ((767px - 100vw) / 680));
+          left: 0;
+        }
       }
 
       .banner__button {
@@ -144,9 +143,8 @@
         align-items: center;
         justify-content: center;
         width: 12em;
-        height: 4em;
+        height: 3.5em;
         font-size: calc(12px - 15 * ((767px - 100vw) / 680));
-        margin-top: 15px;
       }
     }
 
@@ -156,7 +154,7 @@
         position: absolute;
         width: 2em;
         height: 2em;
-        margin-top: 3.5em;
+        margin-top: 2em;
       }
 
       .right {
@@ -173,6 +171,19 @@
         align-items: center;
         justify-content: center;
         font-size: 1em;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1920px) {
+  .slider {
+    .slider__element {
+      .slider__content {
+        font-size: calc(44px - 10 * ((1920px - 100vw) / 680));
+        .content__text {
+          font-size: calc(22px - 5 * ((1920px - 100vw) / 680));
+        }
       }
     }
   }

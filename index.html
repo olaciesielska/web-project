@@ -8,31 +8,34 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/slider.css" />
     <link rel="stylesheet" href="css/banners.css" />
-    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/f3b3d250fe/UntitledProject/style.css">
+    <link
+      rel="stylesheet"
+      href="https://i.icomoon.io/public/temp/42da463223/UntitledProject/style.css"
+    />
   </head>
   <body>
     <header>
-      <div class="container menu menu--top">
+      <div class="menu container menu--top">
         <div class="menu__logo">
           <img class="menu__logo-image" src="img/logo.png" alt="Logo firmy Elhurt" />
         </div>
         <!-- <input class="menu__searchbar" type="text" placeholder="Search.." /> -->
         <nav class="menu__navigation menu__navigation-mobile">
-          <ul class="menu__item-list">
-            <li class="menu__item menu__burger">
+          <ul class="menu__list--top">
+            <li class="menu__item menu__item--burger">
               <a class="menu__link" href="javascript:void(0)">
                 <i class="menu__icon icon-icon_07"></i><span class="menu__caption">menu</span>
               </a>
             </li>
-            <li class="menu__item menu__contact">
+            <li class="menu__item menu__item--contact">
               <a class="menu__link" href="javascript:void(0)">
                 <i class="menu__icon icon-icon_01"></i><span class="menu__caption">kontakt</span>
               </a>
-              <li class="menu__item menu__search">
-                <a class="menu__link" href="javascript:void(0)">
-                  <i class="menu__icon icon-icon_08"></i><span class="menu__caption">szukaj</span>
-                </a>
-              </li>
+            </li>
+            <li class="menu__item menu__item--search">
+              <a class="menu__link" href="javascript:void(0)">
+                <i class="menu__icon icon-icon_08"></i><span class="menu__caption">szukaj</span>
+              </a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="javascript:void(0)">
@@ -49,13 +52,12 @@
                 <i class="menu__icon icon-icon_06"></i><span class="menu__caption">koszyk</span>
               </a>
             </li>
-            <li class="menu__item-basket">
+            <li class="menu__item menu__item-basket">
               <a class="menu__link" href="javascript:void(0)">
                 <div class="basket__wrapper">
                   <div class="basket__icon">
-                    <i class="menu__icon basket-icon icon-icon_06">
-                      <div class="basket__icon--top">342</div>
-                    </i>
+                    <i class="menu__icon basket-icon icon-icon_06"></i>
+                    <div class="basket__icon--top">342</div>
                   </div>
                   <div class="basket__center">
                     twój koszyk<br />
@@ -71,58 +73,61 @@
         </nav>
       </div>
 
-      <nav class="menu__navigation menu__navigation--border menu__navigation--hide">
-        <ul class="menu menu--height">
-          <li class="menu__item menu__item--padding">
-            <a class="menu__link" href="javascript:void(0)">źródła światła</a>
-          </li>
-          <li class="menu__item menu__item--padding">
-            <a class="menu__link" href="javascript:void(0)">oświetlenie wewnętrzne</a>
-          </li>
-          <li class="menu__item menu__item--padding">
-            <a class="menu__link" href="javascript:void(0)"> gniazdka, wyłączniki </a>
-          </li>
-          <li class="menu__item menu__item--padding">
-            <a class="menu__link" href="javascript:void(0)">automatyka, sterowanie</a>
-          </li>
-          <li class="menu__item menu__item--padding">
-            <a class="menu__link" href="javascript:void(0)">rozdzielenie i aparatura</a>
-          </li>
-          <li class="menu__item menu__item--padding">
-            <a class="menu__link" href="javascript:void(0)">materiały instalacyjne</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container menu__bottom-wrapper">
+        <nav class="menu__navigation menu__navigation-bottom menu__navigation--hide">
+          <ul class="menu__list-bottom">
+            <li class="menu__item">
+              <a class="menu__link" href="javascript:void(0)">źródła światła</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="javascript:void(0)">oświetlenie wewnętrzne</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="javascript:void(0)"> gniazdka, wyłączniki </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="javascript:void(0)">automatyka, sterowanie</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="javascript:void(0)">rozdzielenie i aparatura</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="javascript:void(0)">materiały instalacyjne</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <section class="slider">
-        <div class="container menu slider__icons">
+      <section class="slider container">
+        <div class="menu slider__icons">
           <div class="slider__element fade_animation">
             <div class="shadow-bg"></div>
             <img class="slider__element-image" src="img/img_01.jpg" alt="Sprzet Sedna" />
             <div class="slider__content">
-              <span class="slider__content--bold">Poznaj SEDNA</span><br />
-              Schneider Electric
+              <p><span class="slider__content--bold">Poznaj SEDNA</span><br /></p>
+              <p>Schneider Electric</p>
 
-            <p class="content__text">
-              Sedna to osprzęt elektroinstalacyjny o wyrazistym kształcie oraz unikalnej formie.<br />
+              <p class="content__text">
+                Sedna to osprzęt elektroinstalacyjny o wyrazistym kształcie oraz unikalnej
+                formie.<br />
+              </p>
               <button class="banner__button">Zobacz więcej</button>
-            </p>
+            </div>
           </div>
-        </div>
 
           <div class="slider__element fade_animation">
             <div class="shadow-bg"></div>
             <img class="slider__element-image" src="img/img_07.jpg" alt="Oswietlenie Philips" />
-             <div class="slider__content">
-                <span class="slider__content--bold">Philips HUE</span><br />
-                Oświetl swój dom
-  
-                <p class="content__text">
-                  Wyobraź sobie, że jednym dotknięciem wyłączasz wszystkie światła.<br />
-                  <button class="banner__button">Zobacz więcej</button>
-                </p>
+            <div class="slider__content">
+              <p><span class="slider__content--bold">Philips HUE</span><br /></p>
+              <p>Oświetl swój dom</p>
+
+              <p class="content__text">
+                Wyobraź sobie, że jednym dotknięciem wyłączasz wszystkie światła.<br />
+              </p>
+              <button class="banner__button">Zobacz więcej</button>
             </div>
           </div>
 
@@ -131,8 +136,8 @@
         </div>
       </section>
 
-      <section class="banners">
-        <div class="container banners__wrapper">
+      <section class="banners container">
+        <div class="banners__wrapper">
           <div class="banner__element">
             <div class="shadow-bg"></div>
             <img
@@ -141,7 +146,7 @@
               alt="Ekspert doradza klientowi"
             />
             <div class="banner__text">
-            Pomoc eksperta<br /><span class="banner__text--light">Doradzamy</span><br />
+              <p>Pomoc eksperta<br /><span class="banner__text--light">Doradzamy</span><br /></p>
               <button class="banner__button">Zobacz więcej</button>
             </div>
           </div>
@@ -153,7 +158,7 @@
               alt="Klient wygodnie wyszukuje"
             />
             <div class="banner__text">
-              Szukaj wygodnie<br /><span class="banner__text--light">Elhurt Plus</span><br />
+              <p>Szukaj wygodnie<br /><span class="banner__text--light">Elhurt Plus</span><br /></p>
               <button class="banner__button">Zobacz więcej</button>
             </div>
           </div>
@@ -165,7 +170,7 @@
               alt="Wyjatkowy wzor serii Unica"
             />
             <div class="banner__text">
-              Seria Unica<br /><span class="banner__text--light">Wyjątkowy wzór</span><br />
+              <p>Seria Unica<br /><span class="banner__text--light">Wyjątkowy wzór</span><br /></p>
               <button class="banner__button">Zobacz więcej</button>
             </div>
           </div>

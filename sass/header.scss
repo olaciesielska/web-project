@@ -10,20 +10,30 @@
 
 .menu--top {
   height: 109px;
+  width: auto;
+
+  .menu__logo {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .menu__navigation {
   position: relative;
-  padding-inline-start: 40px;
 
-  .menu__item-list {
+  .menu__list--top {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     list-style: none;
+    width: 100%;
+    height: auto;
+    margin: 0 3rem;
 
-    .menu__burger {
+    .menu__item--burger {
       display: none;
     }
-    .menu__search {
+    .menu__item--search {
       display: none;
     }
     .menu__basket--mobile {
@@ -33,29 +43,23 @@
 
   .menu__item {
     display: flex;
-    margin-right: 2.5rem;
-  }
-
-  .menu__item--padding {
-    padding: 1.2rem 0;
-  }
-
-  .menu--height {
-    height: 57px;
-  }
-
-  .menu__link {
-    display: flex;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: c.$black;
-    font-size: 14px;
-    font-family: Metropolis;
-    font-weight: 700;
     align-items: center;
+    justify-content: center;
+    margin: 0 1.5em;
 
-    .menu__caption {
-      white-space: nowrap;
+    .menu__link {
+      display: flex;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: c.$black;
+      font-size: 14px;
+      font-family: Metropolis;
+      font-weight: 700;
+      align-items: center;
+
+      .menu__caption {
+        white-space: nowrap;
+      }
     }
   }
 
@@ -71,11 +75,11 @@
   }
 
   .menu__item-basket {
-    margin-left: 1rem;
+    width: 100%;
+    height: auto;
   }
 
   .basket__wrapper {
-    position: relative;
     display: flex;
     height: 55px;
     border: 1px solid c.$light-gray;
@@ -83,30 +87,32 @@
     margin-right: 0;
 
     .basket__icon {
+      position: relative;
       padding-top: 0.5rem;
+
+      .basket__icon--top {
+        display: flex;
+        position: absolute;
+        width: 26px;
+        height: 14px;
+        background-color: c.$light-green;
+        color: c.$white;
+        font-size: 10px;
+        font-family: Metropolis;
+        align-items: center;
+        justify-content: center;
+        left: 38%;
+        bottom: 57%;
+        border-radius: 10%;
+      }
 
       .icon-icon_06 {
         padding-right: 2rem;
         font-size: 2.3rem;
         margin-right: 1.5rem;
-
-        .basket__icon--top {
-          display: flex;
-          position: absolute;
-          width: 26px;
-          height: 14px;
-          background-color: c.$light-green;
-          color: c.$white;
-          font-size: 10px;
-          font-family: Metropolis;
-          align-items: center;
-          justify-content: center;
-          left: 15%;
-          bottom: 58%;
-          border-radius: 10%;
-        }
       }
     }
+
     .basket__center {
       position: relative;
       margin: auto 1rem;
@@ -128,16 +134,43 @@
     color: c.$white;
     align-items: center;
     justify-content: center;
+
+    .icon-icon_04 {
+      font-weight: 300;
+    }
   }
 }
 
-.menu__navigation--border {
-  margin-top: 1rem;
+.menu__bottom-wrapper {
+  position: relative;
+  height: 57px;
   border-top: 1px solid c.$light-gray;
-  border-bottom: 1px solid c.$light-gray;
+
+  .menu__navigation-bottom {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+
+    .menu__list-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 3em;
+
+      .menu__item {
+        margin: 0 25px;
+        text-align: center;
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
+  .menu__navigation--border {
+    border-bottom: none;
+  }
+
   .menu {
     position: relative;
     min-height: 80px;
@@ -165,18 +198,16 @@
       z-index: 15;
       border: 1px solid c.$light-gray;
       padding: 0 20px;
+      height: 80px;
 
-      .menu__item-list {
+      .menu__list--top {
         position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        left: 0;
-        margin-top: 0.85rem;
+        margin: 0;
+        margin-top: 0.5rem;
 
         .menu__basket--mobile,
-        .menu__burger,
-        .menu__search {
+        .menu__item--burger,
+        .menu__item--search {
           display: block;
         }
 
@@ -206,7 +237,7 @@
           }
         }
 
-        .menu__contact,
+        .menu__item--contact,
         .menu__item-basket {
           display: none;
         }
