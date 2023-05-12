@@ -135,6 +135,7 @@
   border: none;
   width: 204px;
   height: 55px;
+  font-size: 14px;
   background-color: transparent;
   border: 1px solid #ffffff;
   transition: background-color 0.5s;
@@ -199,12 +200,17 @@
     justify-content: center;
     width: 11em;
     height: 3em;
-    font-size: 0.5em;
+    font-size: 14px;
   }
 }
-@media (min-width: 768px) and (max-width: 1920px) {
+@media (min-width: 768px) and (max-width: 1919px) {
+  .banners .banners__wrapper .banner__element .banner__button {
+    width: calc(204px - 55 * (1920px - 100vw) / 680);
+    height: calc(55px - 15 * (1920px - 100vw) / 680);
+    font-size: calc(14px - 3.5 * (1920px - 100vw) / 680);
+  }
   .banners .banners__wrapper .banner__element .banner__text {
-    font-size: calc(44px - 10 * (1920px - 100vw) / 680);
+    font-size: calc(44px - 15 * (1920px - 100vw) / 680);
   }
 }
 

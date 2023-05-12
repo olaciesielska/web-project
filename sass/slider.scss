@@ -61,9 +61,9 @@
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 16px;
+  padding: 1vw;
   margin-top: -22px;
-  font-size: 14px;
+  font-size: 0.8vw;
   transition: 0.6s ease;
   z-index: 10;
   background-color: c.$light-gray;
@@ -71,7 +71,7 @@
 }
 
 .right {
-  right: 2rem;
+  right: 1.9rem;
 }
 
 .left:hover,
@@ -176,13 +176,21 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1920px) {
+@media (min-width: 768px) and (max-width: 1919px) {
   .slider {
     .slider__element {
+      .shadow-bg {
+        height: calc(31vw - 5 * ((1920px - 100vw) / 680));
+      }
       .slider__content {
-        font-size: calc(44px - 10 * ((1920px - 100vw) / 680));
+        font-size: calc(44px - 12 * ((1920px - 100vw) / 680));
+        .banner__button {
+          width: calc(204px - 55 * ((1920px - 100vw) / 680));
+          height: calc(55px - 15 * ((1920px - 100vw) / 680));
+          font-size: calc(14px - 3.5 * ((1920px - 100vw) / 680));
+        }
         .content__text {
-          font-size: calc(22px - 5 * ((1920px - 100vw) / 680));
+          font-size: calc(22px - 6 * ((1920px - 100vw) / 680));
         }
       }
     }
