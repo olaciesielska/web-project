@@ -28,7 +28,6 @@
     list-style: none;
     width: 100%;
     height: auto;
-    margin: 0 3rem;
 
     .menu__item--burger {
       display: none;
@@ -45,7 +44,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 1.5em;
+    margin-left: 3rem;
 
     .menu__link {
       display: flex;
@@ -83,8 +82,6 @@
     display: flex;
     height: 55px;
     border: 1px solid c.$light-gray;
-    margin-top: 0.5rem;
-    margin-right: 0;
 
     .basket__icon {
       position: relative;
@@ -109,14 +106,15 @@
       .icon-icon_06 {
         padding-right: 2rem;
         font-size: 2.3rem;
-        margin-right: 1.5rem;
+        margin-right: 1rem;
       }
     }
 
     .basket__center {
       position: relative;
-      margin: auto 1rem;
+      margin: auto 1.5rem;
       right: 7%;
+      white-space: nowrap;
 
       .basket__center--lowercase {
         line-height: 1.5;
@@ -150,13 +148,12 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 100%;
+    width: 98%;
 
     .menu__list-bottom {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-right: 3em;
 
       .menu__item {
         margin: 0 25px;
