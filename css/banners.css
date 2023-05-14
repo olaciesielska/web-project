@@ -15,6 +15,12 @@
   padding-top: 30px;
 }
 
+.background {
+  background-color: #f2f3f4;
+  width: 100%;
+  border-top: 1px solid #e1e2e8;
+}
+
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon.ttf");
@@ -111,7 +117,7 @@
 .banners .banners__wrapper .banner__element .shadow-bg {
   position: absolute;
   width: 50%;
-  height: 95%;
+  height: 100%;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
   z-index: 1;
   height: 100%;
@@ -127,7 +133,7 @@
 .banners .banners__wrapper .banner__element .banner__button {
   cursor: pointer;
   background-color: #f74137;
-  margin-top: 10%;
+  margin-top: 8%;
   color: #ffffff;
   font-family: Metropolis;
   font-weight: 700;
@@ -165,11 +171,11 @@
 }
 
 @media (max-width: 767px) {
+  .banners {
+    position: relative;
+  }
   .banners .banners__wrapper {
-    position: absolute;
     flex-wrap: wrap;
-    gap: 30px;
-    z-index: 5;
   }
   .banners .banners__wrapper .banner__element {
     justify-content: center;
@@ -179,7 +185,7 @@
   .banners .banners__wrapper .banner__element .shadow-bg {
     position: absolute;
     width: 50%;
-    height: 95%;
+    height: 100%;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
     z-index: 1;
     height: 100%;
@@ -198,8 +204,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 11em;
-    height: 3em;
     font-size: 14px;
   }
 }
@@ -208,9 +212,10 @@
     width: calc(204px - 55 * (1920px - 100vw) / 680);
     height: calc(55px - 15 * (1920px - 100vw) / 680);
     font-size: calc(14px - 3.5 * (1920px - 100vw) / 680);
+    margin-top: 1.4em;
   }
   .banners .banners__wrapper .banner__element .banner__text {
-    font-size: calc(44px - 15 * (1920px - 100vw) / 680);
+    font-size: calc(44px - 15.5 * (1920px - 100vw) / 680);
   }
 }
 

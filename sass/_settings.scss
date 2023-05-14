@@ -17,10 +17,16 @@
   padding-top: 30px;
 }
 
+.background {
+  background-color: c.$main-color;
+  width: 100%;
+  border-top: 1px solid c.$light-gray;
+}
+
 @mixin shadow {
   position: absolute;
   width: 50%;
-  height: 95%;
+  height: 100%;
   background-image: c.$shadow-gradient;
   z-index: 1;
 }
@@ -28,7 +34,7 @@
 @mixin button {
   cursor: pointer;
   background-color: c.$red;
-  margin-top: 10%;
+  margin-top: 8%;
   color: c.$white;
   font-family: Metropolis;
   font-weight: 700;

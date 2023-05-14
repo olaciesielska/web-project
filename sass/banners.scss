@@ -68,11 +68,9 @@
 
 @media (max-width: 767px) {
   .banners {
+    position: relative;
     .banners__wrapper {
-      position: absolute;
       flex-wrap: wrap;
-      gap: 30px;
-      z-index: 5;
 
       .banner__element {
         justify-content: center;
@@ -98,8 +96,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 11em;
-            height: 3em;
             font-size: 14px;
           }
         }
@@ -115,9 +111,10 @@
           width: calc(204px - 55 * ((1920px - 100vw) / 680));
           height: calc(55px - 15 * ((1920px - 100vw) / 680));
           font-size: calc(14px - 3.5 * ((1920px - 100vw) / 680));
+          margin-top: 1.4em;
         }
         .banner__text {
-          font-size: calc(44px - 15 * ((1920px - 100vw) / 680));
+          font-size: calc(44px - 15.5 * ((1920px - 100vw) / 680));
         }
       }
     }
