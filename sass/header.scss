@@ -176,15 +176,9 @@ header {
   .menu__navigation--border {
     border-bottom: none;
   }
-  .menu--top {
-    width: 100%;
-    height: auto;
-  }
 
   .menu {
     position: relative;
-    min-height: 80px;
-    padding-bottom: 5rem;
     border-bottom: 1px solid c.$light-gray;
 
     .menu__logo {
@@ -208,12 +202,13 @@ header {
       z-index: 15;
       border: 1px solid c.$light-gray;
       padding: 0 20px;
-      height: 80px;
+      height: calc(80px - 25 * ((767px - 100vw) / 680));
+      max-height: 80px;
 
       .menu__list--top {
         position: relative;
         margin: 0;
-        margin-top: 0.5rem;
+        margin-top: calc(0.5rem - 15 * ((767px - 100vw) / 680));
 
         .menu__basket--mobile,
         .menu__item--burger,
@@ -243,6 +238,7 @@ header {
 
             .menu__icon {
               font-size: calc(40px - 25 * ((767px - 100vw) / 680));
+              padding: 0;
             }
           }
         }
@@ -258,10 +254,17 @@ header {
       }
     }
   }
+
+  .menu--top {
+    width: 100%;
+    height: calc(150px - 120 * ((767px - 100vw) / 680));
+  }
+
   .menu__navigation--hide {
     display: none;
   }
 }
+
 @media (min-width: 768px) and (max-width: 1919px) {
   .menu--top {
     height: calc(109px - 12 * ((1920px - 90vw) / 680));

@@ -69,6 +69,8 @@
 @media (max-width: 767px) {
   .banners {
     position: relative;
+    padding-bottom: 20%;
+
     .banners__wrapper {
       flex-wrap: wrap;
 
@@ -96,25 +98,28 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 14px;
+            font-size: calc(16px - 11 * (767px - 100vw) / 680);
+            width: calc(16em - 40 * ((767px - 100vw) / 680));
+            height: calc(5em - 20 * ((767px - 100vw) / 680));
           }
         }
       }
     }
   }
 }
+
 @media (min-width: 768px) and (max-width: 1919px) {
   .banners {
     .banners__wrapper {
       .banner__element {
         .banner__button {
-          width: calc(204px - 55 * ((1920px - 100vw) / 680));
-          height: calc(55px - 15 * ((1920px - 100vw) / 680));
-          font-size: calc(14px - 3.5 * ((1920px - 100vw) / 680));
-          margin-top: 1.4em;
+          width: calc(204px - 52 * ((1920px - 100vw) / 680));
+          height: calc(55px - 14 * ((1920px - 100vw) / 680));
+          font-size: calc(14px - 3 * ((1920px - 100vw) / 680));
+          margin-top: 1.2em;
         }
         .banner__text {
-          font-size: calc(44px - 15.5 * ((1920px - 100vw) / 680));
+          font-size: calc(44px - 16 * ((1920px - 100vw) / 680));
         }
       }
     }

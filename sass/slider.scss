@@ -106,12 +106,11 @@
 
 @media (max-width: 767px) {
   .slider {
-    min-height: 200px;
-    margin-top: 1rem;
     .slider__icons {
       width: 100%;
-      height: 250px;
+      height: calc(40vw - 35 * ((767px - 100vw) / 680));
     }
+
     .slider__element {
       width: 100%;
       height: auto;
@@ -124,19 +123,23 @@
       .shadow-bg {
         position: absolute;
         width: 100%;
-        height: calc(29.7vw - 20 * ((767px - 100vw) / 680));
+        height: calc(40.2vw - 22 * ((767px - 100vw) / 680));
         left: 0;
       }
 
       .slider__content {
-        width: 35vw;
-        top: 1.7em;
+        width: 10em;
         font-size: calc(25px - 20 * ((767px - 100vw) / 680));
+        height: 70%;
+        top: calc(2.5em - 20 * ((767px - 100vw) / 680));
+        left: 2em;
 
         .content__text {
-          width: 34vw;
-          font-size: calc(15px - 15.5 * ((767px - 100vw) / 680));
+          width: 35vw;
+          font-size: calc(15px - 13 * ((767px - 100vw) / 680));
           left: 0;
+          padding-bottom: 0.4rem;
+          padding-top: 0.25rem;
         }
       }
 
@@ -144,9 +147,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 12em;
-        height: 3.5em;
-        font-size: calc(12px - 15 * ((767px - 100vw) / 680));
+        width: calc(14em - 20 * ((767px - 100vw) / 680));
+        height: calc(4em - 10 * ((767px - 100vw) / 680));
+        font-size: calc(14px - 10 * ((767px - 100vw) / 680));
+        bottom: calc(2em - 25 * ((767px - 100vw) / 680));
       }
     }
 
@@ -171,7 +175,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1em;
+        font-size: calc(1em - 13 * ((767px - 100vw) / 680));
+        top: calc(10em - 10 * ((767px - 100vw) / 680));
       }
     }
   }
@@ -186,9 +191,9 @@
       .slider__content {
         font-size: calc(44px - 12 * ((1920px - 100vw) / 680));
         .banner__button {
-          width: calc(204px - 55 * ((1920px - 100vw) / 680));
-          height: calc(55px - 15 * ((1920px - 100vw) / 680));
-          font-size: calc(14px - 3.5 * ((1920px - 100vw) / 680));
+          width: calc(204px - 50 * ((1920px - 100vw) / 680));
+          height: calc(55px - 10 * ((1920px - 100vw) / 680));
+          font-size: calc(14px - 3 * ((1920px - 100vw) / 680));
         }
         .content__text {
           font-size: calc(22px - 6 * ((1920px - 100vw) / 680));

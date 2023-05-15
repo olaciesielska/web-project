@@ -8,10 +8,6 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/slider.css" />
     <link rel="stylesheet" href="css/banners.css" />
-    <link
-      rel="stylesheet"
-      href="https://i.icomoon.io/public/temp/30ae16288e/UntitledProject/style.css"
-    />
   </head>
   <body>
     <header>
@@ -106,7 +102,12 @@
         <div class="menu slider__icons">
           <div class="slider__element fade_animation">
             <div class="shadow-bg"></div>
-            <img class="slider__element-image" src="img/img_01.jpg" alt="Sprzet Sedna" />
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/img_01-mobile.jpg" />
+              <source media="(min-width: 768px)" srcset="img/img_01.jpg" />
+              <img class="slider__element-image" src="img/img_01.jpg" alt="Sprzet Sedna" />
+            </picture>
+
             <div class="slider__content">
               <p><span class="slider__content--bold">Poznaj SEDNA</span><br /></p>
               <p>Schneider Electric</p>
@@ -121,7 +122,11 @@
 
           <div class="slider__element fade_animation">
             <div class="shadow-bg"></div>
-            <img class="slider__element-image" src="img/img_07.jpg" alt="Oswietlenie Philips" />
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/img_07-mobile.jpg" />
+              <source media="(min-width: 768px)" srcset="img/img_07.jpg" />
+              <img class="slider__element-image" src="img/img_07.jpg" alt="Oswietlenie Philips" />
+            </picture>
             <div class="slider__content">
               <p><span class="slider__content--bold">Philips HUE</span><br /></p>
               <p>Oświetl swój dom</p>
