@@ -47,10 +47,7 @@
 
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/icomoon.ttf");
-  src: url("../fonts/icomoon.eot") format("embedded-opentype"),
-    url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.ttf") format("woff"),
-    url("../fonts/icomoon.svg") format("svg");
+  src: url('../fonts/icomoon.ttf?m2in9q');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -60,6 +57,7 @@
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -71,32 +69,55 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-icon_01:before {
+.icon-dostepnosc:before {
   content: "\e900";
 }
-.icon-icon_02:before {
+.icon-icon_01:before {
   content: "\e901";
 }
-.icon-icon_03:before {
+.icon-icon_02:before {
   content: "\e902";
 }
-.icon-icon_04:before {
+.icon-icon_03:before {
   content: "\e903";
 }
-.icon-icon_05:before {
+.icon-icon_04:before {
   content: "\e904";
 }
-.icon-icon_06:before {
+.icon-icon_05:before {
   content: "\e905";
 }
-
-.icon-icon_07:before {
+.icon-icon_06:before {
   content: "\e906";
 }
-
-.icon-icon_08:before {
+.icon-icon_07:before {
   content: "\e907";
 }
+.icon-icon_08:before {
+  content: "\e908";
+}
+.icon-play:before {
+  content: "\e909";
+}
+.icon-widok_01:before {
+  content: "\e90a";
+}
+.icon-widok_02:before {
+  content: "\e90b";
+}
+.icon-wysylka:before {
+  content: "\e90c";
+}
+.icon-x:before {
+  content: "\e90d";
+}
+.icon-search:before {
+  content: "\e986";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+
 
 @font-face {
   font-family: "Metropolis";
