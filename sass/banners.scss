@@ -72,6 +72,8 @@
 
     .banners__wrapper {
       flex-wrap: wrap;
+      gap: 20px;
+      padding-top: 20px;
 
       .banner__element {
         justify-content: center;
@@ -90,6 +92,7 @@
           width: 100%;
           height: auto;
         }
+
         .banner__text {
           font-size: 5vw;
 
@@ -98,11 +101,19 @@
             align-items: center;
             justify-content: center;
             font-size: calc(16px - 11 * (767px - 100vw) / 680);
-            width: calc(16em - 40 * ((767px - 100vw) / 680));
-            height: calc(5em - 20 * ((767px - 100vw) / 680));
+            width: calc(15.5em - 40 * ((767px - 100vw) / 680));
+            height: calc(4.5em - 20 * ((767px - 100vw) / 680));
           }
         }
       }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .banners {
+    .banners__wrapper {
+      gap: 20px;
     }
   }
 }

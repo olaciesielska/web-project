@@ -109,10 +109,13 @@ input::-webkit-inner-spin-button {
 
 .left,
 .right {
-  font-size: 1.4vw;
+  display: flex;
+  width: 50px;
+  height: 50px;
   transition: background-color 0.6s ease;
   z-index: 10;
   opacity: 0.7;
+  cursor: pointer;
 }
 
 .right {
@@ -124,10 +127,27 @@ input::-webkit-inner-spin-button {
   background-color: #5b5b5b;
 }
 
-@media (min-width: 1920px) {
+.icon-icon_05,
+.icon-icon_04 {
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1900px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1919px) {
   .left,
   .right {
-    font-size: 25px;
+    width: calc(50px - 12 * (1920px - 100vw) / 680);
+    height: calc(50px - 12 * (1920px - 100vw) / 680);
   }
 }
 .slider {
@@ -246,21 +266,19 @@ input::-webkit-inner-spin-button {
   .slider .slider__element .shadow-bg {
     position: absolute;
     width: 100%;
-    height: calc(40.2vw - 22 * (767px - 100vw) / 680);
+    height: calc(42vw - 10 * (767px - 100vw) / 680);
     left: 0;
   }
   .slider .slider__element .slider__content {
     width: 10em;
-    font-size: calc(25px - 20 * (767px - 100vw) / 680);
+    font-size: calc(25px - 18 * (767px - 100vw) / 680);
     height: 70%;
-    top: calc(2.5em - 20 * (767px - 100vw) / 680);
     left: 2em;
   }
   .slider .slider__element .slider__content .content__text {
     width: 35vw;
     font-size: calc(15px - 13 * (767px - 100vw) / 680);
     left: 0;
-    padding-bottom: 0.4rem;
     padding-top: 0.25rem;
   }
   .slider .slider__element .banner__button {
@@ -270,7 +288,7 @@ input::-webkit-inner-spin-button {
     width: calc(14em - 20 * (767px - 100vw) / 680);
     height: calc(4em - 10 * (767px - 100vw) / 680);
     font-size: calc(14px - 10 * (767px - 100vw) / 680);
-    bottom: calc(2em - 25 * (767px - 100vw) / 680);
+    bottom: calc(2em - 30 * (767px - 100vw) / 680);
   }
   .slider .slider__icons .right,
   .slider .slider__icons .left {
@@ -289,8 +307,8 @@ input::-webkit-inner-spin-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: calc(1em - 13 * (767px - 100vw) / 680);
-    top: calc(10em - 10 * (767px - 100vw) / 680);
+    font-size: calc(1em - 12 * (767px - 100vw) / 680);
+    top: 10em;
   }
 }
 @media (min-width: 768px) and (max-width: 1919px) {

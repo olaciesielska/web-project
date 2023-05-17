@@ -33,13 +33,9 @@ header {
     width: 100%;
     height: auto;
 
-    .menu__item--burger {
-      display: none;
-    }
+    .menu__item--burger,
+    .menu__basket--mobile,
     .menu__item--search {
-      display: none;
-    }
-    .menu__basket--mobile {
       display: none;
     }
   }
@@ -59,13 +55,18 @@ header {
       font-family: Metropolis;
       font-weight: 700;
       align-items: center;
+      transition: color 0.2s;
 
       .menu__caption {
         white-space: nowrap;
       }
     }
   }
-
+  .menu__item:hover {
+    .menu__link {
+      color: c.$red;
+    }
+  }
   .menu__icon {
     font-weight: 500;
     font-size: 1.6rem;
@@ -91,7 +92,7 @@ header {
 
     .basket__icon {
       position: relative;
-      padding-top: 0.5rem;
+      padding-top: 0.4rem;
 
       .basket__icon--top {
         display: flex;
@@ -104,8 +105,8 @@ header {
         font-family: Metropolis;
         align-items: center;
         justify-content: center;
-        left: 46%;
-        bottom: 57%;
+        left: 44%;
+        bottom: 60%;
         border-radius: 10%;
       }
 
@@ -117,7 +118,7 @@ header {
 
     .basket__center {
       position: relative;
-      margin: auto 0.5vw;
+      margin: auto 0.7vw;
       right: 0.7vw;
       white-space: nowrap;
 
@@ -207,8 +208,7 @@ header {
 
       .menu__list--top {
         position: relative;
-        margin: 0;
-        margin-top: calc(0.5rem - 15 * ((767px - 100vw) / 680));
+        margin-top: calc(0.6rem - 15 * ((767px - 100vw) / 680));
 
         .menu__basket--mobile,
         .menu__item--burger,
@@ -222,10 +222,11 @@ header {
           height: 4em;
           padding: 0;
           margin: 0;
+          width: 8%;
 
           .menu__link {
             display: block;
-            padding: 0;
+            padding: 0.5em;
 
             .menu__caption {
               display: block;
@@ -250,6 +251,7 @@ header {
 
         .icon-icon_06:before {
           border: none;
+          padding-right: 0;
         }
       }
     }
@@ -289,7 +291,7 @@ header {
           width: calc(26px - 1 * ((1920px - 90vw) / 680));
           height: calc(14px - 0.8 * ((1920px - 90vw) / 680));
           font-size: calc(10px - 0.6 * ((1920px - 90vw) / 680));
-          left: calc(46% - 4 * ((1920px - 90vw) / 680));
+          left: calc(44% - 3 * ((1920px - 90vw) / 680));
         }
       }
     }
@@ -298,7 +300,7 @@ header {
     }
     .menu__list--top {
       .menu__item {
-        margin-left: calc(3rem - 18 * ((1920px - 100vw) / 680));
+        margin-left: calc(3rem - 20 * ((1920px - 100vw) / 680));
         .menu__link {
           font-size: calc(14px - 2.1 * ((1920px - 100vw) / 680));
         }

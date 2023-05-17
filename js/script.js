@@ -1,10 +1,11 @@
 let slide_index = 1;
-let left_arrow = document.querySelector(".left");
-let right_arrow = document.querySelector(".right");
 
-let minus_buttons = document.querySelectorAll(".productsSlider__input--minus");
-let plus_buttons = document.querySelectorAll(".productsSlider__input--plus");
-let input_fields = document.querySelectorAll(".productsSlider__input");
+const left_arrow = document.querySelector(".left");
+const right_arrow = document.querySelector(".right");
+
+const minus_buttons = document.querySelectorAll(".productsSlider__input--minus");
+const plus_buttons = document.querySelectorAll(".productsSlider__input--plus");
+const input_fields = document.querySelectorAll(".productsSlider__input");
 
 function nextSlide(n) {
   displaySlides((slide_index += n));
@@ -12,7 +13,7 @@ function nextSlide(n) {
 
 function displaySlides(n) {
   let i;
-  let slides = document.querySelectorAll(".slider__element");
+  const slides = document.querySelectorAll(".slider__element");
 
   if (n > slides.length) {
     slide_index = 1;
@@ -43,6 +44,11 @@ input_fields.forEach((input_field, index) => {
 
   function changeValue(n) {
     currentValue += n;
+
+    if (currentValue < 1) {
+      currentValue = 1;
+    }
+
     input_field.value = currentValue;
   }
 
