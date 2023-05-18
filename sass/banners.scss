@@ -36,11 +36,6 @@
         transition: background-color 0.5s;
       }
 
-      .banner__button:hover {
-        background-color: c.$red;
-        border: none;
-      }
-
       .banner__text {
         position: absolute;
         padding-top: 1rem;
@@ -57,11 +52,42 @@
         .banner__text--light {
           font-weight: 300;
         }
+
+        .banner__button:hover {
+          background-color: c.$red;
+          border: none;
+        }
       }
     }
-
     .banner__element:hover .banner__element-image {
       transform: scale(1.1);
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .banners {
+    .banners__wrapper {
+      gap: 20px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1919px) {
+  .banners {
+    .banners__wrapper {
+      .banner__element {
+        .banner__button {
+          width: calc(204px - 55 * ((1920px - 100vw) / 680));
+          height: calc(55px - 15 * ((1920px - 100vw) / 680));
+          font-size: calc(14px - 3 * ((1920px - 100vw) / 680));
+          margin-top: 1.2em;
+        }
+
+        .banner__text {
+          font-size: calc(44px - 17 * ((1920px - 100vw) / 680));
+        }
+      }
     }
   }
 }
@@ -94,43 +120,22 @@
         }
 
         .banner__text {
-          font-size: 5vw;
+          font-size: 5.5vw;
 
           .banner__button {
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: calc(16px - 11 * (767px - 100vw) / 680);
-            width: calc(15.5em - 40 * ((767px - 100vw) / 680));
-            height: calc(4.5em - 20 * ((767px - 100vw) / 680));
+            width: calc(15em - 25 * ((767px - 100vw) / 680));
+            height: calc(4em - 8 * ((767px - 100vw) / 680));
+            background-color: c.$red;
+            border: none;
           }
         }
       }
-    }
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .banners {
-    .banners__wrapper {
-      gap: 20px;
-    }
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1919px) {
-  .banners {
-    .banners__wrapper {
-      .banner__element {
-        .banner__button {
-          width: calc(204px - 52 * ((1920px - 100vw) / 680));
-          height: calc(55px - 14 * ((1920px - 100vw) / 680));
-          font-size: calc(14px - 3 * ((1920px - 100vw) / 680));
-          margin-top: 1.2em;
-        }
-        .banner__text {
-          font-size: calc(44px - 16 * ((1920px - 100vw) / 680));
-        }
+      .banner__element:hover .banner__element-image {
+        transform: none;
       }
     }
   }
