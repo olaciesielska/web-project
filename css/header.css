@@ -458,6 +458,4 @@ header {
   .menu__bottom-wrapper .menu__navigation-bottom .menu__list-bottom .menu__item .menu__link {
     font-size: calc(14px - 1.3 * (1920px - 100vw) / 680);
   }
-}
-
-/*# sourceMappingURL=header.css.map */
+}/*# sourceMappingURL=header.css.map */

@@ -47,7 +47,7 @@
 
 @font-face {
   font-family: "icomoon";
-  src: url('../fonts/icomoon.ttf?m2in9q');
+  src: url("../fonts/icomoon.ttf?m2in9q");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -117,7 +117,6 @@
 .icon-menu:before {
   content: "\e9bd";
 }
-
 
 @font-face {
   font-family: "Metropolis";
@@ -198,5 +197,6 @@ input::-webkit-inner-spin-button {
   .right {
     width: calc(50px - 12 * ((1920px - 100vw) / 680));
     height: calc(50px - 12 * ((1920px - 100vw) / 680));
+    font-size: calc(1em - 2 * ((1920px - 100vw) / 680));
   }
 }
