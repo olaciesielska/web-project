@@ -55,18 +55,14 @@ header {
       font-family: Metropolis;
       font-weight: 700;
       align-items: center;
-      transition: color 0.2s;
+      transition: color 0.25s;
 
       .menu__caption {
         white-space: nowrap;
       }
     }
   }
-  .menu__item:hover {
-    .menu__link {
-      color: c.$red;
-    }
-  }
+
   .menu__icon {
     font-weight: 500;
     font-size: 1.6rem;
@@ -92,7 +88,7 @@ header {
 
     .basket__icon {
       position: relative;
-      padding-top: 0.4rem;
+      padding-top: 0.3rem;
 
       .basket__icon--top {
         display: flex;
@@ -105,8 +101,8 @@ header {
         font-family: Metropolis;
         align-items: center;
         justify-content: center;
-        left: 44%;
-        bottom: 60%;
+        left: 43%;
+        bottom: 62%;
         border-radius: 10%;
       }
 
@@ -120,6 +116,7 @@ header {
       position: relative;
       margin: auto 0.7vw;
       right: 0.7vw;
+      top: 0.15vw;
       white-space: nowrap;
 
       .basket__center--lowercase {
@@ -153,14 +150,15 @@ header {
   .menu__navigation-bottom {
     position: absolute;
     transform: translateY(-50%);
-    width: 97.5%;
-    max-width: 1900px;
+    width: 97%;
+    max-width: 1860px;
 
     .menu__list-bottom {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 97.5%;
+      width: 100%;
+      max-width: 1860px;
 
       .menu__item {
         margin: 0 1.3rem;
@@ -174,6 +172,7 @@ header {
   .menu__bottom-wrapper {
     display: none;
   }
+
   .menu__navigation--border {
     border-bottom: none;
   }
@@ -267,9 +266,11 @@ header {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1919px) {
+@media (min-width: 768px) {
   .menu--top {
     height: calc(109px - 12 * ((1920px - 90vw) / 680));
+    max-height: 109px;
+
     .menu__logo {
       .menu__logo-image {
         width: calc(250px - 35 * ((1920px - 90vw) / 680));
@@ -285,7 +286,7 @@ header {
       .basket__icon {
         .icon-icon_06 {
           padding-left: calc(20px - 8 * ((1920px - 90vw) / 680));
-          font-size: calc(37px - 5 * ((1920px - 90vw) / 680));
+          font-size: calc(37px - 5 * ((1920px - 100vw) / 680));
         }
         .basket__icon--top {
           width: calc(26px - 1 * ((1920px - 90vw) / 680));
@@ -300,37 +301,31 @@ header {
     }
     .menu__list--top {
       .menu__item {
-        margin-left: calc(3rem - 20 * ((1920px - 100vw) / 680));
+        margin-left: calc(48px - 18 * ((1920px - 100vw) / 680));
         .menu__link {
-          font-size: calc(14px - 2.1 * ((1920px - 100vw) / 680));
+          font-size: calc(14px - 2 * ((1920px - 100vw) / 680));
         }
       }
     }
     .menu__icon {
       padding-left: calc(1rem - 7 * ((1920px - 100vw) / 680));
       padding-right: calc(1.5rem - 9 * ((1920px - 100vw) / 680));
+      font-size: calc(1.6rem - 2.1 * ((1920px - 100vw) / 680));
+    }
+    .menu__item:hover {
+      .menu__link {
+        color: c.$red;
+      }
     }
   }
   .menu__bottom-wrapper {
     .menu__navigation-bottom {
       .menu__list-bottom {
-        width: calc(98% - 1 * ((1920px - 100vw) / 680));
         .menu__item {
           .menu__link {
             font-size: calc(14px - 1.3 * ((1920px - 100vw) / 680));
           }
         }
-      }
-    }
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1200px) {
-  .menu__bottom-wrapper {
-    .menu__navigation-bottom {
-      width: auto;
-      .menu__list-bottom {
-        justify-content: space-around;
       }
     }
   }
