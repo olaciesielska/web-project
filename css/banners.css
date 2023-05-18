@@ -180,6 +180,7 @@ input::-webkit-inner-spin-button {
   .right {
     width: calc(50px - 12 * (1920px - 100vw) / 680);
     height: calc(50px - 12 * (1920px - 100vw) / 680);
+    font-size: calc(1em - 2 * (1920px - 100vw) / 680);
   }
 }
 .banners {
@@ -275,7 +276,7 @@ input::-webkit-inner-spin-button {
   .banners .banners__wrapper {
     flex-wrap: wrap;
     gap: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
   }
   .banners .banners__wrapper .banner__element {
     justify-content: center;
