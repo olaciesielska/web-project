@@ -180,6 +180,7 @@ input::-webkit-inner-spin-button {
   .right {
     width: calc(50px - 12 * (1920px - 100vw) / 680);
     height: calc(50px - 12 * (1920px - 100vw) / 680);
+    font-size: calc(1em - 2 * (1920px - 100vw) / 680);
   }
 }
 .productsSlider {
@@ -351,9 +352,9 @@ input::-webkit-inner-spin-button {
     height: calc(900px - 300 * (767px - 100vw) / 680);
   }
   .productsSlider .productsSlider__button {
-    width: calc(318px - 100 * (767px - 100vw) / 680);
-    height: calc(55px - 20 * (767px - 100vw) / 680);
-    font-size: calc(14px - 2.5 * (767px - 100vw) / 680);
+    width: calc(318px - 130 * (767px - 100vw) / 680);
+    height: calc(55px - 25 * (767px - 100vw) / 680);
+    font-size: calc(14.5px - 4 * (767px - 100vw) / 680);
     margin-top: 3rem;
   }
   .productsSlider .productsSlider__title .productsSlider__header {
@@ -382,21 +383,21 @@ input::-webkit-inner-spin-button {
     display: none;
   }
   .productsSlider .productsSlider__wrapper .productsSlider__slider .productsSlider__item {
-    width: calc(480px - 270 * (767px - 100vw) / 680);
-    height: calc(540px - 230 * (767px - 100vw) / 680);
+    width: calc(480px - 290 * (767px - 100vw) / 680);
+    height: calc(540px - 250 * (767px - 100vw) / 680);
     position: absolute;
     left: 50%;
     transform: translate(-50%);
     margin-top: 2em;
   }
   .productsSlider .productsSlider__wrapper .productsSlider__slider .productsSlider__item .productsSlider__item--description-wrapper {
-    bottom: 35%;
+    bottom: 37%;
   }
   .productsSlider .productsSlider__wrapper .productsSlider__slider .productsSlider__item .productsSlider__item--description-wrapper .productsSlider__item--description {
-    font-size: calc(18px - 8 * (767px - 100vw) / 680);
+    font-size: calc(20px - 10 * (767px - 100vw) / 680);
   }
   .productsSlider .productsSlider__wrapper .productsSlider__slider .productsSlider__item .productsSlider__item--description-wrapper .productsSlider__item--price {
-    font-size: calc(18px - 8 * (767px - 100vw) / 680);
+    font-size: calc(20px - 10 * (767px - 100vw) / 680);
   }
   .productsSlider .productsSlider__wrapper .productsSlider__slider .productsSlider__item .productsSlider__item--basket {
     bottom: calc(10% - 25 * (767px - 100vw) / 680);
@@ -404,28 +405,28 @@ input::-webkit-inner-spin-button {
   }
   .productsSlider .productsSlider__wrapper .productsSlider__slider .productsSlider__item .productsSlider__item--basket .productsSlider__item--inputWrapper {
     display: flex;
-    height: calc(70px - 25 * (767px - 100vw) / 680);
-    width: calc(130px - 35 * (767px - 100vw) / 680);
+    height: calc(70px - 35 * (767px - 100vw) / 680);
+    width: calc(130px - 45 * (767px - 100vw) / 680);
   }
   .productsSlider .productsSlider__wrapper .productsSlider__slider .productsSlider__item .productsSlider__item--basket .productsSlider__item--inputWrapper .productsSlider__input {
     width: calc(65px - 15 * (767px - 100vw) / 680);
-    height: calc(70px - 25 * (767px - 100vw) / 680);
+    height: calc(70px - 35 * (767px - 100vw) / 680);
     font-size: calc(2.3em - 7 * (767px - 100vw) / 680);
   }
   .productsSlider .productsSlider__wrapper .productsSlider__slider .productsSlider__item .productsSlider__item--basket .productsSlider__item--inputWrapper .productsSlider__input--minus,
   .productsSlider .productsSlider__wrapper .productsSlider__slider .productsSlider__item .productsSlider__item--basket .productsSlider__item--inputWrapper .productsSlider__input--plus {
-    height: calc(70px - 25 * (767px - 100vw) / 680);
+    height: calc(70px - 35 * (767px - 100vw) / 680);
   }
   .productsSlider .productsSlider__wrapper .productsSlider__slider .productsSlider__item .productsSlider__item--basket .productsSlider__item--basket-icon {
     display: flex;
-    width: calc(70px - 25 * (767px - 100vw) / 680);
-    height: calc(70px - 25 * (767px - 100vw) / 680);
+    width: calc(70px - 35 * (767px - 100vw) / 680);
+    height: calc(70px - 35 * (767px - 100vw) / 680);
     font-size: calc(35px - 10 * (767px - 100vw) / 680);
   }
   .productsSlider .productsSlider__wrapper .productsSlider__slider .productsSlider__item .productsSlider__item--image {
-    top: calc(28% + 5 * (767px - 100vw) / 680);
-    width: calc(270px - 80 * (767px - 100vw) / 680);
-    height: calc(270px - 80 * (767px - 100vw) / 680);
+    top: calc(28% - 3 * (767px - 100vw) / 680);
+    width: calc(270px - 100 * (767px - 100vw) / 680);
+    height: calc(270px - 100 * (767px - 100vw) / 680);
   }
 }
 @media (min-width: 768px) and (max-width: 1919px) {

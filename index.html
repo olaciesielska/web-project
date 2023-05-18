@@ -16,7 +16,7 @@
         <div class="menu__logo">
           <img class="menu__logo-image" src="img/logo.png" alt="Logo firmy Elhurt" />
         </div>
-        <!-- <input class="menu__searchbar" type="text" placeholder="Search.." /> -->
+        <input class="menu__searchbar" type="text" placeholder="Wpisz nazwę produktu" />
         <nav class="menu__navigation menu__navigation-mobile">
           <ul class="menu__list--top">
             <li class="menu__item menu__item--burger">
@@ -100,11 +100,11 @@
 
     <main class="background">
       <section class="slider container">
-        <div class="menu slider__icons">
+        <div class="menu slider__wrapper">
           <div class="slider__element fade_animation">
             <div class="shadow-bg"></div>
             <picture>
-              <source media="(max-width: 767px)" srcset="img/img_01-mobile.jpg" />
+              <source media="(max-width: 767px)" srcset="img/img737.jpg" />
               <source media="(min-width: 768px)" srcset="img/img_01.jpg" />
               <img class="slider__element-image" src="img/img_01.jpg" alt="Sprzet Sedna" />
             </picture>
@@ -124,7 +124,7 @@
           <div class="slider__element fade_animation">
             <div class="shadow-bg"></div>
             <picture>
-              <source media="(max-width: 767px)" srcset="img/img_07-mobile.jpg" />
+              <source media="(max-width: 767px)" srcset="img/img737_2.jpg" />
               <source media="(min-width: 768px)" srcset="img/img_07.jpg" />
               <img class="slider__element-image" src="img/img_07.jpg" alt="Oswietlenie Philips" />
             </picture>
@@ -138,7 +138,6 @@
               <button class="banner__button">Zobacz więcej</button>
             </div>
           </div>
-
           <a class="left icon-icon_05"></a>
           <a class="right icon-icon_04"></a>
         </div>
@@ -222,6 +221,8 @@
                       value="1"
                       name="quantity"
                       type="number"
+                      oninput="this.value = 
+                      !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"
                     />
                     <button class="productsSlider__input--plus">+</button>
                   </div>
@@ -259,6 +260,8 @@
                       placeholder="1"
                       name="quantity"
                       type="number"
+                      oninput="this.value = 
+                      !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"
                     />
                     <button class="productsSlider__input--plus">+</button>
                   </div>
@@ -296,6 +299,8 @@
                       value="1"
                       name="quantity"
                       type="number"
+                      oninput="this.value = 
+                      !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"
                     />
                     <button class="productsSlider__input--plus">+</button>
                   </div>
@@ -333,6 +338,8 @@
                       value="1"
                       name="quantity"
                       type="number"
+                      oninput="this.value = 
+                      !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"
                     />
                     <button class="productsSlider__input--plus">+</button>
                   </div>
@@ -370,6 +377,8 @@
                       value="1"
                       name="quantity"
                       type="number"
+                      oninput="this.value = 
+                      !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"
                     />
                     <button class="productsSlider__input--plus">+</button>
                   </div>
