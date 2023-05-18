@@ -10,6 +10,10 @@ header {
   justify-content: space-between;
   width: 100%;
   height: 100%;
+
+  .menu__searchbar {
+    display: none;
+  }
 }
 
 .menu--top {
