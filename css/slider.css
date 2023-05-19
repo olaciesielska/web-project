@@ -266,6 +266,15 @@ input::-webkit-inner-spin-button {
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @keyframes fade {
   from {
     opacity: 0.4;
@@ -350,4 +359,6 @@ input::-webkit-inner-spin-button {
   .slider .slider__element .slider__content .content__text {
     font-size: calc(22px - 6 * (1920px - 100vw) / 680);
   }
-}/*# sourceMappingURL=slider.css.map */
+}
+
+/*# sourceMappingURL=slider.css.map */

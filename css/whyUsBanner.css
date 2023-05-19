@@ -1,0 +1,378 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1900px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+.background {
+  background-color: #f2f3f4;
+  width: 100%;
+  border-top: 1px solid #e1e2e8;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.ttf?m2in9q");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dostepnosc:before {
+  content: "\e900";
+}
+
+.icon-icon_01:before {
+  content: "\e901";
+}
+
+.icon-icon_02:before {
+  content: "\e902";
+}
+
+.icon-icon_03:before {
+  content: "\e903";
+}
+
+.icon-icon_04:before {
+  content: "\e904";
+}
+
+.icon-icon_05:before {
+  content: "\e905";
+}
+
+.icon-icon_06:before {
+  content: "\e906";
+}
+
+.icon-icon_07:before {
+  content: "\e907";
+}
+
+.icon-icon_08:before {
+  content: "\e908";
+}
+
+.icon-play:before {
+  content: "\e909";
+}
+
+.icon-widok_01:before {
+  content: "\e90a";
+}
+
+.icon-widok_02:before {
+  content: "\e90b";
+}
+
+.icon-wysylka:before {
+  content: "\e90c";
+}
+
+.icon-x:before {
+  content: "\e90d";
+}
+
+.icon-search:before {
+  content: "\e986";
+}
+
+.icon-menu:before {
+  content: "\e9bd";
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/Metropolis-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/Metropolis-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/Metropolis-Medium.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/Metropolis-SemiBold.otf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/Metropolis-Bold.otf");
+  font-weight: 700;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.left,
+.right {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  transition: background-color 0.6s ease;
+  z-index: 10;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.right {
+  right: 0;
+}
+
+.left:hover,
+.right:hover {
+  background-color: #5b5b5b;
+}
+
+.icon-icon_05,
+.icon-icon_04 {
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1900px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1919px) {
+  .left,
+  .right {
+    width: calc(50px - 12 * (1920px - 100vw) / 680);
+    height: calc(50px - 12 * (1920px - 100vw) / 680);
+    font-size: calc(1em - 2 * (1920px - 100vw) / 680);
+  }
+}
+.whyUsBanner {
+  position: relative;
+  width: 100%;
+  height: 595px;
+  background-image: url("../img/img_07.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 50px;
+}
+.whyUsBanner .whyUsBanner__title {
+  position: absolute;
+  height: 141px;
+  width: 100%;
+  color: #ffffff;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%);
+  border-bottom: 1px solid rgba(225, 226, 232, 0.2);
+}
+.whyUsBanner .whyUsBanner__title .whyUsBanner__header {
+  margin: 70px auto 0;
+  font-family: Metropolis;
+  font-weight: 700;
+  font-size: 44px;
+  text-align: center;
+  height: 50px;
+}
+.whyUsBanner .whyUsBanner__title .underline {
+  margin: 0 auto;
+  width: 60px;
+  height: 3px;
+  background-color: #f74137;
+  margin-top: 20px;
+}
+.whyUsBanner .shadow-bg {
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  z-index: 1;
+  background-color: rgba(0, 9, 62, 0.2);
+  width: 100%;
+}
+.whyUsBanner .whyUsBanner__description {
+  position: absolute;
+  width: 1020px;
+  height: 82px;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%);
+  z-index: 1;
+}
+.whyUsBanner .whyUsBanner__description .whyUsBanner__description--text {
+  position: absolute;
+  font-family: Metropolis;
+  font-weight: 300;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  opacity: 90%;
+  letter-spacing: -0.36px;
+  line-height: 1.2;
+}
+.whyUsBanner .whyUsBanner__item--wrapper {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  left: 50%;
+  top: 46%;
+  transform: translate(-50%);
+  z-index: 1;
+}
+.whyUsBanner .whyUsBanner__item--wrapper .whyUsBanner__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 310px;
+  height: 153px;
+  border: 1px solid rgba(225, 226, 232, 0.3);
+}
+.whyUsBanner .whyUsBanner__item--wrapper .whyUsBanner__item .whyUsBanner__item--description {
+  font-family: Metropolis;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 16px;
+}
+.whyUsBanner .whyUsBanner__item--wrapper .whyUsBanner__item .whyUsBanner__item--image {
+  margin-bottom: 8%;
+}
+.whyUsBanner .whyUsBanner__button {
+  cursor: pointer;
+  background-color: #f74137;
+  margin-top: 8%;
+  color: #ffffff;
+  font-family: Metropolis;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  width: 204px;
+  height: 55px;
+  font-size: 14px;
+  position: absolute;
+  width: 246px;
+  left: 50%;
+  top: 77%;
+  transform: translate(-50%);
+  z-index: 1;
+  margin-top: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1919px) {
+  .whyUsBanner .whyUsBanner__title .whyUsBanner__header {
+    font-size: calc(44px - 4 * (1920px - 100vw) / 680);
+  }
+  .whyUsBanner .whyUsBanner__description {
+    width: calc(1020px - 200 * (1920px - 100vw) / 680);
+  }
+  .whyUsBanner .whyUsBanner__description .whyUsBanner__description--text {
+    font-size: calc(18px - 1 * (1920px - 100vw) / 680);
+  }
+  .whyUsBanner .whyUsBanner__item--wrapper .whyUsBanner__item {
+    width: calc(310px - 65 * (1920px - 100vw) / 680);
+    height: calc(153px - 25 * (1920px - 100vw) / 680);
+  }
+  .whyUsBanner .whyUsBanner__item--wrapper .whyUsBanner__item .whyUsBanner__item--description {
+    font-size: calc(16px - 1.7 * (1920px - 100vw) / 680);
+  }
+  .whyUsBanner .whyUsBanner__button {
+    width: calc(246px - 10 * (1920px - 100vw) / 680);
+    height: calc(55px - 5 * (1920px - 100vw) / 680);
+    top: calc(77% - 15 * (1920px - 100vw) / 680);
+  }
+}
+@media (max-width: 767px) {
+  .whyUsBanner {
+    background-image: url("../img/img_02.jpg");
+  }
+  .whyUsBanner .whyUsBanner__title .whyUsBanner__header {
+    margin: 0 15px;
+    font-size: calc(44px - 20 * (767px - 100vw) / 680);
+    margin-top: calc(60px - 5 * (767px - 100vw) / 680);
+  }
+  .whyUsBanner .whyUsBanner__title .underline {
+    margin-top: 30px;
+  }
+  .whyUsBanner .whyUsBanner__description {
+    display: none;
+    top: calc(28% - 5 * (767px - 100vw) / 680);
+    width: calc(555px - 400 * (767px - 100vw) / 680);
+  }
+  .whyUsBanner .whyUsBanner__description .whyUsBanner__description--text {
+    font-size: calc(18px - 9 * (767px - 100vw) / 680);
+  }
+  .whyUsBanner .whyUsBanner__item--wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    top: calc(30% - 20 * (767px - 100vw) / 680);
+  }
+  .whyUsBanner .whyUsBanner__item--wrapper .whyUsBanner__item {
+    width: calc(230px - 135 * (767px - 100vw) / 680);
+    height: calc(115px - 25 * (767px - 100vw) / 680);
+  }
+  .whyUsBanner .whyUsBanner__item--wrapper .whyUsBanner__item .whyUsBanner__item--description {
+    font-size: calc(16px - 8 * (767px - 100vw) / 680);
+  }
+  .whyUsBanner .whyUsBanner__item--wrapper .whyUsBanner__item--third {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .whyUsBanner .whyUsBanner__button {
+    width: calc(246px - 50 * (767px - 100vw) / 680);
+    height: calc(55px - 25 * (767px - 100vw) / 680);
+    font-size: calc(14px - 4 * (767px - 100vw) / 680);
+  }
+}
+@media (max-width: 350px) {
+  .whyUsBanner .whyUsBanner__item--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .whyUsBanner .whyUsBanner__button {
+    top: 87%;
+  }
+}
+
+/*# sourceMappingURL=whyUsBanner.css.map */

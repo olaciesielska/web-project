@@ -65,3 +65,9 @@
     });
   });
 })();
+
+/* let right_arrow = document.querySelector(".productsSlider_rightArrow");
+let slides = document.querySelector(".productsSlider__slider");
+right_arrow.addEventListener("click", function () {
+  slides.style.gridTemplateAreas = '"b c d e"';
+}); */

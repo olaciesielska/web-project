@@ -1,0 +1,216 @@
+@use "colors" as c;
+@use "settings" as s;
+
+.whyUsBanner {
+  position: relative;
+  width: 100%;
+  height: 595px;
+  background-image: url("../img/img_07.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 50px;
+
+  .whyUsBanner__title {
+    position: absolute;
+    height: 141px;
+    width: 100%;
+    color: c.$white;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%);
+    border-bottom: 1px solid rgba(c.$light-gray, $alpha: 0.2);
+
+    .whyUsBanner__header {
+      margin: 70px auto 0;
+      font-family: Metropolis;
+      font-weight: 700;
+      font-size: 44px;
+      text-align: center;
+      height: 50px;
+    }
+
+    .underline {
+      margin: 0 auto;
+      width: 60px;
+      height: 3px;
+      background-color: c.$red;
+      margin-top: 20px;
+    }
+  }
+
+  .shadow-bg {
+    @include s.shadow;
+    background-color: c.$shadow;
+    width: 100%;
+  }
+
+  .whyUsBanner__description {
+    position: absolute;
+    width: 1020px;
+    height: 82px;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%);
+    z-index: 1;
+
+    .whyUsBanner__description--text {
+      position: absolute;
+      font-family: Metropolis;
+      font-weight: 300;
+      font-size: 18px;
+      color: c.$white;
+      text-align: center;
+      opacity: 90%;
+      letter-spacing: -0.36px;
+      line-height: 1.2;
+    }
+  }
+
+  .whyUsBanner__item--wrapper {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    left: 50%;
+    top: 46%;
+    transform: translate(-50%);
+    z-index: 1;
+
+    .whyUsBanner__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 310px;
+      height: 153px;
+      border: 1px solid rgba(c.$light-gray, $alpha: 0.3);
+
+      .whyUsBanner__item--description {
+        font-family: Metropolis;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: c.$white;
+        font-size: 16px;
+      }
+
+      .whyUsBanner__item--image {
+        margin-bottom: 8%;
+      }
+    }
+  }
+
+  .whyUsBanner__button {
+    @include s.button;
+    position: absolute;
+    width: 246px;
+    left: 50%;
+    top: 77%;
+    transform: translate(-50%);
+    z-index: 1;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1919px) {
+  .whyUsBanner {
+    .whyUsBanner__title {
+      .whyUsBanner__header {
+        font-size: calc(44px - 4 * ((1920px - 100vw) / 680));
+      }
+    }
+
+    .whyUsBanner__description {
+      width: calc(1020px - 200 * ((1920px - 100vw) / 680));
+
+      .whyUsBanner__description--text {
+        font-size: calc(18px - 1 * ((1920px - 100vw) / 680));
+      }
+    }
+
+    .whyUsBanner__item--wrapper {
+      .whyUsBanner__item {
+        width: calc(310px - 65 * ((1920px - 100vw) / 680));
+        height: calc(153px - 25 * ((1920px - 100vw) / 680));
+        .whyUsBanner__item--description {
+          font-size: calc(16px - 1.7 * ((1920px - 100vw) / 680));
+        }
+      }
+    }
+
+    .whyUsBanner__button {
+      width: calc(246px - 10 * ((1920px - 100vw) / 680));
+      height: calc(55px - 5 * ((1920px - 100vw) / 680));
+      top: calc(77% - 15 * ((1920px - 100vw) / 680));
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .whyUsBanner {
+    background-image: url("../img/img_02.jpg");
+
+    .whyUsBanner__title {
+      .whyUsBanner__header {
+        margin: 0 15px;
+        font-size: calc(44px - 20 * ((767px - 100vw) / 680));
+        margin-top: calc(60px - 5 * ((767px - 100vw) / 680));
+      }
+
+      .underline {
+        margin-top: 30px;
+      }
+    }
+
+    .whyUsBanner__description {
+      display: none;
+      top: calc(28% - 5 * ((767px - 100vw) / 680));
+      width: calc(555px - 400 * ((767px - 100vw) / 680));
+
+      .whyUsBanner__description--text {
+        font-size: calc(18px - 9 * ((767px - 100vw) / 680));
+      }
+    }
+
+    .whyUsBanner__item--wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      top: calc(30% - 20 * ((767px - 100vw) / 680));
+
+      .whyUsBanner__item {
+        width: calc(230px - 135 * ((767px - 100vw) / 680));
+        height: calc(115px - 25 * ((767px - 100vw) / 680));
+
+        .whyUsBanner__item--description {
+          font-size: calc(16px - 8 * ((767px - 100vw) / 680));
+        }
+      }
+
+      .whyUsBanner__item--third {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+      }
+    }
+
+    .whyUsBanner__button {
+      width: calc(246px - 50 * ((767px - 100vw) / 680));
+      height: calc(55px - 25 * ((767px - 100vw) / 680));
+      font-size: calc(14px - 4 * ((767px - 100vw) / 680));
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .whyUsBanner {
+    .whyUsBanner__item--wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .whyUsBanner__button {
+      top: 87%;
+    }
+  }
+}
