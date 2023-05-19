@@ -187,8 +187,7 @@ input::-webkit-inner-spin-button {
   position: relative;
   padding-top: 30px;
   width: 100%;
-  height: 851px;
-  padding-bottom: 50px;
+  height: 790px;
 }
 .productsSlider .productsSlider__title {
   height: 71px;
@@ -207,7 +206,6 @@ input::-webkit-inner-spin-button {
   width: 60px;
   height: 3px;
   background-color: #f74137;
-  bottom: 0;
   margin-top: 17px;
 }
 .productsSlider .productsSlider__wrapper {
@@ -331,25 +329,28 @@ input::-webkit-inner-spin-button {
   background-color: #323940;
 }
 .productsSlider .productsSlider__button {
-  position: absolute;
-  margin: 2.5rem auto;
+  cursor: pointer;
   background-color: #f74137;
+  margin-top: 8%;
+  color: #ffffff;
+  font-family: Metropolis;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  width: 204px;
+  height: 55px;
+  font-size: 14px;
+  position: absolute;
+  margin-top: 2rem;
   width: 318px;
   height: 55px;
   left: 50%;
   transform: translate(-50%);
-  border: none;
-  text-transform: uppercase;
-  color: #ffffff;
-  font-size: 14px;
-  font-family: Metropolis;
-  font-weight: 700;
-  cursor: pointer;
 }
 
 @media (max-width: 767px) {
   .productsSlider {
-    height: calc(900px - 300 * (767px - 100vw) / 680);
+    height: calc(800px - 250 * (767px - 100vw) / 680);
   }
   .productsSlider .productsSlider__button {
     width: calc(318px - 130 * (767px - 100vw) / 680);
@@ -431,7 +432,7 @@ input::-webkit-inner-spin-button {
 }
 @media (min-width: 768px) and (max-width: 1919px) {
   .productsSlider {
-    height: calc(851px - 150 * (1920px - 100vw) / 680);
+    height: calc(790px - 130 * (1920px - 100vw) / 680);
   }
   .productsSlider .productsSlider__button {
     width: calc(318px - 20 * (1920px - 100vw) / 680);
@@ -579,4 +580,6 @@ input::-webkit-inner-spin-button {
   .productsSlider .productsSlider__wrapper .productsSlider__slider .productsSlider__item:hover .productsSlider__item--basket-icon {
     display: flex;
   }
-}/*# sourceMappingURL=productsSlider.css.map */
+}
+
+/*# sourceMappingURL=productsSlider.css.map */
