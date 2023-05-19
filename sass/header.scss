@@ -237,7 +237,7 @@ header {
               font-weight: 300;
               white-space: nowrap;
               margin-top: 0.4rem;
-              font-size: calc(15px - 12 * ((767px - 100vw) / 680));
+              font-size: calc(15px - 10 * ((767px - 100vw) / 680));
             }
 
             .menu__icon {
