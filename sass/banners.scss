@@ -78,14 +78,14 @@
     .banners__wrapper {
       .banner__element {
         .banner__button {
-          width: calc(204px - 55 * ((1920px - 100vw) / 680));
-          height: calc(55px - 15 * ((1920px - 100vw) / 680));
-          font-size: calc(14px - 3 * ((1920px - 100vw) / 680));
-          margin-top: 1.2em;
+          width: s.$responsiveButtonWidth;
+          height: s.$responsiveButtonHeight;
+          font-size: s.$responsiveButtonFontSize;
+          margin-top: 4%;
         }
 
         .banner__text {
-          font-size: calc(44px - 17 * ((1920px - 100vw) / 680));
+          font-size: calc(44px - 15 * s.$responsiveCalc);
         }
       }
     }
@@ -126,14 +126,15 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: calc(16px - 11 * (767px - 100vw) / 680);
-            width: calc(15em - 25 * ((767px - 100vw) / 680));
-            height: calc(4em - 8 * ((767px - 100vw) / 680));
+            font-size: calc(16px - 11 * s.$mobileCalc);
+            width: calc(15em - 25 * s.$mobileCalc);
+            height: calc(4em - 8 * s.$mobileCalc);
             background-color: c.$red;
             border: none;
           }
         }
       }
+
       .banner__element:hover .banner__element-image {
         transform: none;
       }

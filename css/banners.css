@@ -260,13 +260,13 @@ input::-webkit-inner-spin-button {
 }
 @media (min-width: 768px) and (max-width: 1919px) {
   .banners .banners__wrapper .banner__element .banner__button {
-    width: calc(204px - 55 * (1920px - 100vw) / 680);
-    height: calc(55px - 15 * (1920px - 100vw) / 680);
+    width: calc(204px - 50 * (1920px - 100vw) / 680);
+    height: calc(55px - 10 * (1920px - 100vw) / 680);
     font-size: calc(14px - 3 * (1920px - 100vw) / 680);
-    margin-top: 1.2em;
+    margin-top: 4%;
   }
   .banners .banners__wrapper .banner__element .banner__text {
-    font-size: calc(44px - 17 * (1920px - 100vw) / 680);
+    font-size: calc(44px - 15 * (1920px - 100vw) / 680);
   }
 }
 @media (max-width: 767px) {

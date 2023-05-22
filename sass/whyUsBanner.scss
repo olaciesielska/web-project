@@ -9,7 +9,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-bottom: 50px;
 
   .whyUsBanner__title {
     position: absolute;
@@ -19,7 +18,7 @@
     z-index: 1;
     left: 50%;
     transform: translate(-50%);
-    border-bottom: 1px solid rgba(c.$light-gray, $alpha: 0.2);
+    border-bottom: 1px solid rgba(c.$light-gray, 0.2);
 
     .whyUsBanner__header {
       margin: 70px auto 0;
@@ -117,32 +116,32 @@
   .whyUsBanner {
     .whyUsBanner__title {
       .whyUsBanner__header {
-        font-size: calc(44px - 4 * ((1920px - 100vw) / 680));
+        font-size: calc(44px - 4 * s.$responsiveCalc);
       }
     }
 
     .whyUsBanner__description {
-      width: calc(1020px - 200 * ((1920px - 100vw) / 680));
+      width: calc(1020px - 200 * s.$responsiveCalc);
 
       .whyUsBanner__description--text {
-        font-size: calc(18px - 1 * ((1920px - 100vw) / 680));
+        font-size: calc(18px - 1 * s.$responsiveCalc);
       }
     }
 
     .whyUsBanner__item--wrapper {
       .whyUsBanner__item {
-        width: calc(310px - 65 * ((1920px - 100vw) / 680));
-        height: calc(153px - 25 * ((1920px - 100vw) / 680));
+        width: calc(310px - 65 * s.$responsiveCalc);
+        height: calc(153px - 25 * s.$responsiveCalc);
         .whyUsBanner__item--description {
-          font-size: calc(16px - 1.7 * ((1920px - 100vw) / 680));
+          font-size: calc(16px - 1.7 * s.$responsiveCalc);
         }
       }
     }
 
     .whyUsBanner__button {
-      width: calc(246px - 10 * ((1920px - 100vw) / 680));
-      height: calc(55px - 5 * ((1920px - 100vw) / 680));
-      top: calc(77% - 15 * ((1920px - 100vw) / 680));
+      width: calc(246px - 10 * s.$responsiveCalc);
+      height: calc(55px - 5 * s.$responsiveCalc);
+      top: calc(77% - 15 * s.$responsiveCalc);
     }
   }
 }
@@ -154,8 +153,8 @@
     .whyUsBanner__title {
       .whyUsBanner__header {
         margin: 0 15px;
-        font-size: calc(44px - 20 * ((767px - 100vw) / 680));
-        margin-top: calc(60px - 5 * ((767px - 100vw) / 680));
+        font-size: calc(44px - 20 * s.$mobileCalc);
+        margin-top: calc(60px - 5 * s.$mobileCalc);
       }
 
       .underline {
@@ -165,11 +164,11 @@
 
     .whyUsBanner__description {
       display: none;
-      top: calc(28% - 5 * ((767px - 100vw) / 680));
-      width: calc(555px - 400 * ((767px - 100vw) / 680));
+      top: calc(28% - 5 * s.$mobileCalc);
+      width: calc(555px - 400 * s.$mobileCalc);
 
       .whyUsBanner__description--text {
-        font-size: calc(18px - 9 * ((767px - 100vw) / 680));
+        font-size: calc(18px - 9 * s.$mobileCalc);
       }
     }
 
@@ -177,14 +176,14 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 15px;
-      top: calc(30% - 20 * ((767px - 100vw) / 680));
+      top: calc(30% - 20 * s.$mobileCalc);
 
       .whyUsBanner__item {
-        width: calc(230px - 135 * ((767px - 100vw) / 680));
-        height: calc(115px - 25 * ((767px - 100vw) / 680));
+        width: calc(230px - 135 * s.$mobileCalc);
+        height: calc(115px - 25 * s.$mobileCalc);
 
         .whyUsBanner__item--description {
-          font-size: calc(16px - 8 * ((767px - 100vw) / 680));
+          font-size: calc(16px - 8 * s.$mobileCalc);
         }
       }
 
@@ -196,9 +195,9 @@
     }
 
     .whyUsBanner__button {
-      width: calc(246px - 50 * ((767px - 100vw) / 680));
-      height: calc(55px - 25 * ((767px - 100vw) / 680));
-      font-size: calc(14px - 4 * ((767px - 100vw) / 680));
+      width: calc(246px - 50 * s.$mobileCalc);
+      height: calc(55px - 25 * s.$mobileCalc);
+      font-size: calc(14px - 4 * s.$mobileCalc);
     }
   }
 }

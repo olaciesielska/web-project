@@ -125,7 +125,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: calc(1em - 12 * ((767px - 100vw) / 680));
+        font-size: calc(1em - 12 * s.$mobileCalc);
         top: 50%;
       }
     }
@@ -147,12 +147,12 @@
       }
 
       .slider__content {
-        font-size: calc(52px - 42 * ((767px - 100vw) / 680));
+        font-size: calc(52px - 42 * s.$mobileCalc);
         top: 60%;
         left: 8%;
 
         .content__text {
-          font-size: calc(24px - 19 * ((767px - 100vw) / 680));
+          font-size: calc(24px - 19 * s.$mobileCalc);
           left: 0;
           padding-top: 0.25rem;
         }
@@ -162,10 +162,10 @@
         display: none;
         align-items: center;
         justify-content: center;
-        width: calc(14em - 20 * ((767px - 100vw) / 680));
-        height: calc(4em - 10 * ((767px - 100vw) / 680));
-        font-size: calc(14px - 10 * ((767px - 100vw) / 680));
-        bottom: calc(2em - 30 * ((767px - 100vw) / 680));
+        width: calc(14em - 20 * s.$mobileCalc);
+        height: calc(4em - 10 * s.$mobileCalc);
+        font-size: calc(14px - 10 * s.$mobileCalc);
+        bottom: calc(2em - 30 * s.$mobileCalc);
       }
     }
   }
@@ -175,18 +175,18 @@
   .slider {
     .slider__element {
       .shadow-bg {
-        height: calc(100% - 0.7 * ((1920px - 100vw) / 680));
+        height: calc(100% - 0.7 * s.$responsiveCalc);
       }
       .slider__content {
-        font-size: calc(44px - 12 * ((1920px - 100vw) / 680));
+        font-size: calc(44px - 12 * s.$responsiveCalc);
 
         .banner__button {
-          width: calc(204px - 50 * ((1920px - 100vw) / 680));
-          height: calc(55px - 10 * ((1920px - 100vw) / 680));
-          font-size: calc(14px - 3 * ((1920px - 100vw) / 680));
+          width: s.$responsiveButtonWidth;
+          height: s.$responsiveButtonHeight;
+          font-size: s.$responsiveButtonFontSize;
         }
         .content__text {
-          font-size: calc(22px - 6 * ((1920px - 100vw) / 680));
+          font-size: calc(22px - 6 * s.$responsiveCalc);
         }
       }
     }

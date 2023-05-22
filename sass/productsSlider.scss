@@ -219,7 +219,7 @@
         }
 
         .productsSlider__item {
-          width: calc(480px - 290 * ((767px - 100vw) / 680));
+          width: calc(480px - 305 * ((767px - 100vw) / 680));
           height: calc(540px - 250 * ((767px - 100vw) / 680));
           position: absolute;
           left: 50%;
@@ -320,8 +320,8 @@
             }
           }
           .productsSlider__item--image {
-            width: calc(270px - 80 * ((1920px - 100vw) / 680));
-            height: calc(270px - 80 * ((1920px - 100vw) / 680));
+            width: calc(280px - 80 * ((1920px - 100vw) / 680));
+            height: calc(280px - 80 * ((1920px - 100vw) / 680));
             top: calc(33% - 15 * ((1920px - 100vw) / 680));
           }
         }
