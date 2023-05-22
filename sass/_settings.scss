@@ -23,6 +23,15 @@
   border-top: 1px solid c.$light-gray;
 }
 
+$mobileCalc: calc((767px - 100vw) / 680);
+$mobileMenuLinkNavigation: calc(16px - 8 * ((767px - 100vw) / 680));
+$mobileMenuCaption: calc(15px - 10 * ((767px - 100vw) / 680));
+
+$responsiveCalc: calc((1920px - 100vw) / 680);
+$responsiveButtonWidth: calc(204px - 50 * ((1920px - 100vw) / 680));
+$responsiveButtonHeight: calc(55px - 10 * ((1920px - 100vw) / 680));
+$responsiveButtonFontSize: calc(14px - 3 * ((1920px - 100vw) / 680));
+
 @mixin shadow {
   position: absolute;
   width: 70%;

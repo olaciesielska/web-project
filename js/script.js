@@ -1,4 +1,19 @@
 (() => {
+  let menu_elements = document.querySelector(".menu__bottom-wrapper");
+  let menu_burger = document.querySelector(".menu__item--burger");
+
+  function showMenu() {
+    if (menu_elements.style.display === "block") {
+      menu_elements.style.display = "none";
+    } else {
+      menu_elements.style.display = "block";
+    }
+  }
+
+  menu_burger.addEventListener("click", showMenu);
+})();
+
+(() => {
   const slides = document.querySelectorAll(".slider__element");
   let slide_index = 1;
 
