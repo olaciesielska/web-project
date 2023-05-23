@@ -22,7 +22,7 @@
       font-family: Metropolis;
       font-weight: 300;
       color: c.$white;
-      top: 25%;
+      top: 30%;
       left: 7%;
       font-size: 44px;
       z-index: 2;
@@ -36,7 +36,7 @@
 
       .content__text {
         position: absolute;
-        padding-top: 0.5rem;
+        padding-top: 0.7em;
         text-align: left;
         font-family: Metropolis;
         font-size: 22px;
@@ -55,13 +55,17 @@
     @include s.button;
     position: absolute;
     bottom: 0;
+    transition: background-color 0.25s;
+  }
+  .banner__button:hover {
+    background-color: c.$dark-red;
   }
 }
 
 .left,
 .right {
   position: absolute;
-  top: 53%;
+  top: 50%;
   padding: 0.7em;
   margin-top: -22px;
   background-color: c.$light-gray;

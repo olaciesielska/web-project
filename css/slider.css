@@ -202,7 +202,7 @@ input::-webkit-inner-spin-button {
   font-family: Metropolis;
   font-weight: 300;
   color: #ffffff;
-  top: 25%;
+  top: 30%;
   left: 7%;
   font-size: 44px;
   z-index: 2;
@@ -215,7 +215,7 @@ input::-webkit-inner-spin-button {
 }
 .slider .slider__element .slider__content .content__text {
   position: absolute;
-  padding-top: 0.5rem;
+  padding-top: 0.7em;
   text-align: left;
   font-family: Metropolis;
   font-size: 22px;
@@ -244,12 +244,16 @@ input::-webkit-inner-spin-button {
   font-size: 14px;
   position: absolute;
   bottom: 0;
+  transition: background-color 0.25s;
+}
+.slider .banner__button:hover {
+  background-color: #b90f06;
 }
 
 .left,
 .right {
   position: absolute;
-  top: 53%;
+  top: 50%;
   padding: 0.7em;
   margin-top: -22px;
   background-color: #e1e2e8;
