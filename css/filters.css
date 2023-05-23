@@ -1,0 +1,218 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1900px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+.background {
+  background-color: #f2f3f4;
+  width: 100%;
+  border-top: 1px solid #e1e2e8;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.ttf?m2in9q");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dostepnosc:before {
+  content: "\e900";
+}
+
+.icon-icon_01:before {
+  content: "\e901";
+}
+
+.icon-icon_02:before {
+  content: "\e902";
+}
+
+.icon-icon_03:before {
+  content: "\e903";
+}
+
+.icon-icon_04:before {
+  content: "\e904";
+}
+
+.icon-icon_05:before {
+  content: "\e905";
+}
+
+.icon-icon_06:before {
+  content: "\e906";
+}
+
+.icon-icon_07:before {
+  content: "\e907";
+}
+
+.icon-icon_08:before {
+  content: "\e908";
+}
+
+.icon-play:before {
+  content: "\e909";
+}
+
+.icon-widok_01:before {
+  content: "\e90a";
+}
+
+.icon-widok_02:before {
+  content: "\e90b";
+}
+
+.icon-wysylka:before {
+  content: "\e90c";
+}
+
+.icon-x:before {
+  content: "\e90d";
+}
+
+.icon-search:before {
+  content: "\e986";
+}
+
+.icon-menu:before {
+  content: "\e9bd";
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/Metropolis-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/Metropolis-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/Metropolis-Medium.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/Metropolis-SemiBold.otf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("../fonts/Metropolis-Bold.otf");
+  font-weight: 700;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.left,
+.right {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  transition: background-color 0.6s ease;
+  z-index: 10;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.right {
+  right: 0;
+}
+
+.left:hover,
+.right:hover {
+  background-color: #5b5b5b;
+}
+
+.icon-icon_05,
+.icon-icon_04 {
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1900px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1919px) {
+  .left,
+  .right {
+    width: calc(50px - 12 * (1920px - 100vw) / 680);
+    height: calc(50px - 12 * (1920px - 100vw) / 680);
+    font-size: calc(1em - 2 * (1920px - 100vw) / 680);
+  }
+}
+.main__wrapper {
+  display: flex;
+}
+
+.filters {
+  position: relative;
+}
+.filters__wrapper {
+  width: 300px;
+  margin-bottom: 22px;
+}
+.filters__wrapper .filters__item--list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.filters__wrapper .filters__item--list .filters__item {
+  display: flex;
+  font-family: Metropolis;
+  text-transform: uppercase;
+  font-size: 14px;
+  height: 60px;
+  border: 1px solid #e1e2e8;
+  align-items: center;
+  padding-left: 17px;
+}
+.filters__wrapper .filters__item--list .filters__item--title {
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #f74137;
+}
+
+/*# sourceMappingURL=filters.css.map */

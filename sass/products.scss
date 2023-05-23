@@ -1,0 +1,32 @@
+@use "colors" as c;
+@use "settings" as s;
+
+.products {
+  position: relative;
+  height: 500px;
+  font-family: Metropolis;
+  color: c.$black;
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-color: c.$lighter-gray;
+    width: 1530px;
+    height: 55px;
+    right: 10px;
+
+    &--item {
+      display: flex;
+      justify-content: space-between;
+      width: 124px;
+      font-size: 12px;
+      font-weight: 400;
+      padding-left: 15px;
+
+      .icon-widok_01 {
+        opacity: 20%;
+      }
+    }
+  }
+}

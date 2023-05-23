@@ -1,0 +1,116 @@
+@use "colors" as c;
+@use "settings" as s;
+
+.introduction {
+  position: relative;
+  flex: 1;
+  font-family: Metropolis;
+  color: c.$black;
+  padding-left: 30px;
+  margin-bottom: 10px;
+
+  &__wrapper {
+    .introduction__title {
+      font-size: 44px;
+      font-weight: 700;
+    }
+
+    .introduction__fieldset {
+      position: relative;
+      border: none;
+      border-bottom: 1px solid c.$light-gray;
+      margin-bottom: 21.5px;
+
+      .introduction__description {
+        height: 61px;
+        margin-top: 18.5px;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      &--legend {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translate(5%, 50%);
+        padding: 0 10px;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 700;
+        background-color: c.$white;
+      }
+    }
+
+    .introduction__item--wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 10px;
+
+      .introduction__item {
+        display: flex;
+        align-items: center;
+        height: 80px;
+        border: 1px solid c.$light-gray;
+
+        &--imageWrapper {
+          position: relative;
+          width: 33%;
+          height: 100%;
+          border-right: 1px solid c.$light-gray;
+
+          .introduction__item--image {
+            position: absolute;
+            width: 35px;
+            height: 58.5px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+
+        .introduction__item--description {
+          font-weight: 400;
+          font-size: 14px;
+          padding-left: 15px;
+        }
+
+        &:nth-child(2) {
+          .introduction__item--imageWrapper {
+            border-bottom: 2px solid c.$red;
+          }
+        }
+      }
+    }
+
+    .introduction__banner {
+      margin-top: 20px;
+
+      &--image {
+        position: relative;
+
+        .shadow-bg {
+          @include s.shadow;
+          position: absolute;
+          bottom: 1px;
+        }
+
+        .introduction__banner--description {
+          position: absolute;
+          color: c.$white;
+          font-size: 44px;
+          top: 27%;
+          left: 4%;
+          z-index: 1;
+
+          .introduction__banner--descriptionBold {
+            font-weight: 700;
+          }
+
+          .introduction__button {
+            @include s.button;
+          }
+        }
+      }
+    }
+  }
+}

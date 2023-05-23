@@ -333,6 +333,24 @@ header {
   text-align: center;
 }
 
+.categories {
+  position: relative;
+  height: 50px;
+}
+.categories__list {
+  position: absolute;
+  display: flex;
+  list-style: none;
+  font-family: Metropolis;
+  font-weight: 400;
+  font-size: 14px;
+  gap: 35px;
+  bottom: 30%;
+}
+.categories__list--item {
+  color: #111111;
+}
+
 @media (max-width: 767px) {
   .menu__bottom-wrapper {
     display: none;
