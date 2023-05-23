@@ -1,6 +1,6 @@
 (() => {
-  let menu_elements = document.querySelector(".menu__bottom-wrapper");
-  let menu_burger = document.querySelector(".menu__item--burger");
+  const menu_elements = document.querySelector(".menu__bottom-wrapper");
+  const menu_burger = document.querySelector(".menu__item--burger");
 
   function showMenu() {
     if (menu_elements.style.display === "block") {
@@ -77,6 +77,24 @@
 
     plus_buttons[index].addEventListener("click", () => {
       changeValue(1);
+    });
+  });
+})();
+
+(() => {
+  const arrows = document.querySelectorAll(".footer__arrow");
+
+  arrows.forEach((arrow) => {
+    arrow.addEventListener("click", () => {
+      arrow.classList.toggle("rotate");
+      const parentItem = arrow.parentNode;
+      const siblings = Array.from(parentItem.parentNode.children);
+
+      siblings.forEach((sibling) => {
+        if (sibling !== parentItem) {
+          sibling.classList.toggle("visible");
+        }
+      });
     });
   });
 })();
