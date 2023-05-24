@@ -99,8 +99,28 @@
   });
 })();
 
-/* let right_arrow = document.querySelector(".productsSlider_rightArrow");
-let slides = document.querySelector(".productsSlider__slider");
-right_arrow.addEventListener("click", function () {
-  slides.style.gridTemplateAreas = '"b c d e"';
-}); */
+(() => {
+  const right_arrow = document.querySelector(".productsSlider_rightArrow");
+  const left_arrow = document.querySelector(".productsSlider_leftArrow");
+  const productContainer = document.querySelectorAll(".productsSlider__slider");
+  const productItem = document.querySelector(".productsSlider__item");
+  let productItemRect = getProductItemRect();
+
+  function getProductItemRect() {
+    return productItem.getBoundingClientRect().width;
+  }
+
+  window.addEventListener("resize", () => {
+    productItemRect = getProductItemRect();
+  });
+
+  productContainer.forEach((item) => {
+    right_arrow.addEventListener("click", () => {
+      item.scrollLeft += productItemRect + 20;
+    });
+
+    left_arrow.addEventListener("click", () => {
+      item.scrollLeft -= productItemRect + 20;
+    });
+  });
+})();

@@ -233,7 +233,7 @@ input::-webkit-inner-spin-button {
   width: 1020px;
   height: 82px;
   left: 50%;
-  top: 35%;
+  top: 30%;
   transform: translate(-50%);
   z-index: 1;
 }
@@ -255,7 +255,7 @@ input::-webkit-inner-spin-button {
   justify-content: center;
   gap: 30px;
   left: 50%;
-  top: 52%;
+  top: 45%;
   transform: translate(-50%);
   z-index: 1;
 }
