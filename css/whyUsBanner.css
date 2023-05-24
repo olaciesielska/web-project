@@ -232,7 +232,7 @@ input::-webkit-inner-spin-button {
   width: 1020px;
   height: 82px;
   left: 50%;
-  top: 30%;
+  top: 35%;
   transform: translate(-50%);
   z-index: 1;
 }
@@ -254,7 +254,7 @@ input::-webkit-inner-spin-button {
   justify-content: center;
   gap: 30px;
   left: 50%;
-  top: 46%;
+  top: 52%;
   transform: translate(-50%);
   z-index: 1;
 }
@@ -292,7 +292,7 @@ input::-webkit-inner-spin-button {
   position: absolute;
   width: 246px;
   left: 50%;
-  top: 77%;
+  top: 80%;
   transform: translate(-50%);
   z-index: 1;
   margin-top: 0;
@@ -322,7 +322,7 @@ input::-webkit-inner-spin-button {
   .whyUsBanner .whyUsBanner__button {
     width: calc(246px - 10 * (1920px - 100vw) / 680);
     height: calc(55px - 5 * (1920px - 100vw) / 680);
-    top: calc(77% - 15 * (1920px - 100vw) / 680);
+    top: calc(80% - 10 * (1920px - 100vw) / 680);
   }
 }
 @media (max-width: 767px) {
@@ -338,6 +338,7 @@ input::-webkit-inner-spin-button {
     margin-top: 30px;
   }
   .whyUsBanner .whyUsBanner__description {
+    top: 30%;
     width: calc(555px - 400 * (767px - 100vw) / 680);
   }
   .whyUsBanner .whyUsBanner__description .whyUsBanner__description--text {
@@ -358,7 +359,7 @@ input::-webkit-inner-spin-button {
     border: none;
   }
   .whyUsBanner .whyUsBanner__item--wrapper .whyUsBanner__item .whyUsBanner__item--description {
-    font-size: calc(16px - 8 * (767px - 100vw) / 680);
+    font-size: calc(16px - 6 * (767px - 100vw) / 680);
     white-space: nowrap;
   }
   .whyUsBanner .whyUsBanner__item--wrapper .whyUsBanner__item:not(:last-child) {

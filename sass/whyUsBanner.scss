@@ -50,7 +50,7 @@
     width: 1020px;
     height: 82px;
     left: 50%;
-    top: 30%;
+    top: 35%;
     transform: translate(-50%);
     z-index: 1;
 
@@ -74,7 +74,7 @@
     justify-content: center;
     gap: 30px;
     left: 50%;
-    top: 46%;
+    top: 52%;
     transform: translate(-50%);
     z-index: 1;
 
@@ -106,7 +106,7 @@
     position: absolute;
     width: 246px;
     left: 50%;
-    top: 77%;
+    top: 80%;
     transform: translate(-50%);
     z-index: 1;
     margin-top: 0;
@@ -146,7 +146,7 @@
     .whyUsBanner__button {
       width: calc(246px - 10 * s.$responsiveCalc);
       height: calc(55px - 5 * s.$responsiveCalc);
-      top: calc(77% - 15 * s.$responsiveCalc);
+      top: calc(80% - 10 * s.$responsiveCalc);
     }
   }
 }
@@ -168,6 +168,7 @@
     }
 
     .whyUsBanner__description {
+      top: 30%;
       width: calc(555px - 400 * s.$mobileCalc);
 
       .whyUsBanner__description--text {
@@ -190,7 +191,7 @@
         border: none;
 
         .whyUsBanner__item--description {
-          font-size: calc(16px - 8 * s.$mobileCalc);
+          font-size: calc(16px - 6 * s.$mobileCalc);
           white-space: nowrap;
         }
       }
