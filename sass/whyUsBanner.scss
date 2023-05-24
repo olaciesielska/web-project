@@ -10,6 +10,7 @@
   background-size: cover;
   background-position: center;
   object-fit: contain;
+  margin-top: 40px;
 
   .whyUsBanner__title {
     position: absolute;
@@ -154,6 +155,7 @@
 @media (max-width: 767px) {
   .whyUsBanner {
     background-image: url("../img/img_02.jpg");
+    margin-top: 10px;
 
     .whyUsBanner__title {
       .whyUsBanner__header {

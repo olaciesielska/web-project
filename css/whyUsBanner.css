@@ -192,6 +192,7 @@ input::-webkit-inner-spin-button {
   background-size: cover;
   background-position: center;
   object-fit: contain;
+  margin-top: 40px;
 }
 .whyUsBanner .whyUsBanner__title {
   position: absolute;
@@ -328,6 +329,7 @@ input::-webkit-inner-spin-button {
 @media (max-width: 767px) {
   .whyUsBanner {
     background-image: url("../img/img_02.jpg");
+    margin-top: 10px;
   }
   .whyUsBanner .whyUsBanner__title .whyUsBanner__header {
     margin: 0 15px;
