@@ -16,6 +16,7 @@
       display: flex;
       flex-direction: column;
       list-style: none;
+      border: 1px solid c.$light-gray;
 
       .filters__item {
         display: flex;
@@ -26,12 +27,68 @@
         border: 1px solid c.$light-gray;
         align-items: center;
         padding-left: 17px;
+        transition: font-weight 0.2s;
+      }
+
+      .filters__item:hover {
+        font-weight: 700;
       }
 
       .filters__item--title {
         font-weight: 700;
         font-size: 15px;
         border-bottom: 2px solid c.$red;
+      }
+
+      .filters__item--bottomTitle {
+        border-bottom: 1px solid c.$light-gray;
+        font-weight: 700;
+      }
+
+      .filters__input--description {
+        text-transform: none;
+        margin-left: 1em;
+      }
+
+      .filters__item--bottomCompanyTitle {
+        border: none;
+        font-weight: 700;
+      }
+
+      .filters__item--input {
+        border: none;
+        height: 22px;
+        margin-bottom: 13px;
+      }
+
+      .input__wrapper {
+        position: relative;
+        width: 22px;
+        height: 22px;
+        border: 1px solid c.$light-gray;
+
+        .filters__input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+        }
+
+        .checkmark {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          height: 14px;
+          width: 14px;
+          background-color: #eee;
+          margin-right: 0.5em;
+        }
+      }
+
+      .input__wrapper input:checked ~ .checkmark {
+        background-color: c.$red;
       }
     }
   }

@@ -183,6 +183,10 @@ input::-webkit-inner-spin-button {
     font-size: calc(1em - 2 * (1920px - 100vw) / 680);
   }
 }
+.sections__wrapper {
+  position: relative;
+}
+
 .introduction {
   position: relative;
   flex: 1;
@@ -234,6 +238,7 @@ input::-webkit-inner-spin-button {
   width: 33%;
   height: 100%;
   border-right: 1px solid #e1e2e8;
+  transition: border-bottom 0.075s;
 }
 .introduction__wrapper .introduction__item--wrapper .introduction__item--imageWrapper .introduction__item--image {
   position: absolute;
@@ -248,7 +253,7 @@ input::-webkit-inner-spin-button {
   font-size: 14px;
   padding-left: 15px;
 }
-.introduction__wrapper .introduction__item--wrapper .introduction__item:nth-child(2) .introduction__item--imageWrapper {
+.introduction__wrapper .introduction__item--wrapper .introduction__item:hover .introduction__item--imageWrapper {
   border-bottom: 2px solid #f74137;
 }
 .introduction__wrapper .introduction__banner {
@@ -289,6 +294,10 @@ input::-webkit-inner-spin-button {
   width: 204px;
   height: 55px;
   font-size: 14px;
+  transition: background-color 0.25s;
+}
+.introduction__wrapper .introduction__banner--image .introduction__banner--description .introduction__button:hover {
+  background-color: #c21e16;
 }
 
 /*# sourceMappingURL=introduction.css.map */
