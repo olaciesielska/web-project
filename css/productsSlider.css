@@ -346,6 +346,10 @@ input::-webkit-inner-spin-button {
   height: 55px;
   left: 50%;
   transform: translate(-50%);
+  transition: background-color 0.25s;
+}
+.productsSlider .productsSlider__button:hover {
+  background-color: #c21e16;
 }
 
 @media (max-width: 767px) {
@@ -428,6 +432,9 @@ input::-webkit-inner-spin-button {
     top: calc(28% - 3 * (767px - 100vw) / 680);
     width: calc(270px - 100 * (767px - 100vw) / 680);
     height: calc(270px - 100 * (767px - 100vw) / 680);
+  }
+  .productsSlider .productsSlider__button:hover {
+    background-color: #f74137;
   }
 }
 @media (min-width: 768px) and (max-width: 1919px) {

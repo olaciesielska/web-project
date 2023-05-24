@@ -109,6 +109,10 @@
     transform: translate(-50%);
     z-index: 1;
     margin-top: 0;
+    transition: background-color 0.25s;
+  }
+  .whyUsBanner__button:hover {
+    background-color: c.$dark-red;
   }
 }
 
@@ -198,6 +202,9 @@
       width: calc(246px - 50 * s.$mobileCalc);
       height: calc(55px - 25 * s.$mobileCalc);
       font-size: calc(14px - 4 * s.$mobileCalc);
+    }
+    .whyUsBanner__button:hover {
+      background-color: c.$red;
     }
   }
 }

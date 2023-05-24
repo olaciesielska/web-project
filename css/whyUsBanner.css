@@ -295,6 +295,10 @@ input::-webkit-inner-spin-button {
   transform: translate(-50%);
   z-index: 1;
   margin-top: 0;
+  transition: background-color 0.25s;
+}
+.whyUsBanner .whyUsBanner__button:hover {
+  background-color: #c21e16;
 }
 
 @media (min-width: 768px) and (max-width: 1919px) {
@@ -362,6 +366,9 @@ input::-webkit-inner-spin-button {
     width: calc(246px - 50 * (767px - 100vw) / 680);
     height: calc(55px - 25 * (767px - 100vw) / 680);
     font-size: calc(14px - 4 * (767px - 100vw) / 680);
+  }
+  .whyUsBanner .whyUsBanner__button:hover {
+    background-color: #f74137;
   }
 }
 @media (max-width: 350px) {
