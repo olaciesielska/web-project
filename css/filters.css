@@ -193,12 +193,14 @@ input::-webkit-inner-spin-button {
 .filters__wrapper {
   width: 300px;
   margin-bottom: 22px;
+  border-bottom: 1px solid #e1e2e8;
 }
 .filters__wrapper .filters__item--list {
   display: flex;
   flex-direction: column;
   list-style: none;
   border: 1px solid #e1e2e8;
+  border-bottom: none;
 }
 .filters__wrapper .filters__item--list .filters__item {
   display: flex;
@@ -208,7 +210,7 @@ input::-webkit-inner-spin-button {
   height: 60px;
   border: 1px solid #e1e2e8;
   align-items: center;
-  padding-left: 17px;
+  padding-left: 20px;
   transition: font-weight 0.2s;
 }
 .filters__wrapper .filters__item--list .filters__item:hover {
@@ -220,8 +222,8 @@ input::-webkit-inner-spin-button {
   border-bottom: 2px solid #f74137;
 }
 .filters__wrapper .filters__item--list .filters__item--bottomTitle {
-  border-bottom: 1px solid #e1e2e8;
   font-weight: 700;
+  border-bottom: none;
 }
 .filters__wrapper .filters__item--list .filters__input--description {
   text-transform: none;
@@ -261,6 +263,48 @@ input::-webkit-inner-spin-button {
 }
 .filters__wrapper .filters__item--list .input__wrapper input:checked ~ .checkmark {
   background-color: #f74137;
+}
+.filters__wrapper .filters__item--list .filters__item--more {
+  font-family: Metropolis;
+  font-weight: 400;
+  font-size: 13px;
+  color: #f74137;
+  padding: 10px 0px 25px 20px;
+}
+.filters__wrapper .filters__item--listColor {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  border-left: 1px solid #e1e2e8;
+  border-right: 1px solid #e1e2e8;
+  padding: 0px 20px 20px 20px;
+}
+.filters__wrapper .filters__item--listColor .filters__item--inputColor {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 45px;
+  height: 45px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.filters__wrapper .filters__item--listColor .filters__item--inputColor::-webkit-color-swatch {
+  border: none;
+}
+.filters__wrapper .filters__item--listFilters {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  border-left: 1px solid #e1e2e8;
+  border-right: 1px solid #e1e2e8;
+}
+.filters__wrapper .filters__item--listFilters .filters__item--inputNumber {
+  font-family: Metropolis;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  width: 40px;
+  height: 30px;
+  border: 1px solid #e1e2e8;
 }
 
 /*# sourceMappingURL=filters.css.map */

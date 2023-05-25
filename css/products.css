@@ -186,7 +186,7 @@ input::-webkit-inner-spin-button {
 .products {
   display: flex;
   width: 1530px;
-  height: 1900px;
+  height: 1800px;
   font-family: Metropolis;
   color: #111111;
 }
@@ -228,7 +228,8 @@ input::-webkit-inner-spin-button {
 }
 .products__menu .products__menu--rightItems .products__menu--rightItemWrapper .products__menu--rightItem {
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  width: 50px;
 }
 .products__menu .products__menu--rightItems .products__menu--rightItemWrapper .quantity {
   width: 85px;
@@ -262,7 +263,7 @@ input::-webkit-inner-spin-button {
   font-size: 10px;
 }
 .products .products__menu--bottom {
-  bottom: 110px;
+  bottom: 40px;
 }
 
 .products__items--wrapper {

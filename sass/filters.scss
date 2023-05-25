@@ -11,12 +11,14 @@
   &__wrapper {
     width: 300px;
     margin-bottom: 22px;
+    border-bottom: 1px solid c.$light-gray;
 
     .filters__item--list {
       display: flex;
       flex-direction: column;
       list-style: none;
       border: 1px solid c.$light-gray;
+      border-bottom: none;
 
       .filters__item {
         display: flex;
@@ -26,7 +28,7 @@
         height: 60px;
         border: 1px solid c.$light-gray;
         align-items: center;
-        padding-left: 17px;
+        padding-left: 20px;
         transition: font-weight 0.2s;
       }
 
@@ -41,8 +43,8 @@
       }
 
       .filters__item--bottomTitle {
-        border-bottom: 1px solid c.$light-gray;
         font-weight: 700;
+        border-bottom: none;
       }
 
       .filters__input--description {
@@ -89,6 +91,53 @@
 
       .input__wrapper input:checked ~ .checkmark {
         background-color: c.$red;
+      }
+
+      .filters__item--more {
+        font-family: Metropolis;
+        font-weight: 400;
+        font-size: 13px;
+        color: c.$red;
+        padding: 10px 0px 25px 20px;
+      }
+    }
+
+    .filters__item--listColor {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      border-left: 1px solid c.$light-gray;
+      border-right: 1px solid c.$light-gray;
+      padding: 0px 20px 20px 20px;
+
+      .filters__item--inputColor {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 45px;
+        height: 45px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+
+      .filters__item--inputColor::-webkit-color-swatch {
+        border: none;
+      }
+    }
+    .filters__item--listFilters {
+      padding-left: 20px;
+      padding-bottom: 20px;
+      border-left: 1px solid c.$light-gray;
+      border-right: 1px solid c.$light-gray;
+
+      .filters__item--inputNumber {
+        font-family: Metropolis;
+        font-weight: 400;
+        font-size: 12px;
+        text-align: center;
+        width: 40px;
+        height: 30px;
+        border: 1px solid c.$light-gray;
       }
     }
   }

@@ -4,7 +4,7 @@
 .products {
   display: flex;
   width: 1530px;
-  height: 1900px;
+  height: 1800px;
   font-family: Metropolis;
   color: c.$black;
 
@@ -29,6 +29,7 @@
         opacity: 20%;
       }
     }
+
     .products__menu--rightItems {
       display: flex;
       position: absolute;
@@ -48,7 +49,8 @@
 
         .products__menu--rightItem {
           align-items: center;
-          justify-content: space-around;
+          justify-content: space-evenly;
+          width: 50px;
         }
 
         .quantity {
@@ -56,6 +58,7 @@
           height: 40px;
         }
       }
+
       .pagerContainer {
         display: flex;
         gap: 5px;
@@ -87,9 +90,9 @@
       }
     }
   }
-  
+
   .products__menu--bottom {
-    bottom: 110px;
+    bottom: 40px;
   }
 }
 
