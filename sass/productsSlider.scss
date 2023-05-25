@@ -152,6 +152,7 @@
         }
       }
     }
+
     .productsSlider__slider::-webkit-scrollbar {
       display: none;
     }
@@ -190,13 +191,13 @@
 
 @media (max-width: 767px) {
   .productsSlider {
-    height: calc(800px - 250 * s.$mobileCalc);
+    height: calc(800px - 280 * s.$mobileCalc);
 
     .productsSlider__button {
       width: calc(318px - 130 * s.$mobileCalc);
       height: calc(55px - 25 * s.$mobileCalc);
       font-size: calc(14.5px - 4 * s.$mobileCalc);
-      margin-top: 3rem;
+      bottom: 1.5rem;
     }
 
     .productsSlider__title {
@@ -207,7 +208,7 @@
 
     .productsSlider__wrapper {
       margin: 0 auto;
-      width: calc(610px - 650 * s.$mobileCalc);
+      width: calc(480px - 320 * s.$mobileCalc);
 
       .left,
       .right {
@@ -215,18 +216,11 @@
       }
 
       .productsSlider__slider {
-        width: calc(610px - 650 * s.$mobileCalc);
-        height: calc(530px - 250 * s.$mobileCalc);
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+        height: calc(550px - 230 * s.$mobileCalc);
 
         .productsSlider__item {
-          width: calc(480px - 305 * s.$mobileCalc);
+          width: calc(480px - 320 * s.$mobileCalc);
           height: calc(540px - 250 * s.$mobileCalc);
-          position: absolute;
-          left: 50%;
-          transform: translate(-50%);
-          margin-top: 2em;
 
           .productsSlider__item--description-wrapper {
             bottom: 37%;
@@ -240,7 +234,7 @@
           }
 
           .productsSlider__item--basket {
-            bottom: calc(10% - 25 * s.$mobileCalc);
+            bottom: calc(10% - 20 * s.$mobileCalc);
             gap: 15px;
 
             .productsSlider__item--inputWrapper {
@@ -251,8 +245,9 @@
               .productsSlider__input {
                 width: calc(65px - 15 * s.$mobileCalc);
                 height: calc(70px - 35 * s.$mobileCalc);
-                font-size: calc(2.3em - 7 * s.$mobileCalc);
+                font-size: calc(2em - 7 * s.$mobileCalc);
               }
+
               .productsSlider__input--minus,
               .productsSlider__input--plus {
                 height: calc(70px - 35 * s.$mobileCalc);
@@ -274,6 +269,10 @@
           }
         }
       }
+
+      /* .productsSlider__slider::-webkit-scrollbar {
+        display: default;
+      } */
     }
     .productsSlider__button:hover {
       background-color: c.$red;
