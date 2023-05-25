@@ -4,7 +4,7 @@
 .products {
   display: flex;
   width: 1530px;
-  height: 1500px;
+  height: 1900px;
   font-family: Metropolis;
   color: c.$black;
 
@@ -16,6 +16,7 @@
     width: 1530px;
     height: 55px;
     right: 0;
+    padding-left: 15px;
 
     &--item {
       display: flex;
@@ -23,7 +24,6 @@
       width: 124px;
       font-size: 12px;
       font-weight: 400;
-      padding-left: 15px;
 
       .icon-widok_01 {
         opacity: 20%;
@@ -32,11 +32,11 @@
     .products__menu--rightItems {
       display: flex;
       position: absolute;
-      right: 0;
+      right: 20px;
+      gap: 30px;
 
       .products__menu--rightItemWrapper {
         display: flex;
-        font-display: row;
 
         .products__menu--select {
           font-family: Metropolis;
@@ -56,7 +56,40 @@
           height: 40px;
         }
       }
+      .pagerContainer {
+        display: flex;
+        gap: 5px;
+
+        .pager__page {
+          display: flex;
+          width: 40px;
+          height: 100%;
+          align-items: center;
+          justify-content: center;
+          background-color: c.$white;
+          color: c.$black;
+          font-size: 12px;
+          text-decoration: none;
+          transition: background-color 0.2s, color 0.2s;
+        }
+        .pager__page:hover {
+          background-color: c.$red;
+          color: c.$white;
+        }
+
+        .pager__page--current {
+          background-color: c.$red;
+          color: c.$white;
+        }
+        .pager__arrow {
+          font-size: 10px;
+        }
+      }
     }
+  }
+  
+  .products__menu--bottom {
+    bottom: 110px;
   }
 }
 
@@ -64,7 +97,7 @@
   position: absolute;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  top: 34%;
+  top: 30%;
   width: 1530px;
   right: 0;
 
@@ -173,6 +206,31 @@
         cursor: pointer;
       }
     }
+  }
+
+  .productsSlider__item:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 4%;
+    height: 92%;
+    border-right: 1px solid c.$light-gray;
+  }
+
+  .productsSlider__item:nth-child(4n):before {
+    border-right: none;
+  }
+
+  .productsSlider__item:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 94%;
+    border-bottom: 1px solid c.$light-gray;
+  }
+
+  .productsSlider__item:nth-last-child(-n + 4):after {
+    border-bottom: none;
   }
 }
 
