@@ -110,8 +110,8 @@
       .right,
       .left {
         position: absolute;
-        width: 4em;
-        height: 4em;
+        width: 3.7em;
+        height: 3.7em;
         background-color: c.$darker-gray;
         color: c.$white;
       }
@@ -152,8 +152,8 @@
 
       .slider__content {
         font-size: calc(52px - 42 * s.$mobileCalc);
-        top: 60%;
-        left: 8%;
+        top: calc(60% - 20 * s.$mobileCalc);
+        left: 10%;
 
         .content__text {
           font-size: calc(24px - 19 * s.$mobileCalc);
@@ -163,13 +163,13 @@
       }
 
       .banner__button {
-        display: none;
-        align-items: center;
-        justify-content: center;
-        width: calc(14em - 20 * s.$mobileCalc);
-        height: calc(4em - 10 * s.$mobileCalc);
-        font-size: calc(14px - 10 * s.$mobileCalc);
-        bottom: calc(2em - 30 * s.$mobileCalc);
+        font-size: calc(16px - 11 * s.$mobileCalc);
+        width: calc(15em - 25 * s.$mobileCalc);
+        height: calc(4em - 8 * s.$mobileCalc);
+        bottom: 22%;
+      }
+      .banner__button:hover {
+        background-color: c.$red;
       }
     }
   }

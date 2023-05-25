@@ -295,8 +295,8 @@ input::-webkit-inner-spin-button {
   .slider .slider__wrapper .right,
   .slider .slider__wrapper .left {
     position: absolute;
-    width: 4em;
-    height: 4em;
+    width: 3.7em;
+    height: 3.7em;
     background-color: #323940;
     color: #ffffff;
   }
@@ -330,8 +330,8 @@ input::-webkit-inner-spin-button {
   }
   .slider .slider__element .slider__content {
     font-size: calc(52px - 42 * (767px - 100vw) / 680);
-    top: 60%;
-    left: 8%;
+    top: calc(60% - 20 * (767px - 100vw) / 680);
+    left: 10%;
   }
   .slider .slider__element .slider__content .content__text {
     font-size: calc(24px - 19 * (767px - 100vw) / 680);
@@ -339,13 +339,13 @@ input::-webkit-inner-spin-button {
     padding-top: 0.25rem;
   }
   .slider .slider__element .banner__button {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    width: calc(14em - 20 * (767px - 100vw) / 680);
-    height: calc(4em - 10 * (767px - 100vw) / 680);
-    font-size: calc(14px - 10 * (767px - 100vw) / 680);
-    bottom: calc(2em - 30 * (767px - 100vw) / 680);
+    font-size: calc(16px - 11 * (767px - 100vw) / 680);
+    width: calc(15em - 25 * (767px - 100vw) / 680);
+    height: calc(4em - 8 * (767px - 100vw) / 680);
+    bottom: 22%;
+  }
+  .slider .slider__element .banner__button:hover {
+    background-color: #f74137;
   }
 }
 @media (min-width: 768px) and (max-width: 1919px) {
