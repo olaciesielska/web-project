@@ -220,7 +220,7 @@ input::-webkit-inner-spin-button {
   left: 50%;
   transform: translate(-50%);
   width: 60px;
-  border-bottom: 2px solid #f74137;
+  border-bottom: 3px solid #f74137;
   z-index: 10;
 }
 .whyUsBanner .shadow-bg {
