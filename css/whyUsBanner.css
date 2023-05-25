@@ -213,12 +213,15 @@ input::-webkit-inner-spin-button {
   text-align: center;
   height: 50px;
 }
-.whyUsBanner .whyUsBanner__title .underline {
-  margin: 0 auto;
+.whyUsBanner .whyUsBanner__title:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
   width: 60px;
-  height: 3px;
-  background-color: #f74137;
-  margin-top: 20px;
+  border-bottom: 2px solid #f74137;
+  z-index: 10;
 }
 .whyUsBanner .shadow-bg {
   position: absolute;
@@ -303,6 +306,9 @@ input::-webkit-inner-spin-button {
 .whyUsBanner .whyUsBanner__button:hover {
   background-color: #c21e16;
 }
+.whyUsBanner .container {
+  padding-top: 0;
+}
 
 @media (min-width: 768px) and (max-width: 1919px) {
   .whyUsBanner .whyUsBanner__title .whyUsBanner__header {
@@ -332,16 +338,17 @@ input::-webkit-inner-spin-button {
     background-image: url("../img/img_02.jpg");
     margin-top: 10px;
   }
+  .whyUsBanner .whyUsBanner__title {
+    height: calc(120px - 20 * (767px - 100vw) / 680);
+  }
   .whyUsBanner .whyUsBanner__title .whyUsBanner__header {
     margin: 0 15px;
-    font-size: calc(44px - 20 * (767px - 100vw) / 680);
+    font-size: calc(44px - 27 * (767px - 100vw) / 680);
     margin-top: calc(60px - 5 * (767px - 100vw) / 680);
-  }
-  .whyUsBanner .whyUsBanner__title .underline {
-    margin-top: 30px;
+    white-space: nowrap;
   }
   .whyUsBanner .whyUsBanner__description {
-    top: 30%;
+    top: 24%;
     width: calc(555px - 400 * (767px - 100vw) / 680);
   }
   .whyUsBanner .whyUsBanner__description .whyUsBanner__description--text {
@@ -350,7 +357,7 @@ input::-webkit-inner-spin-button {
   .whyUsBanner .whyUsBanner__item--wrapper {
     justify-content: flex-start;
     gap: 10px;
-    top: calc(50% + 60 * (767px - 100vw) / 680);
+    top: calc(47% + 60 * (767px - 100vw) / 680);
     overflow-x: auto;
     max-width: 100%;
   }

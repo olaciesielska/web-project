@@ -31,14 +31,16 @@
       text-align: center;
       height: 50px;
     }
-
-    .underline {
-      margin: 0 auto;
-      width: 60px;
-      height: 3px;
-      background-color: c.$red;
-      margin-top: 20px;
-    }
+  }
+  .whyUsBanner__title:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 60px;
+    border-bottom: 2px solid c.$red;
+    z-index: 10;
   }
 
   .shadow-bg {
@@ -117,6 +119,9 @@
   .whyUsBanner__button:hover {
     background-color: c.$dark-red;
   }
+  .container {
+    padding-top: 0;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1919px) {
@@ -159,19 +164,17 @@
     margin-top: 10px;
 
     .whyUsBanner__title {
+      height: calc(120px - 20 * s.$mobileCalc);
       .whyUsBanner__header {
         margin: 0 15px;
-        font-size: calc(44px - 20 * s.$mobileCalc);
+        font-size: calc(44px - 27 * s.$mobileCalc);
         margin-top: calc(60px - 5 * s.$mobileCalc);
-      }
-
-      .underline {
-        margin-top: 30px;
+        white-space: nowrap;
       }
     }
 
     .whyUsBanner__description {
-      top: 30%;
+      top: 24%;
       width: calc(555px - 400 * s.$mobileCalc);
 
       .whyUsBanner__description--text {
@@ -182,7 +185,7 @@
     .whyUsBanner__item--wrapper {
       justify-content: flex-start;
       gap: 10px;
-      top: calc(50% + 60 * s.$mobileCalc);
+      top: calc(47% + 60 * s.$mobileCalc);
       overflow-x: auto;
       max-width: 100%;
 
