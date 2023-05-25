@@ -191,6 +191,7 @@ input::-webkit-inner-spin-button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   object-fit: contain;
   margin-top: 40px;
 }
