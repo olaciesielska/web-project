@@ -66,7 +66,7 @@
           text-align: center;
           white-space: nowrap;
           line-height: 1.5em;
-          transition: bottom 0.35s, opacity 1s;
+          transition: bottom 0.4s;
 
           .productsSlider__item--description {
             font-size: 14px;
@@ -110,7 +110,6 @@
           .productsSlider__item--inputWrapper {
             width: 100px;
             display: none;
-            transition: display 0.7s;
             border: 1px solid c.$light-gray;
 
             .productsSlider__input {
@@ -145,7 +144,7 @@
             font-size: 25px;
             align-items: center;
             justify-content: center;
-            transition: display 0.7s;
+            transition: opacity 2s;
             cursor: pointer;
           }
         }
@@ -237,6 +236,7 @@
 
             .productsSlider__item--inputWrapper {
               display: flex;
+              opacity: 1;
               height: calc(70px - 35 * s.$mobileCalc);
               width: calc(130px - 45 * s.$mobileCalc);
 
@@ -254,6 +254,7 @@
 
             .productsSlider__item--basket-icon {
               display: flex;
+              opacity: 1;
               width: calc(70px - 35 * s.$mobileCalc);
               height: calc(70px - 35 * s.$mobileCalc);
               font-size: calc(35px - 10 * s.$mobileCalc);
@@ -440,13 +441,32 @@
         .productsSlider__item:hover .productsSlider__item--description-wrapper {
           bottom: 35%;
         }
-        .productsSlider__item:hover .productsSlider__item--inputWrapper {
+        .productsSlider__item:hover
+          .productsSlider__item--basket
+          .productsSlider__item--inputWrapper {
           display: flex;
+          opacity: 1;
+          animation: opacity 1s;
+          animation-iteration-count: 1;
         }
-        .productsSlider__item:hover .productsSlider__item--basket-icon {
+
+        .productsSlider__item:hover
+          .productsSlider__item--basket
+          .productsSlider__item--basket-icon {
           display: flex;
+          animation: opacity 0.85s;
+          animation-iteration-count: 1;
         }
       }
     }
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 1%;
+  }
+  to {
+    opacity: 100%;
   }
 }

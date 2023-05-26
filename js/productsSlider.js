@@ -76,14 +76,3 @@
     });
   });
 })();
-
-(() => {
-  const inputFields = document.querySelectorAll(".productsSlider__input");
-
-  inputFields.forEach(function (inputField) {
-    inputField.addEventListener("input", function () {
-      let value = parseFloat(this.value);
-      this.value = value && Math.abs(value) >= 0 ? Math.abs(value) : null;
-    });
-  });
-})();
