@@ -6,7 +6,7 @@
     if (menu_elements.style.display === "block") {
       menu_elements.style.display = "none";
     } else {
-      menu_elements.style.display = "block";
+      menu_elements.classList.toggle("visible");
     }
   }
 

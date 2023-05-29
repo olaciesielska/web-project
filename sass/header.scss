@@ -192,6 +192,10 @@ header {
 }
 
 @media (max-width: 767px) {
+  .visible {
+    display: block !important;
+  }
+
   .menu__bottom-wrapper {
     display: none;
     height: 0;
