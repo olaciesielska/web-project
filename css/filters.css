@@ -195,6 +195,7 @@ input::-webkit-inner-spin-button {
   margin-bottom: 22px;
   border-bottom: 1px solid #e1e2e8;
   border: 1px solid #e1e2e8;
+  margin-right: 30px;
 }
 .filters__wrapper .filters__item--list {
   display: flex;
@@ -386,6 +387,13 @@ input::-webkit-inner-spin-button {
   position: absolute;
   background-color: #e1e2e8;
   pointer-events: none;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .filters__wrapper {
+    margin-right: 30px;
+    width: 270px;
+  }
 }
 
 /*# sourceMappingURL=filters.css.map */
