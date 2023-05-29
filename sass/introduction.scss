@@ -12,7 +12,6 @@
   flex: 1;
   font-family: Metropolis;
   color: c.$black;
-  padding-left: 30px;
   margin-bottom: 10px;
 
   &__wrapper {
@@ -67,7 +66,6 @@
 
           .introduction__item--image {
             position: absolute;
-            width: 35px;
             height: 58.5px;
             left: 50%;
             top: 50%;
@@ -78,7 +76,7 @@
         .introduction__item--description {
           font-weight: 400;
           font-size: 14px;
-          padding-left: 15px;
+          padding: 0 15px;
         }
       }
       .introduction__item:hover {
@@ -113,10 +111,11 @@
           left: 4%;
           z-index: 1;
 
-          .introduction__banner--descriptionBold {
-            font-weight: 700;
+          .introduction__banner--descriptionText {
+            .introduction__banner--descriptionBold {
+              font-weight: 700;
+            }
           }
-
           .introduction__button {
             @include s.button;
             transition: background-color 0.25s;
@@ -137,12 +136,36 @@
       width: calc(95% - 270 * s.$responsiveCalc);
 
       .introduction {
-        width: calc(1540px - 645 * s.$responsiveCalc);
+        width: calc(1540px - 680 * s.$responsiveCalc);
 
         .introduction__wrapper {
           .introduction__fieldset {
             .introduction__description {
               margin-bottom: calc(5px + 30 * s.$responsiveCalc);
+            }
+          }
+          .introduction__banner--imageWrapper {
+            .introduction__banner--description {
+              top: calc(27% - 15 * s.$responsiveCalc);
+
+              .introduction__banner--descriptionText {
+                font-size: calc(44px - 12 * s.$responsiveCalc);
+              }
+              .introduction__button {
+                width: s.$responsiveButtonWidth;
+                height: s.$responsiveButtonHeight;
+                font-size: s.$responsiveButtonFontSize;
+                margin-top: calc(8% - 15 * s.$responsiveCalc);
+              }
+            }
+          }
+          .introduction__item {
+            height: calc(80px - 25 * s.$responsiveCalc);
+
+            .introduction__item--imageWrapper {
+              .introduction__item--image {
+                height: calc(58.5px - 8 * s.$responsiveCalc);
+              }
             }
           }
         }
@@ -154,7 +177,14 @@
 @media (min-width: 768px) and (max-width: 1200px) {
   .main__wrapper {
     .sections__wrapper {
-      height: calc(2500px - 550 * s.$responsiveCalc);
+      height: calc(2700px - 500 * (1920px - 100vw) / 680);
+      .introduction {
+        .introduction__wrapper {
+          .introduction__item--wrapper {
+            grid-template-columns: 1fr 1fr 1fr;
+          }
+        }
+      }
     }
   }
 }
