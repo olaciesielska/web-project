@@ -185,6 +185,8 @@ input::-webkit-inner-spin-button {
 }
 .sections__wrapper {
   position: relative;
+  width: 100%;
+  height: 2450px;
 }
 
 .introduction {
@@ -259,10 +261,10 @@ input::-webkit-inner-spin-button {
 .introduction__wrapper .introduction__banner {
   margin-top: 20px;
 }
-.introduction__wrapper .introduction__banner--image {
+.introduction__wrapper .introduction__banner--imageWrapper {
   position: relative;
 }
-.introduction__wrapper .introduction__banner--image .shadow-bg {
+.introduction__wrapper .introduction__banner--imageWrapper .shadow-bg {
   position: absolute;
   width: 70%;
   height: 100%;
@@ -271,7 +273,11 @@ input::-webkit-inner-spin-button {
   position: absolute;
   bottom: 1px;
 }
-.introduction__wrapper .introduction__banner--image .introduction__banner--description {
+.introduction__wrapper .introduction__banner--imageWrapper .introduction__banner--image {
+  width: 100%;
+  height: 100%;
+}
+.introduction__wrapper .introduction__banner--imageWrapper .introduction__banner--description {
   position: absolute;
   color: #ffffff;
   font-size: 44px;
@@ -279,10 +285,10 @@ input::-webkit-inner-spin-button {
   left: 4%;
   z-index: 1;
 }
-.introduction__wrapper .introduction__banner--image .introduction__banner--description .introduction__banner--descriptionBold {
+.introduction__wrapper .introduction__banner--imageWrapper .introduction__banner--description .introduction__banner--descriptionBold {
   font-weight: 700;
 }
-.introduction__wrapper .introduction__banner--image .introduction__banner--description .introduction__button {
+.introduction__wrapper .introduction__banner--imageWrapper .introduction__banner--description .introduction__button {
   cursor: pointer;
   background-color: #f74137;
   margin-top: 8%;
@@ -296,8 +302,26 @@ input::-webkit-inner-spin-button {
   font-size: 14px;
   transition: background-color 0.25s;
 }
-.introduction__wrapper .introduction__banner--image .introduction__banner--description .introduction__button:hover {
+.introduction__wrapper .introduction__banner--imageWrapper .introduction__banner--description .introduction__button:hover {
   background-color: #c21e16;
+}
+
+@media (min-width: 768px) and (max-width: 1919px) {
+  .main__wrapper .sections__wrapper {
+    height: calc(2530px - 870 * (1920px - 100vw) / 680);
+    width: calc(95% - 270 * (1920px - 100vw) / 680);
+  }
+  .main__wrapper .sections__wrapper .introduction {
+    width: calc(1540px - 645 * (1920px - 100vw) / 680);
+  }
+  .main__wrapper .sections__wrapper .introduction .introduction__wrapper .introduction__fieldset .introduction__description {
+    margin-bottom: calc(5px + 30 * (1920px - 100vw) / 680);
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .main__wrapper .sections__wrapper {
+    height: calc(2500px - 550 * (1920px - 100vw) / 680);
+  }
 }
 
 /*# sourceMappingURL=introduction.css.map */

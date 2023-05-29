@@ -210,6 +210,29 @@
               <input class="filters__item--inputNumber" type="number" value="65">
               <input class="filters__item--inputNumber" type="number" value="65">
             </div>
+            <ul class="filters__item--list">
+              <li class="filters__item filters__item--bottomTitle">filtr</li>
+            </ul> 
+            <div class="filters__inputNumberWrapper">
+              <input class="filters__quantity" type="number" min="65" max="90" placeholder="min. 65">
+              <p>-</p>
+              <input class="filters__quantity" type="number" min="65" max="90" placeholder="max. 90">
+            </div>
+            <ul class="filters__item--list">
+              <li class="filters__item filters__item--bottomTitle">cena</li>
+            </ul> 
+            <div class="filters__price--wrapper">
+              <div class="filters__price--rangeContainer">
+                <div class="filters__price--slidersControl">
+                    <input class="fromSlider" type="range" value="20" min="0" max="100"/>
+                    <input class="toSlider" type="range" value="75" min="0" max="100"/>
+                </div>
+                <div class="filters__price--formControl">
+                      <input class="filters__price--quantity" type="number" placeholder="34">
+                      <input class="filters__price--quantity" type="number" placeholder="220">
+                </div>
+              </div>
+            </div>
           </div>
         </aside>
 
@@ -267,8 +290,8 @@
               </div>
 
               <div class="introduction__banner">
-                <div class="introduction__banner--image">
-                  <img src="img/img_04.jpg" alt="Dron DJI Mavic Air" />
+                <div class="introduction__banner--imageWrapper">
+                  <img class="introduction__banner--image"src="img/img_04.jpg" alt="Dron DJI Mavic Air" />
                   <div class="shadow-bg"></div>
                   <div class="introduction__banner--description">
                     <p>
@@ -282,7 +305,7 @@
             </div>
           </section>
 
-          <section class="container products">
+          <section class="products">
             <div class="products__menu">
                 <p class="products__menu--item">
                   Widok
@@ -352,8 +375,6 @@
                       value="1"
                       name="quantity"
                       type="number"
-                      oninput="this.value = 
-                      !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"
                     />
                     <button class="productsSlider__input--plus">+</button>
                   </div>
@@ -391,8 +412,6 @@
                       value="1"
                       name="quantity"
                       type="number"
-                      oninput="this.value = 
-                      !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"
                     />
                     <button class="productsSlider__input--plus">+</button>
                   </div>
@@ -430,8 +449,6 @@
                       value="1"
                       name="quantity"
                       type="number"
-                      oninput="this.value = 
-                      !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"
                     />
                     <button class="productsSlider__input--plus">+</button>
                   </div>
@@ -469,8 +486,6 @@
                       value="1"
                       name="quantity"
                       type="number"
-                      oninput="this.value = 
-                      !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"
                     />
                     <button class="productsSlider__input--plus">+</button>
                   </div>
@@ -508,8 +523,6 @@
                       value="1"
                       name="quantity"
                       type="number"
-                      oninput="this.value = 
-                      !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"
                     />
                     <button class="productsSlider__input--plus">+</button>
                   </div>
@@ -547,8 +560,6 @@
                       value="1"
                       name="quantity"
                       type="number"
-                      oninput="this.value = 
-                      !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"
                     />
                     <button class="productsSlider__input--plus">+</button>
                   </div>
@@ -586,8 +597,6 @@
                       value="1"
                       name="quantity"
                       type="number"
-                      oninput="this.value = 
-                      !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"
                     />
                     <button class="productsSlider__input--plus">+</button>
                   </div>
@@ -625,8 +634,6 @@
                       value="1"
                       name="quantity"
                       type="number"
-                      oninput="this.value = 
-                      !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"
                     />
                     <button class="productsSlider__input--plus">+</button>
                   </div>
@@ -664,8 +671,6 @@
                       value="1"
                       name="quantity"
                       type="number"
-                      oninput="this.value = 
-                      !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"
                     />
                     <button class="productsSlider__input--plus">+</button>
                   </div>
@@ -703,8 +708,6 @@
                       value="1"
                       name="quantity"
                       type="number"
-                      oninput="this.value = 
-                      !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"
                     />
                     <button class="productsSlider__input--plus">+</button>
                   </div>
@@ -742,8 +745,6 @@
                       value="1"
                       name="quantity"
                       type="number"
-                      oninput="this.value = 
-                      !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"
                     />
                     <button class="productsSlider__input--plus">+</button>
                   </div>
@@ -781,8 +782,6 @@
                       value="1"
                       name="quantity"
                       type="number"
-                      oninput="this.value = 
-                      !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"
                     />
                     <button class="productsSlider__input--plus">+</button>
                   </div>
@@ -953,7 +952,7 @@
         <div class="container">
           <div class="footer__bottom--wrapper">
             <div class="footer__bottom--left">
-              <p>&copy Copyright 2022. Wszystkie prawa zastrzeżone.</p>
+              <p>Copyright 2022. Wszystkie prawa zastrzeżone.</p>
             </div>
             <div class="footer__bottom--right">
               <p>
