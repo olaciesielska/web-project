@@ -13,9 +13,8 @@
     align-items: center;
     position: absolute;
     background-color: c.$lighter-gray;
-    width: 1510px;
+    width: 1530px;
     height: 55px;
-    right: 0;
     padding-left: 15px;
 
     &--item {
@@ -274,7 +273,7 @@
     height: calc(1800px - 800 * s.$responsiveCalc);
 
     .products__menu {
-      width: calc(1530px - 675 * s.$responsiveCalc);
+      width: calc(1540px - 680 * s.$responsiveCalc);
       left: 0;
 
       .products__menu--rightItems {
@@ -283,7 +282,7 @@
 
         .products__menu--rightItemWrapper {
           .products__menu--select {
-            width: calc(170px - 50 * s.$responsiveCalc);
+            width: calc(170px - 48 * s.$responsiveCalc);
             height: calc(40px - 5 * s.$responsiveCalc);
           }
           .quantity {
@@ -293,8 +292,8 @@
         }
         .pagerContainer {
           .pager__page {
-            width: calc(40px - 5 * s.$responsiveCalc);
-            height: calc(40px - 5 * s.$responsiveCalc);
+            width: calc(40px - 7 * s.$responsiveCalc);
+            height: calc(40px - 7 * s.$responsiveCalc);
           }
         }
       }
@@ -321,19 +320,24 @@
 
         .productsSlider__item--inputWrapper {
           border: none;
+          width: calc(100px - 12 * s.$responsiveCalc);
           .productsSlider__input {
-            width: calc(50px - 5 * s.$responsiveCalc);
-            height: calc(50px - 5 * s.$responsiveCalc);
+            width: calc(50px - 12 * s.$responsiveCalc);
+            height: calc(50px - 12 * s.$responsiveCalc);
+            font-size: calc(14px - 1 * s.$responsiveCalc);
           }
           .productsSlider__input--minus,
           .productsSlider__input--plus {
-            width: 23%;
-            height: calc(50px - 5 * s.$responsiveCalc);
+            width: calc(30% - 5 * s.$responsiveCalc);
+            height: calc(50px - 12 * s.$responsiveCalc);
           }
         }
         .productsSlider__item--basket-icon {
-          height: calc(50px - 5 * s.$responsiveCalc);
-          width: calc(50px - 5 * s.$responsiveCalc);
+          height: calc(50px - 12 * s.$responsiveCalc);
+          width: calc(50px - 12 * s.$responsiveCalc);
+          .icon-icon_06 {
+            font-size: calc(25px - 3.5 * s.$responsiveCalc);
+          }
         }
       }
 
@@ -341,7 +345,7 @@
         bottom: calc(20% + 15 * s.$responsiveCalc);
 
         .productsSlider__item--description {
-          font-size: calc(14px - 2.2 * s.$responsiveCalc);
+          font-size: calc(14px - 2.3 * s.$responsiveCalc);
         }
         .productsSlider__item--price {
           font-size: calc(14px - 2 * s.$responsiveCalc);
@@ -358,8 +362,14 @@
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
+  .products {
+    .products__menu {
+      width: calc(840px - 630 * (1200px - 100vw) / 680);
+    }
+  }
   .products__items--wrapper {
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
 
     .productsSlider__item:nth-last-child(-n + 4):after {
       border-bottom: 1px solid c.$light-gray;
@@ -377,37 +387,46 @@
       border-bottom: none;
     }
   }
+
   .products__items--wrapper {
     .productsSlider__item {
-      width: calc(356px - 100 * s.$responsiveCalc);
-      height: calc(530px - 150 * s.$responsiveCalc);
+      width: calc(400px - 150 * s.$responsiveCalc);
+      height: calc(530px - 180 * s.$responsiveCalc);
 
       .productsSlider__item--basket {
         height: calc(50px - 20 * s.$responsiveCalc);
         bottom: calc(10% - 2.5 * s.$responsiveCalc);
+        gap: 0;
       }
       .productsSlider__item--description-wrapper {
         bottom: calc(20% + 15 * s.$responsiveCalc);
 
         .productsSlider__item--description {
-          font-size: calc(14px - 2.2 * s.$responsiveCalc);
+          font-size: calc(15px - 3.5 * s.$responsiveCalc);
         }
         .productsSlider__item--price {
-          font-size: calc(14px - 2 * s.$responsiveCalc);
+          font-size: calc(14px - 2.2 * s.$responsiveCalc);
           height: calc(33px - 5 * s.$responsiveCalc);
         }
       }
       .productsSlider__item--image {
-        width: calc(280px - 100 * s.$responsiveCalc);
-        height: calc(280px - 100 * s.$responsiveCalc);
+        width: calc(280px - 110 * s.$responsiveCalc);
+        height: calc(280px - 110 * s.$responsiveCalc);
         top: calc(33% - 15 * s.$responsiveCalc);
       }
     }
   }
 }
+
 @media (max-width: 1050px) {
   .products {
     .products__menu {
+      .products__menu--item {
+        width: calc(50px - 30 * (1050px - 100vw) / 680);
+        .products__menu--itemTitle {
+          display: none;
+        }
+      }
       .products__menu--rightItems {
         .products__menu--rightItemWrapper {
           .products__menu--rightItem {

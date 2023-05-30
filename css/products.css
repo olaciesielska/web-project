@@ -195,9 +195,8 @@ input::-webkit-inner-spin-button {
   align-items: center;
   position: absolute;
   background-color: #f8f8f8;
-  width: 1510px;
+  width: 1530px;
   height: 55px;
-  right: 0;
   padding-left: 15px;
 }
 .products__menu--item {
@@ -423,7 +422,7 @@ input::-webkit-inner-spin-button {
     height: calc(1800px - 800 * (1920px - 100vw) / 680);
   }
   .products .products__menu {
-    width: calc(1530px - 675 * (1920px - 100vw) / 680);
+    width: calc(1540px - 680 * (1920px - 100vw) / 680);
     left: 0;
   }
   .products .products__menu .products__menu--rightItems {
@@ -431,7 +430,7 @@ input::-webkit-inner-spin-button {
     gap: 5px;
   }
   .products .products__menu .products__menu--rightItems .products__menu--rightItemWrapper .products__menu--select {
-    width: calc(170px - 50 * (1920px - 100vw) / 680);
+    width: calc(170px - 48 * (1920px - 100vw) / 680);
     height: calc(40px - 5 * (1920px - 100vw) / 680);
   }
   .products .products__menu .products__menu--rightItems .products__menu--rightItemWrapper .quantity {
@@ -439,8 +438,8 @@ input::-webkit-inner-spin-button {
     height: calc(40px - 5 * (1920px - 100vw) / 680);
   }
   .products .products__menu .products__menu--rightItems .pagerContainer .pager__page {
-    width: calc(40px - 5 * (1920px - 100vw) / 680);
-    height: calc(40px - 5 * (1920px - 100vw) / 680);
+    width: calc(40px - 7 * (1920px - 100vw) / 680);
+    height: calc(40px - 7 * (1920px - 100vw) / 680);
   }
   .products .products__menu .products__menu--item {
     width: calc(124px - 30 * (1920px - 100vw) / 680);
@@ -461,25 +460,30 @@ input::-webkit-inner-spin-button {
   }
   .products__items--wrapper .productsSlider__item .productsSlider__item--basket .productsSlider__item--inputWrapper {
     border: none;
+    width: calc(100px - 12 * (1920px - 100vw) / 680);
   }
   .products__items--wrapper .productsSlider__item .productsSlider__item--basket .productsSlider__item--inputWrapper .productsSlider__input {
-    width: calc(50px - 5 * (1920px - 100vw) / 680);
-    height: calc(50px - 5 * (1920px - 100vw) / 680);
+    width: calc(50px - 12 * (1920px - 100vw) / 680);
+    height: calc(50px - 12 * (1920px - 100vw) / 680);
+    font-size: calc(14px - 1 * (1920px - 100vw) / 680);
   }
   .products__items--wrapper .productsSlider__item .productsSlider__item--basket .productsSlider__item--inputWrapper .productsSlider__input--minus,
   .products__items--wrapper .productsSlider__item .productsSlider__item--basket .productsSlider__item--inputWrapper .productsSlider__input--plus {
-    width: 23%;
-    height: calc(50px - 5 * (1920px - 100vw) / 680);
+    width: calc(30% - 5 * (1920px - 100vw) / 680);
+    height: calc(50px - 12 * (1920px - 100vw) / 680);
   }
   .products__items--wrapper .productsSlider__item .productsSlider__item--basket .productsSlider__item--basket-icon {
-    height: calc(50px - 5 * (1920px - 100vw) / 680);
-    width: calc(50px - 5 * (1920px - 100vw) / 680);
+    height: calc(50px - 12 * (1920px - 100vw) / 680);
+    width: calc(50px - 12 * (1920px - 100vw) / 680);
+  }
+  .products__items--wrapper .productsSlider__item .productsSlider__item--basket .productsSlider__item--basket-icon .icon-icon_06 {
+    font-size: calc(25px - 3.5 * (1920px - 100vw) / 680);
   }
   .products__items--wrapper .productsSlider__item .productsSlider__item--description-wrapper {
     bottom: calc(20% + 15 * (1920px - 100vw) / 680);
   }
   .products__items--wrapper .productsSlider__item .productsSlider__item--description-wrapper .productsSlider__item--description {
-    font-size: calc(14px - 2.2 * (1920px - 100vw) / 680);
+    font-size: calc(14px - 2.3 * (1920px - 100vw) / 680);
   }
   .products__items--wrapper .productsSlider__item .productsSlider__item--description-wrapper .productsSlider__item--price {
     font-size: calc(14px - 2 * (1920px - 100vw) / 680);
@@ -492,8 +496,12 @@ input::-webkit-inner-spin-button {
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
+  .products .products__menu {
+    width: calc(840px - 630 * (1200px - 100vw) / 680);
+  }
   .products__items--wrapper {
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
   }
   .products__items--wrapper .productsSlider__item:nth-last-child(-n+4):after {
     border-bottom: 1px solid #e1e2e8;
@@ -508,30 +516,37 @@ input::-webkit-inner-spin-button {
     border-bottom: none;
   }
   .products__items--wrapper .productsSlider__item {
-    width: calc(356px - 100 * (1920px - 100vw) / 680);
-    height: calc(530px - 150 * (1920px - 100vw) / 680);
+    width: calc(400px - 150 * (1920px - 100vw) / 680);
+    height: calc(530px - 180 * (1920px - 100vw) / 680);
   }
   .products__items--wrapper .productsSlider__item .productsSlider__item--basket {
     height: calc(50px - 20 * (1920px - 100vw) / 680);
     bottom: calc(10% - 2.5 * (1920px - 100vw) / 680);
+    gap: 0;
   }
   .products__items--wrapper .productsSlider__item .productsSlider__item--description-wrapper {
     bottom: calc(20% + 15 * (1920px - 100vw) / 680);
   }
   .products__items--wrapper .productsSlider__item .productsSlider__item--description-wrapper .productsSlider__item--description {
-    font-size: calc(14px - 2.2 * (1920px - 100vw) / 680);
+    font-size: calc(15px - 3.5 * (1920px - 100vw) / 680);
   }
   .products__items--wrapper .productsSlider__item .productsSlider__item--description-wrapper .productsSlider__item--price {
-    font-size: calc(14px - 2 * (1920px - 100vw) / 680);
+    font-size: calc(14px - 2.2 * (1920px - 100vw) / 680);
     height: calc(33px - 5 * (1920px - 100vw) / 680);
   }
   .products__items--wrapper .productsSlider__item .productsSlider__item--image {
-    width: calc(280px - 100 * (1920px - 100vw) / 680);
-    height: calc(280px - 100 * (1920px - 100vw) / 680);
+    width: calc(280px - 110 * (1920px - 100vw) / 680);
+    height: calc(280px - 110 * (1920px - 100vw) / 680);
     top: calc(33% - 15 * (1920px - 100vw) / 680);
   }
 }
 @media (max-width: 1050px) {
+  .products .products__menu .products__menu--item {
+    width: calc(50px - 30 * (1050px - 100vw) / 680);
+  }
+  .products .products__menu .products__menu--item .products__menu--itemTitle {
+    display: none;
+  }
   .products .products__menu .products__menu--rightItems .products__menu--rightItemWrapper .products__menu--rightItem {
     display: none;
   }
