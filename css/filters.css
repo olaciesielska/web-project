@@ -336,10 +336,6 @@ input::-webkit-inner-spin-button {
   position: relative;
   min-height: 20px;
 }
-.filters__wrapper .filters__price--wrapper .filters__price--rangeContainer .filters__price--slidersControl .fromSlider {
-  height: 0;
-  z-index: 1;
-}
 .filters__wrapper .filters__price--wrapper .filters__price--rangeContainer .filters__price--slidersControl .fromSlider::before {
   height: 1;
   z-index: 1;
