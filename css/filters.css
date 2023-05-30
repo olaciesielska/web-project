@@ -272,6 +272,9 @@ input::-webkit-inner-spin-button {
   color: #f74137;
   padding: 10px 0px 25px 20px;
 }
+.filters__wrapper .filters__item--list .filters__item--filters {
+  border-bottom: 1px solid #e1e2e8;
+}
 .filters__wrapper .filters__item--listColor {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -288,6 +291,7 @@ input::-webkit-inner-spin-button {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  margin: 0 auto;
 }
 .filters__wrapper .filters__item--listColor .filters__item--inputColor::-webkit-color-swatch {
   border: none;
@@ -387,8 +391,11 @@ input::-webkit-inner-spin-button {
 
 @media (min-width: 768px) and (max-width: 1200px) {
   .filters__wrapper {
-    margin-right: 30px;
-    width: 270px;
+    margin-right: calc(30px - 15 * (1200px - 100vw) / 680);
+    width: calc(270px - 30 * (1200px - 100vw) / 680);
+  }
+  .filters__wrapper .filters__item--listColor {
+    padding: 0px 10px 10px 10px;
   }
 }
 
