@@ -183,6 +183,7 @@
 @media (min-width: 768px) and (max-width: 1200px) {
   .main__wrapper {
     width: 100%;
+
     .sections__wrapper {
       height: calc(2050px - 800 * (1200px - 100vw) / 680);
 
@@ -190,7 +191,8 @@
         .introduction__wrapper {
           .introduction__fieldset {
             .introduction__description {
-              margin-bottom: calc(30px + 130 * (1200px - 100vw) / 680);
+              margin-bottom: calc(30px + 90 * (1200px - 100vw) / 680);
+              font-size: calc(14px - 1 * (1200px - 100vw) / 680);
             }
           }
           .introduction__item--wrapper {

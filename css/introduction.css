@@ -345,7 +345,8 @@ input::-webkit-inner-spin-button {
     height: calc(2050px - 800 * (1200px - 100vw) / 680);
   }
   .main__wrapper .sections__wrapper .introduction .introduction__wrapper .introduction__fieldset .introduction__description {
-    margin-bottom: calc(30px + 130 * (1200px - 100vw) / 680);
+    margin-bottom: calc(30px + 90 * (1200px - 100vw) / 680);
+    font-size: calc(14px - 1 * (1200px - 100vw) / 680);
   }
   .main__wrapper .sections__wrapper .introduction .introduction__wrapper .introduction__item--wrapper {
     grid-template-columns: 1fr 1fr 1fr;
