@@ -191,7 +191,6 @@ input::-webkit-inner-spin-button {
 
 .introduction {
   position: relative;
-  flex: 1;
   font-family: Metropolis;
   color: #111111;
   margin-bottom: 10px;
@@ -211,6 +210,7 @@ input::-webkit-inner-spin-button {
   margin-top: 18.5px;
   font-size: 14px;
   line-height: 1.5;
+  margin-right: 10px;
 }
 .introduction__wrapper .introduction__fieldset--legend {
   position: absolute;
@@ -307,36 +307,45 @@ input::-webkit-inner-spin-button {
 @media (min-width: 768px) and (max-width: 1919px) {
   .main__wrapper .sections__wrapper {
     height: calc(2530px - 870 * (1920px - 100vw) / 680);
-    width: calc(95% - 270 * (1920px - 100vw) / 680);
   }
-  .main__wrapper .sections__wrapper .introduction {
-    width: calc(1540px - 680 * (1920px - 100vw) / 680);
+  .main__wrapper .sections__wrapper .introduction .introduction__wrapper .introduction__title {
+    font-size: calc(44px - 6 * (1920px - 100vw) / 680);
   }
   .main__wrapper .sections__wrapper .introduction .introduction__wrapper .introduction__fieldset .introduction__description {
-    margin-bottom: calc(5px + 30 * (1920px - 100vw) / 680);
+    margin-bottom: calc(5px + 40 * (1920px - 100vw) / 680);
   }
   .main__wrapper .sections__wrapper .introduction .introduction__wrapper .introduction__banner--imageWrapper .introduction__banner--description {
-    top: calc(27% - 15 * (1920px - 100vw) / 680);
+    top: calc(27% - 12 * (1920px - 100vw) / 680);
   }
   .main__wrapper .sections__wrapper .introduction .introduction__wrapper .introduction__banner--imageWrapper .introduction__banner--description .introduction__banner--descriptionText {
-    font-size: calc(44px - 12 * (1920px - 100vw) / 680);
+    font-size: calc(44px - 14 * (1920px - 100vw) / 680);
   }
   .main__wrapper .sections__wrapper .introduction .introduction__wrapper .introduction__banner--imageWrapper .introduction__banner--description .introduction__button {
+    position: absolute;
     width: calc(204px - 50 * (1920px - 100vw) / 680);
     height: calc(55px - 10 * (1920px - 100vw) / 680);
     font-size: calc(14px - 3 * (1920px - 100vw) / 680);
-    margin-top: calc(8% - 15 * (1920px - 100vw) / 680);
+    margin-top: calc(6% - 2 * (1920px - 100vw) / 680);
   }
-  .main__wrapper .sections__wrapper .introduction .introduction__wrapper .introduction__item {
+  .main__wrapper .sections__wrapper .introduction .introduction__wrapper .introduction__item--wrapper .introduction__item {
     height: calc(80px - 25 * (1920px - 100vw) / 680);
   }
-  .main__wrapper .sections__wrapper .introduction .introduction__wrapper .introduction__item .introduction__item--imageWrapper .introduction__item--image {
-    height: calc(58.5px - 8 * (1920px - 100vw) / 680);
+  .main__wrapper .sections__wrapper .introduction .introduction__wrapper .introduction__item--wrapper .introduction__item .introduction__item--imageWrapper .introduction__item--image {
+    height: calc(58.5px - 15 * (1920px - 100vw) / 680);
+  }
+  .main__wrapper .sections__wrapper .introduction .introduction__wrapper .introduction__item--wrapper .introduction__item .introduction__item--description {
+    font-size: calc(14px - 1 * (1920px - 100vw) / 680);
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
+  .main__wrapper {
+    width: 100%;
+  }
   .main__wrapper .sections__wrapper {
-    height: calc(2700px - 500 * (1920px - 100vw) / 680);
+    height: calc(2050px - 800 * (1200px - 100vw) / 680);
+  }
+  .main__wrapper .sections__wrapper .introduction .introduction__wrapper .introduction__fieldset .introduction__description {
+    margin-bottom: calc(30px + 130 * (1200px - 100vw) / 680);
   }
   .main__wrapper .sections__wrapper .introduction .introduction__wrapper .introduction__item--wrapper {
     grid-template-columns: 1fr 1fr 1fr;

@@ -9,7 +9,6 @@
 
 .introduction {
   position: relative;
-  flex: 1;
   font-family: Metropolis;
   color: c.$black;
   margin-bottom: 10px;
@@ -31,6 +30,7 @@
         margin-top: 18.5px;
         font-size: 14px;
         line-height: 1.5;
+        margin-right: 10px;
       }
 
       &--legend {
@@ -133,38 +133,44 @@
   .main__wrapper {
     .sections__wrapper {
       height: calc(2530px - 870 * s.$responsiveCalc);
-      width: calc(95% - 270 * s.$responsiveCalc);
 
       .introduction {
-        width: calc(1540px - 680 * s.$responsiveCalc);
-
         .introduction__wrapper {
+          .introduction__title {
+            font-size: calc(44px - 6 * s.$responsiveCalc);
+          }
           .introduction__fieldset {
             .introduction__description {
-              margin-bottom: calc(5px + 30 * s.$responsiveCalc);
+              margin-bottom: calc(5px + 40 * s.$responsiveCalc);
             }
           }
           .introduction__banner--imageWrapper {
             .introduction__banner--description {
-              top: calc(27% - 15 * s.$responsiveCalc);
+              top: calc(27% - 12 * s.$responsiveCalc);
 
               .introduction__banner--descriptionText {
-                font-size: calc(44px - 12 * s.$responsiveCalc);
+                font-size: calc(44px - 14 * s.$responsiveCalc);
               }
               .introduction__button {
+                position: absolute;
                 width: s.$responsiveButtonWidth;
                 height: s.$responsiveButtonHeight;
                 font-size: s.$responsiveButtonFontSize;
-                margin-top: calc(8% - 15 * s.$responsiveCalc);
+                margin-top: calc(6% - 2 * s.$responsiveCalc);
               }
             }
           }
-          .introduction__item {
-            height: calc(80px - 25 * s.$responsiveCalc);
+          .introduction__item--wrapper {
+            .introduction__item {
+              height: calc(80px - 25 * s.$responsiveCalc);
 
-            .introduction__item--imageWrapper {
-              .introduction__item--image {
-                height: calc(58.5px - 8 * s.$responsiveCalc);
+              .introduction__item--imageWrapper {
+                .introduction__item--image {
+                  height: calc(58.5px - 15 * s.$responsiveCalc);
+                }
+              }
+              .introduction__item--description {
+                font-size: calc(14px - 1 * s.$responsiveCalc);
               }
             }
           }
@@ -176,10 +182,17 @@
 
 @media (min-width: 768px) and (max-width: 1200px) {
   .main__wrapper {
+    width: 100%;
     .sections__wrapper {
-      height: calc(2700px - 500 * (1920px - 100vw) / 680);
+      height: calc(2050px - 800 * (1200px - 100vw) / 680);
+
       .introduction {
         .introduction__wrapper {
+          .introduction__fieldset {
+            .introduction__description {
+              margin-bottom: calc(30px + 130 * (1200px - 100vw) / 680);
+            }
+          }
           .introduction__item--wrapper {
             grid-template-columns: 1fr 1fr 1fr;
           }
