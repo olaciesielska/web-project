@@ -205,7 +205,7 @@
 
     .productsSlider__wrapper {
       margin: 0 auto;
-      width: calc(480px - 320 * s.$mobileCalc);
+      width: 100%;
 
       .left,
       .right {

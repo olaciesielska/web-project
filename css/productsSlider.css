@@ -371,7 +371,7 @@ input::-webkit-inner-spin-button {
   }
   .productsSlider .productsSlider__wrapper {
     margin: 0 auto;
-    width: calc(480px - 320 * (767px - 100vw) / 680);
+    width: 100%;
     /* .productsSlider__slider::-webkit-scrollbar {
       display: default;
     } */
