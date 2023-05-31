@@ -185,6 +185,7 @@ input::-webkit-inner-spin-button {
 }
 .main__wrapper {
   display: flex;
+  position: relative;
 }
 
 .filters {
@@ -193,7 +194,6 @@ input::-webkit-inner-spin-button {
 .filters__wrapper {
   width: 300px;
   margin-bottom: 22px;
-  border-bottom: 1px solid #e1e2e8;
   border: 1px solid #e1e2e8;
   margin-right: 30px;
 }
@@ -213,8 +213,14 @@ input::-webkit-inner-spin-button {
   padding-left: 20px;
   transition: font-weight 0.2s;
 }
+.filters__wrapper .filters__item--list .filters__item .filters__arrow {
+  display: none;
+}
 .filters__wrapper .filters__item--list .filters__item:hover {
   font-weight: 700;
+}
+.filters__wrapper .filters__item--list .filters__item:last-child {
+  border-bottom: none;
 }
 .filters__wrapper .filters__item--list .filters__item--title {
   font-weight: 700;
@@ -225,6 +231,10 @@ input::-webkit-inner-spin-button {
   font-weight: 700;
   border-top: 1px solid #e1e2e8;
   border-bottom: none;
+}
+.filters__wrapper .filters__item--list .filters__item--bottomTitle:first-of-type {
+  border-bottom: 1px solid #e1e2e8;
+  border-top: none;
 }
 .filters__wrapper .filters__item--list .filters__input--description {
   text-transform: none;
@@ -261,6 +271,10 @@ input::-webkit-inner-spin-button {
   width: 14px;
   background-color: #eee;
   margin-right: 0.5em;
+}
+.filters__wrapper .filters__item--list .filters__item--border:first-of-type {
+  border-bottom: none;
+  border-top: 1px solid #e1e2e8;
 }
 .filters__wrapper .filters__item--list .input__wrapper input:checked ~ .checkmark {
   background-color: #f74137;
@@ -396,6 +410,26 @@ input::-webkit-inner-spin-button {
   }
   .filters__wrapper .filters__item--listColor {
     padding: 0px 10px 10px 10px;
+  }
+}
+@media (max-width: 767px) {
+  .filters .filters__wrapper {
+    display: none;
+  }
+  .filters .filters__wrapper--categories {
+    position: absolute;
+    display: none;
+    z-index: 5;
+    background-color: #f8f8f8;
+    left: 50%;
+  }
+  .filters .filters__wrapper--categories .filters__item--list .filters__item--title .filters__arrow {
+    position: absolute;
+    display: inline;
+    width: calc(25px - 8 * (767px - 100vw) / 680);
+    left: 80%;
+    transition: transform 0.35s ease-out;
+    background-color: black;
   }
 }
 

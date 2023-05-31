@@ -118,9 +118,11 @@
     <main>
       <div class="container main__wrapper">
         <section class="filters">
-          <div class="filters__wrapper">
+          <div class="filters__wrapper filters__wrapper--categories">
             <ul class="filters__item--list">
-              <li class="filters__item filters__item--title">gniazdka, wyłączniki</li>
+              <li class="filters__item filters__item--title">gniazdka, wyłączniki
+                <img class="filters__arrow" src="icons/down-arrow.png" />
+              </li>
               <li class="filters__item">schneider electric</li>
               <li class="filters__item">kontakt simon</li>
               <li class="filters__item">berker</li>
@@ -168,7 +170,7 @@
               <li class="filters__item--more">więcej (10)</li>
             </ul>
             <ul class="filters__item--list">
-              <li class="filters__item filters__item--bottomTitle">kolor</li>
+              <li class="filters__item filters__item--bottomTitle filters__item--border">kolor</li>
             </ul> 
             <div class="filters__item--listColor">
               <input class="filters__item--inputColor" type="color" value="#5ABD68">
@@ -188,7 +190,7 @@
               <input class="filters__item--inputColor" type="color" value="#F7DA50">
             </div>
             <ul class="filters__item--list">
-              <li class="filters__item filters__item--bottomTitle">filtr</li>
+              <li class="filters__item filters__item--bottomTitle filters__item--border">filtr</li>
             </ul> 
             <div class="filters__item--listFilters">
               <input class="filters__item--inputNumber" type="number" value="65">
@@ -211,7 +213,7 @@
               <input class="filters__item--inputNumber" type="number" value="65">
             </div>
             <ul class="filters__item--list">
-              <li class="filters__item filters__item--bottomTitle">filtr</li>
+              <li class="filters__item filters__item--bottomTitle filters__item--border">filtr</li>
             </ul> 
             <div class="filters__inputNumberWrapper">
               <input class="filters__quantity" type="number" min="65" max="90" placeholder="min. 65">
@@ -219,7 +221,7 @@
               <input class="filters__quantity" type="number" min="65" max="90" placeholder="max. 90">
             </div>
             <ul class="filters__item--list">
-              <li class="filters__item filters__item--bottomTitle">cena</li>
+              <li class="filters__item filters__item--bottomTitle filters__item--border">cena</li>
             </ul> 
             <div class="filters__price--wrapper">
               <div class="filters__price--rangeContainer">
@@ -315,7 +317,7 @@
               <div class="products__menu--rightItems">
                 <div class="products__menu--rightItemWrapper">
                   <p class="products__menu--item products__menu--rightItem">Sortuj</p>
-                  <select name="sorting" class="products__menu--select">
+                  <select name="sorting" class="products__menu--select products__menu--selectSort">
                     <option selected="selected">Domyślnie</option>
                     <option>Bestsellery</option>
                     <option>Cena od najniższej</option>
@@ -350,7 +352,7 @@
                 <img
                   class="productsSlider__item--image"
                   src="img/img_06.jpg"
-                  alt="Łącznik jednobiegunowy"
+                  alt="Łącznik jedbiegunowy"
                 />
                 <div class="productsSlider__item--description-wrapper">
                   <p class="productsSlider__item--description">
@@ -801,7 +803,7 @@
             <div class="products__menu--rightItems">
               <div class="products__menu--rightItemWrapper">
                 <p class="products__menu--item products__menu--rightItem">Sortuj</p>
-                <select name="sorting" class="products__menu--select">
+                <select name="sorting" class="products__menu--select products__menu--selectSort">
                   <option selected="selected">Domyślnie</option>
                   <option>Bestsellery</option>
                   <option>Cena od najniższej</option>
