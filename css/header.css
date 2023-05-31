@@ -350,6 +350,26 @@ header {
 .categories__list--item {
   color: #111111;
 }
+.categories__list--item:nth-child(1):after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 13px;
+  height: 1px;
+  top: 50%;
+  left: 36%;
+  background-color: #e1e2e8;
+}
+.categories__list--item:nth-child(2):after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 13px;
+  height: 1px;
+  top: 50%;
+  left: 70%;
+  background-color: #e1e2e8;
+}
 
 @media (max-width: 767px) {
   .visible {
@@ -501,6 +521,11 @@ header {
   }
   .menu__bottom-wrapper .menu__navigation-bottom .menu__list-bottom .menu__item .menu__link {
     font-size: calc(14px - 1.3 * (1920px - 100vw) / 680);
+  }
+}
+@media (max-width: 479px) {
+  .categories__list--item {
+    font-size: calc(14px - 2 * (479px - 100vw) / 680);
   }
 }
 

@@ -188,6 +188,26 @@ header {
     &--item {
       color: c.$black;
     }
+    &--item:nth-child(1):after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 13px;
+      height: 1px;
+      top: 50%;
+      left: 36%;
+      background-color: c.$light-gray;
+    }
+    &--item:nth-child(2):after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 13px;
+      height: 1px;
+      top: 50%;
+      left: 70%;
+      background-color: c.$light-gray;
+    }
   }
 }
 
@@ -379,6 +399,15 @@ header {
             font-size: calc(14px - 1.3 * s.$responsiveCalc);
           }
         }
+      }
+    }
+  }
+}
+@media (max-width: 479px) {
+  .categories {
+    &__list {
+      &--item {
+        font-size: calc(14px - 2 * (479px - 100vw) / 680);
       }
     }
   }
