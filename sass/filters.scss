@@ -125,8 +125,6 @@
     .filters__item--listColor {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      border-left: 1px solid c.$light-gray;
-      border-right: 1px solid c.$light-gray;
       padding: 0px 20px 20px 20px;
 
       .filters__item--inputColor {

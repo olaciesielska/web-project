@@ -292,8 +292,6 @@ input::-webkit-inner-spin-button {
 .filters__wrapper .filters__item--listColor {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  border-left: 1px solid #e1e2e8;
-  border-right: 1px solid #e1e2e8;
   padding: 0px 20px 20px 20px;
 }
 .filters__wrapper .filters__item--listColor .filters__item--inputColor {
