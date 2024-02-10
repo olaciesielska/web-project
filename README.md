@@ -18,7 +18,7 @@
 ![6](https://github.com/olaciesielska/web-project/assets/132547195/79c2ccc2-54e7-4aa2-bd3d-0e20089ab128)
 
 
-## Podstrona - mobile
+### Podstrona - mobile
 
 ![7](https://github.com/olaciesielska/web-project/assets/132547195/67eac7c2-5a50-4f4f-920f-b331169f9c0b)
 ![8](https://github.com/olaciesielska/web-project/assets/132547195/43774949-ffcb-4fdc-abc5-2241efc7ff5c)
