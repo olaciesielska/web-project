@@ -192,7 +192,8 @@ input::-webkit-inner-spin-button {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin-top: 40px;
 }
 .whyUsBanner .whyUsBanner__title {
@@ -384,6 +385,4 @@ input::-webkit-inner-spin-button {
   .whyUsBanner .whyUsBanner__button:hover {
     background-color: #f74137;
   }
-}
-
-/*# sourceMappingURL=whyUsBanner.css.map */
+}/*# sourceMappingURL=whyUsBanner.css.map */

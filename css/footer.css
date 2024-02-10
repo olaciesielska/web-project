@@ -337,6 +337,4 @@ input::-webkit-inner-spin-button {
   .footer__wrapper .footer__element .footer__item--list .footer__item .footer__link {
     font-size: calc(14px - 1 * (1920px - 100vw) / 680);
   }
-}
-
-/*# sourceMappingURL=footer.css.map */
+}/*# sourceMappingURL=footer.css.map */

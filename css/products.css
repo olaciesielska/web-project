@@ -706,6 +706,4 @@ input::-webkit-inner-spin-button {
   .products__menu .products__menu--rightItems .products__menu--rightItemWrapper .products__menu--selectSort {
     width: calc(170px - 250 * (479px - 100vw) / 680);
   }
-}
-
-/*# sourceMappingURL=products.css.map */
+}/*# sourceMappingURL=products.css.map */

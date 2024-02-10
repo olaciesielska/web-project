@@ -336,6 +336,9 @@ input::-webkit-inner-spin-button {
   font-size: 12px;
   text-align: center;
 }
+.filters__wrapper .filters__inputNumberWrapper .filters__quantity::-moz-placeholder {
+  color: #111111;
+}
 .filters__wrapper .filters__inputNumberWrapper .filters__quantity::placeholder {
   color: #111111;
 }
@@ -371,17 +374,22 @@ input::-webkit-inner-spin-button {
   height: 30px;
   border: 1px solid #e1e2e8;
 }
+.filters__wrapper .filters__price--wrapper .filters__price--formControl .filters__price--quantity::-moz-placeholder {
+  color: #111111;
+}
 .filters__wrapper .filters__price--wrapper .filters__price--formControl .filters__price--quantity::placeholder {
   color: #111111;
 }
 .filters__wrapper .filters__price--wrapper input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
+  position: relative;
   pointer-events: all;
   width: 16px;
   height: 16px;
   background-color: #f74137;
   opacity: 1;
   cursor: pointer;
+  z-index: 1;
 }
 .filters__wrapper .filters__price--wrapper input[type=range]::-moz-range-thumb {
   pointer-events: all;
@@ -393,7 +401,8 @@ input::-webkit-inner-spin-button {
 }
 .filters__wrapper .filters__price--wrapper input[type=range] {
   -webkit-appearance: none;
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   height: 4px;
   width: 100%;
   position: absolute;
@@ -429,6 +438,4 @@ input::-webkit-inner-spin-button {
     transition: transform 0.35s ease-out;
     background-color: black;
   }
-}
-
-/*# sourceMappingURL=filters.css.map */
+}/*# sourceMappingURL=filters.css.map */

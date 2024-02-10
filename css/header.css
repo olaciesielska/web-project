@@ -527,6 +527,4 @@ header {
   .categories__list--item {
     font-size: calc(14px - 2 * (479px - 100vw) / 680);
   }
-}
-
-/*# sourceMappingURL=header.css.map */
+}/*# sourceMappingURL=header.css.map */
