@@ -185,6 +185,7 @@ header {
     font-size: 14px;
     gap: 35px;
     bottom: 30%;
+    
     &--item {
       color: c.$black;
     }
@@ -212,11 +213,7 @@ header {
 }
 
 @media (max-width: 767px) {
-  .visible {
-    display: block !important;
-  }
-
-  .menu__bottom-wrapper {
+    .menu__bottom-wrapper {
     display: none;
     height: 0;
 
@@ -230,10 +227,12 @@ header {
       transform: translateY(0);
 
       .menu__list-bottom {
+        position: relative;
         align-items: start;
         flex-direction: column;
         background-color: c.$white;
         line-height: 5;
+        z-index: 1;
 
         .menu__item {
           width: 80%;
@@ -248,6 +247,10 @@ header {
         }
       }
     }
+  }
+
+  .visible {
+    display: block;
   }
 
   .menu__navigation--border {

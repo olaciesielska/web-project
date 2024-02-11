@@ -1,8 +1,8 @@
 (() => {
   const fromSlider = document.querySelector('.fromSlider');
   const toSlider = document.querySelector('.toSlider');
-  const fromInput = document.querySelector('.filters__price--quantity.min');
-  const toInput = document.querySelector('.filters__price--quantity.max');
+  const fromInput = document.querySelector('.min');
+  const toInput = document.querySelector('.max');
 
   
   function controlFromSlider(fromSlider, toSlider, fromInput) {
